@@ -7,5 +7,4 @@ export default defineConfig({
   css: {
     modules: true, // enable CSS modules
   },
-  mode: 'production', // set Vite mode to production
 })
