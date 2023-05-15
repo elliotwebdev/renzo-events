@@ -130,7 +130,7 @@ export default function Events() {
                   lg: 'block'
                 });
             return (
-                  <Box display={variant} pos="absolute" mt={20}  >
+                  <Box display={variant} pos="absolute" mt={10}  >
                         <Icon as={logo} width="100%" height="100%" zIndex={-1} />
                   </Box>
                   
