@@ -2,13 +2,13 @@ import React, {useState} from 'react';
 import { Calendar, dateFnsLocalizer } from 'react-big-calendar';
 import {format, parse, startOfWeek, getDay} from 'date-fns';
 import enUS from 'date-fns/locale/en-US'
-import '/src/index.css';
 import {
       Flex,
       Heading,
       Icon,
       Text,
       useBreakpointValue,
+      useColorMode,
       Box,
       Button,
       Stack,
@@ -19,11 +19,13 @@ import {
       DrawerOverlay,
       DrawerContent,
       DrawerCloseButton,
+      background,
     } from '@chakra-ui/react'
 import {academies} from './components/Academies'
 import {generateRecurringEvents} from './components/GenerateEvents'
+import Footer from './components/Footer'
 import logo from "./assets/logo"
-
+import '/src/index.css';
 
 const localizer = dateFnsLocalizer({
       format,
@@ -41,6 +43,7 @@ export default function Events() {
       const btnRef = React.useRef()
       const [selectedLocation, setSelectedLocation] = useState()
       const [events, setEvents] = useState([])
+      const { colorMode, toggleColorMode } = useColorMode()
 
       const handleShowEvents = (location) => {
             const generatedEvents = []
@@ -60,7 +63,6 @@ export default function Events() {
             setSelectedLocation(location)
             onClose();
       }
-
       function LocationTitle() {
             return(
                   <Heading>
@@ -68,13 +70,11 @@ export default function Events() {
                   </Heading>
             )
       }
-          
       function ButtonDisplay() {
             const variant = useBreakpointValue({
                   base: {
-                    width: "100%",
+                    width: "60%",
                     height: 12,
-                    
                     position: "fixed",
                     borderTopRadius: 0,
                     borderBottomRadius: "30px",
@@ -85,28 +85,25 @@ export default function Events() {
                     position: "fixed",
                     borderLeftRadius: 0,
                     borderRightRadius: "50px",
-                    className: "truncate"
+                    className: "truncate",
+                    maxW: 20
                   }
                 });
             const isLg = useBreakpointValue({ base: false, lg: true });
+            
             return (
                   <Button  ref={btnRef} sx={variant} overflow='visible' colorScheme="blue" onClick={onOpen}>
-                       <Stack direction={isLg ? "column" : "row"}>
-                              <Text>Select</Text>
-                              <Text>Schedule</Text>
-                        </Stack>
+                        <Heading size={isLg ? "xl" : "md"} className={isLg ? "rotateText" : ""}>SELECT SCHEDULE</Heading>
                   </Button>
 
             )
       }
-      function calDisplay() {
+      function calendarDisplay() {
             const variant = useBreakpointValue({
                   base: ['day'],
                   lg: ['day', 'week']
                 });
             return (
-                  // <Box pos="relative" width="100%">
-
                         <Calendar
                         localizer={localizer}
                         events={events}
@@ -115,15 +112,11 @@ export default function Events() {
                         views={variant}
                         defaultView="day"
                         min={minTime}
-                        max={maxTime} 
+                        max={maxTime}
+                      
                         />
-                        // {/* <Flex widht="100%" right="0" position="fixed" zIndex={-1}>
-                        //             <Icon as={logo} width="100%" height="100%" />
-                        // </Flex> */}
-                  // </Box>
             )
       }
-
       function logoDisplay() {
             const variant = useBreakpointValue({
                   base: 'none',
@@ -157,23 +150,23 @@ export default function Events() {
                         </DrawerBody>
                   </DrawerContent>
             </Drawer>
-   
 
-            {/* <Box position="absolute" top="50%" left="50%" transform="translate(-50%, -50%)" zIndex={-1}>
-                  <Icon as={logo} width="100%" height="100%" />
-            </Box> */}
+            <Box>{ButtonDisplay()}</Box> 
 
+            <Button onClick={toggleColorMode}>
+                  Toggle Light
+            </Button>
+
+            <Flex pt={16} pb={6}  height="50px" justifyContent="center" alignItems="center">{LocationTitle()}</Flex>
+            <Flex justifyContent="center" alignItems="center" mx={[null, null, null, 32, 32]} >
                   
-                  <Box>{ButtonDisplay()}</Box> 
-                  <Flex pt={16} pb={6}  height="50px" justifyContent="center" alignItems="center">{LocationTitle()}</Flex>
-                  <Flex justifyContent="center" alignItems="center" mx={[null, null, null, 32, 40]} >
-                        
-                        {logoDisplay()}
-                        <Box  width="100%">      
-                              {calDisplay()}
-                        </Box>
-                  
-                  </Flex>
+                  {logoDisplay()}
+                  <Box  width="100%">      
+                        {calendarDisplay()}
+                  </Box>
+            
+            </Flex>
+      <Footer />
       </Box>
       )
     }

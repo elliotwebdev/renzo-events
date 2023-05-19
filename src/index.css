@@ -1,4 +1,10 @@
 @charset "UTF-8";
+
+.rotateText {
+  transform: rotate(-90deg);
+  transform-origin: center;
+} 
+/* REACT BIG CALENDAR */
 .rbc-btn {
   color: inherit;
   font: inherit;
@@ -143,8 +149,15 @@ button.rbc-input::-moz-focus-inner {
   display: none;
 }
 
-.rbc-today {
+/* .rbc-today {
   background-color: #eaf6ff;
+} */
+[data-theme="light"] .rbc-today {
+  background-color: rgba(164, 189, 220, 0.85); /* Light mode background color */
+}
+
+[data-theme="dark"] .rbc-today {
+  background-color: #707070; /* Dark mode background color */
 }
 
 .rbc-toolbar {
@@ -183,6 +196,14 @@ button.rbc-input::-moz-focus-inner {
   line-height: normal;
   white-space: nowrap;
 }
+/*
+[data-theme="light"] .rbc-toolbar button {
+  color: "black" 
+
+[data-theme="dark"] .rbc-toolbar button {
+  color: "white" 
+*/
+
 .rbc-toolbar button:active, .rbc-toolbar button.rbc-active {
   background-image: none;
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
@@ -517,6 +538,16 @@ button.rbc-input::-moz-focus-inner {
           flex-direction: column;
   min-height: 100%;
 }
+
+[data-theme="light"] .rbc-time-column {
+  background-color: rgba(255, 255, 255, 0.85); /* Light mode background color */
+}
+
+[data-theme="dark"] .rbc-time-column {
+  background-color: #1a202c; /* Dark mode background color */
+}
+
+
 .rbc-time-column .rbc-timeslot-group {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -597,9 +628,10 @@ button.rbc-input::-moz-focus-inner {
   height: 100%;
   min-height: 1em;
 }
-.rbc-day-slot .rbc-time-slot {
+
+/* .rbc-day-slot .rbc-time-slot {
   border-top: 1px solid #f7f7f7;
-}
+} */
 
 .rbc-time-view-resources .rbc-time-gutter,
 .rbc-time-view-resources .rbc-time-header-gutter {
@@ -682,8 +714,7 @@ button.rbc-input::-moz-focus-inner {
   width: 100%;
   border: 1px solid #ddd;
   min-height: 0;
-  opacity:0.96;
-  background-color: #eaf6ff;
+  opacity:0.9;
 }
 .rbc-time-view .rbc-time-gutter {
   white-space: nowrap;
@@ -778,11 +809,13 @@ button.rbc-input::-moz-focus-inner {
   overflow-y: auto;
   position: relative;
 }
+
 .rbc-time-content > .rbc-time-gutter {
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
 }
+
 .rbc-time-content > * + * > * {
   border-left: 1px solid #ddd;
 }
@@ -796,6 +829,15 @@ button.rbc-input::-moz-focus-inner {
    -ms-user-select: none;
        user-select: none;
   -webkit-user-select: none;
+  /* background-color: #3174ad; */
+}
+
+[data-theme="light"] .rbc-time-content > .rbc-day-slot {
+  background-color: rgba(255, 255, 255, 0.85); /* Light mode background color */
+}
+
+[data-theme="dark"] .rbc-time-content > .rbc-day-slot {
+  background-color: #1a202c; /* Dark mode background color */
 }
 
 .rbc-current-time-indicator {
