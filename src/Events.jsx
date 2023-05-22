@@ -251,11 +251,11 @@ export default function Events() {
 
                         <DrawerBody>
                               <Stack>
-                                    <Button size="lg" colorScheme='blue' onClick={() => handleShowEvents("Houston (HQ)")}>Houston (HQ)</Button>
-                                    <Button size="lg" colorScheme='blue' onClick={() => handleShowEvents("The Grove")}>The Grove</Button>
-                                    <Button size="lg" colorScheme='blue' onClick={() => handleShowEvents("HTX (Downtown)")}>HTX (Downtown)</Button>
-                                    {/* <Button size="lg" colorScheme='blue' onClick={() => handleShowEvents("Missouri City")}>Missouri City</Button> */}
-                                    <Button size="lg" colorScheme='blue' onClick={() => handleShowEvents("Riverstone")}>Riverstone</Button>
+                                    <Button size="lg" colorScheme='messenger' onClick={() => handleShowEvents("Houston (HQ)")}>Houston (HQ)</Button>
+                                    <Button size="lg" colorScheme='messenger' onClick={() => handleShowEvents("The Grove")}>The Grove</Button>
+                                    <Button size="lg" colorScheme='messenger' onClick={() => handleShowEvents("HTX (Downtown)")}>HTX (Downtown)</Button>
+                                    {/* <Button size="lg" colorScheme='messenger' onClick={() => handleShowEvents("Missouri City")}>Missouri City</Button> */}
+                                    <Button size="lg" colorScheme='messenger' onClick={() => handleShowEvents("Riverstone")}>Riverstone</Button>
                               </Stack>
                         </DrawerBody>
                   </DrawerContent>

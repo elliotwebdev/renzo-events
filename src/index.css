@@ -303,12 +303,21 @@ button.rbc-input::-moz-focus-inner {
           box-shadow: none;
   margin: 0;
   padding: 2px 5px;
-  background-color: #3174ad;
+  background-color: #0078ff;
   border-radius: 5px;
   color: #fff;
   cursor: pointer;
   width: 100%;
   text-align: left;
+}
+[data-theme="light"] .rbc-event, .rbc-day-slot .rbc-background-event {
+  color: #fff;
+  background-color: #0078ff; 
+}
+
+[data-theme="dark"] .rbc-event, .rbc-day-slot .rbc-background-event {
+  color: #1a202c;
+  background-color: #a2cdff; 
 }
 .rbc-slot-selecting .rbc-event, .rbc-slot-selecting .rbc-day-slot .rbc-background-event, .rbc-day-slot .rbc-slot-selecting .rbc-background-event {
   cursor: inherit;
@@ -322,7 +331,7 @@ button.rbc-input::-moz-focus-inner {
 }
 
 .rbc-event-label {
-  font-size: 30%;
+  font-size: 60%;
 }
 
 .rbc-event-overlaps {
@@ -662,6 +671,7 @@ button.rbc-input::-moz-focus-inner {
   line-height: 1;
   height: 100%;
   min-height: 0.01em;
+  font-weight: bold;
 }
 
 /* .rbc-day-slot .rbc-time-slot {
