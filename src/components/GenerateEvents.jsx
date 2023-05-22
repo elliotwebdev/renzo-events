@@ -9,12 +9,12 @@ export const generateRecurringEvents = (events, numWeeks) => {
                   const end = addWeeks(event.end, i)
                   const eventStart = new Date(start)
                   const eventEnd = new Date(end)
-                  const bgColor = event.color
+                  // const bgColor = event.color
                   
                   generatedEvents.push({
                         start: eventStart,
                         end: eventEnd,
-                        color: bgColor
+                        // color: bgColor
                   })
             })
       }

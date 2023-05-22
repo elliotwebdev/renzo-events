@@ -13,11 +13,14 @@
     "@chakra-ui/react": "^2.6.0",
     "@emotion/react": "^11.10.8",
     "@emotion/styled": "^11.10.8",
+    "@fontsource-variable/montserrat": "^5.0.1",
+    "@fontsource/teko": "^5.0.0",
     "date-fns": "^2.29.3",
     "framer-motion": "^10.12.4",
     "react": "^18.2.0",
     "react-big-calendar": "^1.6.9",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

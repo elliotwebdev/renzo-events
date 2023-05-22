@@ -9,6 +9,10 @@ const config = {
 
 const theme = extendTheme({
       config,
+      fonts: {
+            heading: `'Teko', sans-serif`,
+            body: `'Montserrat Variable', sans-serif`
+            },
 })
 
 export default theme;

@@ -1,3 +1,5 @@
+import '@fontsource-variable/montserrat';
+import '@fontsource/teko/600.css';
 import { ChakraProvider } from '@chakra-ui/react'
 import React from 'react'
 import ReactDOM from 'react-dom/client'
