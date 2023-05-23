@@ -37,7 +37,9 @@ import '/src/index.css';
 const localizer = dateFnsLocalizer({
       format,
       parse,
-      startOfWeek,
+      startOfWeek: () => {
+            return startOfWeek(new Date(), { weekStartsOn: 1 });
+      },
       getDay,
       locales: enUS
 });
@@ -91,6 +93,9 @@ export default function Events() {
                         borderTopRadius: 0,
                         zIndex:2,
                         ml: 2,
+                        border:'2px',
+                        borderColor:'blackAlpha.500',
+                        
                   },
                   lg: {
                         height: "60vh",
@@ -176,7 +181,7 @@ export default function Events() {
                               </Text>
 
                               </ModalBody>
-                              <ModalFooter>
+                              <ModalFooter >
                                     <Button colorScheme='messenger' mr={3} onClick={onClose}>
                                     Close
                                     </Button>
@@ -250,12 +255,12 @@ export default function Events() {
                         <DrawerHeader>Select an Academy</DrawerHeader>
 
                         <DrawerBody>
-                              <Stack>
-                                    <Button size="lg" colorScheme='messenger' onClick={() => handleShowEvents("Houston (HQ)")}>Houston (HQ)</Button>
-                                    <Button size="lg" colorScheme='messenger' onClick={() => handleShowEvents("The Grove")}>The Grove</Button>
-                                    <Button size="lg" colorScheme='messenger' onClick={() => handleShowEvents("HTX (Downtown)")}>HTX (Downtown)</Button>
+                              <Stack gap={2}>
+                                    <Button size="lg" colorScheme='messenger' onClick={() => handleShowEvents("Houston (HQ)")}>HOUSTON (HQ)</Button>
+                                    <Button size="lg" colorScheme='messenger' onClick={() => handleShowEvents("The Grove")}>THE GROVE</Button>
+                                    <Button size="lg" colorScheme='messenger' onClick={() => handleShowEvents("HTX (Downtown)")}>HTX (DOWNTOWN)</Button>
                                     {/* <Button size="lg" colorScheme='messenger' onClick={() => handleShowEvents("Missouri City")}>Missouri City</Button> */}
-                                    <Button size="lg" colorScheme='messenger' onClick={() => handleShowEvents("Riverstone")}>Riverstone</Button>
+                                    <Button size="lg" colorScheme='messenger' onClick={() => handleShowEvents("Riverstone")}>RIVERSTONE</Button>
                               </Stack>
                         </DrawerBody>
                   </DrawerContent>
@@ -266,13 +271,12 @@ export default function Events() {
 
             <Flex py={4} justifyContent="center" alignItems="center" >{LocationTitle()}</Flex>
             <Flex justifyContent="center" alignItems="center" mx={[null, null, null, 32, 32]} >
-                  
                   {logoDisplay()}
                   <Box  width="100%">      
                         {calendarDisplay()}
                   </Box>
-            
             </Flex>
+            <Text color="gray.400" mx={[null, null, null, 32, 32]}>Updated:5.23.23</Text>
       <Footer />
       </Box>
       )

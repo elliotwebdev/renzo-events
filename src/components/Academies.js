@@ -122,11 +122,46 @@ export const academies = {
                   end: new Date(2023, 4, 6, 8, 0),
             },
             ],
+            "Live Training":[
+            {
+                  //Monday
+                  start: new Date(2023, 4, 1, 13, 0),
+                  end: new Date(2023, 4, 1, 13, 30),
+            },
+            {
+                  //Tuesday
+                  start: new Date(2023, 4, 2, 13, 0),
+                  end: new Date(2023, 4, 2, 13, 30),
+            },
+            {
+                  start: new Date(2023, 4, 2, 19, 30),
+                  end: new Date(2023, 4, 2, 20, 0),
+            },
+            {
+                  //Wednesday
+                  start: new Date(2023, 4, 3, 19, 30),
+                  end: new Date(2023, 4, 3, 20, 0),
+            },
+            {
+                  //Thursday
+                  start: new Date(2023, 4, 4, 13, 0),
+                  end: new Date(2023, 4, 4, 13, 30),
+            },
+            {
+                  start: new Date(2023, 4, 4, 19, 30),
+                  end: new Date(2023, 4, 4, 20, 0),
+            },
+            {
+                  //Friday
+                  start: new Date(2023, 4, 5, 13, 0),
+                  end: new Date(2023, 4, 5, 13, 30),
+            },
+            ],
             "Warrior Wednesday (Live Training Only)": 
             {
                   //Wednesday
                   start: new Date(2023, 4, 3, 12, 0),
-                  end: new Date(2023, 4, 3, 13, 0),
+                  end: new Date(2023, 4, 3, 13, 30),
             },
             "Technical Workshop": 
             {     
@@ -146,6 +181,13 @@ export const academies = {
                   //Monday
                   start: new Date(2023, 4, 1, 11, 0),
                   end: new Date(2023, 4, 1, 12, 0),
+                  
+            },
+            "Defending Pins & Escapes": 
+            {     
+                  //Monday
+                  start: new Date(2023, 4, 1, 19, 30),
+                  end: new Date(2023, 4, 1, 20, 30),
                   
             },
             "Veterans BJJ": 
@@ -210,14 +252,14 @@ export const academies = {
                         start: new Date(2023, 4, 5, 5, 0),
                         end: new Date(2023, 4, 5, 6, 0),
                   },
+                  ],
+                  "Competition BJJ":
                   {     
                         //Saturday
                         start: new Date(2023, 4, 6, 11, 0),
                         end: new Date(2023, 4, 6, 12, 0),
                         
                   },
-                  ],
-      
                   "No-Gi BJJ":[
 
                   {
@@ -266,7 +308,7 @@ export const academies = {
                         start: new Date(2023, 4, 6, 12, 0),
                         end: new Date(2023, 4, 6, 13, 0),
                   },
-                  "Women Competition Class": 
+                  "Women's Competition Class": 
                   {
                         start: new Date(2023, 4, 5, 18, 30),
                         end: new Date(2023, 4, 5, 19, 30),
@@ -347,6 +389,32 @@ export const academies = {
            
                   },
             ],
+            "Live Training": [
+                  {    
+                        // Monday
+                        start: new Date(2023, 4, 1, 18, 30),
+                        end: new Date(2023, 4, 1, 19, 0),
+           
+                  },
+                  {    
+                        // Tuesday
+                        start: new Date(2023, 4, 2, 18, 30),
+                        end: new Date(2023, 4, 2, 19, 0),
+           
+                  },
+                  {    
+                        //Wednesday
+                        start: new Date(2023, 4, 3, 18, 30),
+                        end: new Date(2023, 4, 3, 19, 0),
+           
+                  },
+                  {    
+                        //Thursday
+                        start: new Date(2023, 4, 4, 18, 0),
+                        end: new Date(2023, 4, 4, 19, 0),
+           
+                  },
+            ],
             "OPEN MAT": {    
                   //Friday
                   start: new Date(2023, 4, 5, 11, 30),
@@ -415,6 +483,20 @@ export const academies = {
                         //Saturday
                         start: new Date(2023, 4, 6, 9, 0),
                         end: new Date(2023, 4, 6, 10, 0),
+           
+                  },
+            ],
+            "Live Training": [
+                  {    
+                        // Monday
+                        start: new Date(2023, 4, 1, 19, 30),
+                        end: new Date(2023, 4, 1, 20, 0),
+           
+                  },
+                  {    
+                        // Wednesday
+                        start: new Date(2023, 4, 3, 19, 30),
+                        end: new Date(2023, 4, 3, 20, 0),
            
                   },
             ],
