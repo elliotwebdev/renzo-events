@@ -50,9 +50,7 @@ const localizer = dateFnsLocalizer({
 });
 
 export default function Events() {
-      const minTime = new Date(2023, 0, 1, 5, 0, 0)
-      const maxTime = new Date(2023, 0, 1, 21, 0, 0)
-      
+
       const { isOpen, onOpen, onClose } = useDisclosure()
       const btnRef = React.useRef()
       const { colorMode, toggleColorMode } = useColorMode()
@@ -80,7 +78,50 @@ export default function Events() {
             setSelectedLocation(location)
             onClose();
       }
-
+      function getMinTime(location){
+            switch (location) {            
+                  case "Houston (HQ)":
+                        return(
+                              new Date(2023, 0, 1, 6, 0, 0)
+                        )
+                  case "The Grove":
+                        return(
+                              new Date(2023, 0, 1, 5, 0, 0)
+                        )
+                  case "HTX (Downtown)":
+                        return(
+                              new Date(2023, 0, 1, 7, 0, 0)
+                        )
+                  case "Riverstone":
+                        return(
+                              new Date(2023, 0, 1, 6, 0, 0)
+                        )
+                  default:
+                        return (new Date(2023, 0, 1, 7, 0, 0))
+                }
+      }
+      function getMaxTime(location){
+            switch (location) {            
+                  case "Houston (HQ)":
+                        return(
+                              new Date(2023, 0, 1, 20, 30, 0)
+                        )
+                  case "The Grove":
+                        return(
+                              new Date(2023, 0, 1, 21, 0, 0)
+                        )
+                  case "HTX (Downtown)":
+                        return(
+                              new Date(2023, 0, 1, 19, 0, 0)
+                        )
+                  case "Riverstone":
+                        return(
+                              new Date(2023, 0, 1, 20, 0, 0)
+                        )
+                  default:
+                        return (new Date(2023, 0, 1, 17, 0, 0))
+                }
+      }
       function LocationTitle() {
             const variant = useBreakpointValue({
                   base: "xl",
@@ -92,7 +133,6 @@ export default function Events() {
                   </Heading>
             )
       }
-
       function ButtonDisplay() {
             const variant = useBreakpointValue({
                   base: {
@@ -128,7 +168,6 @@ export default function Events() {
         
             )
       }
-
       function ToolbarButtonDisplay() {
             const { isOpen, onOpen, onClose } = useDisclosure()
             const directionVariant = useBreakpointValue({
@@ -213,23 +252,22 @@ export default function Events() {
                   </>
             )
       }
-
       function getDarkColor(eventColor){
             switch (eventColor) {
-                  //Purple
+                  //Purple (Aux Classes)
                   case '#6e23fb':
                         return(
                               '#bf8dfc'
                         )
+                  //Orange (Kids)
                   case '#e58800 ':
                         return(
                               '#ffb64c '
                         ) 
                   default:
-                        undefined
+                       return undefined
                 }
-      }
-      
+      }    
       function calendarDisplay() {
             const variant = useBreakpointValue({
                   base: ['day'],
@@ -255,8 +293,8 @@ export default function Events() {
                         endAccessor="end"
                         views={variant}
                         defaultView="day"
-                        min={minTime}
-                        max={maxTime}
+                        min={getMinTime(selectedLocation)}
+                        max={getMaxTime(selectedLocation)}
                         dayPropGetter={customDayPropGetter}
                         eventPropGetter={(event) => ({
                               style: {
@@ -266,7 +304,6 @@ export default function Events() {
                         />
             )
       }
- 
       function logoDisplay() {
             const variant = useBreakpointValue({
                   base: 'none',
