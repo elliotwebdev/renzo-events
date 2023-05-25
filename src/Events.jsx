@@ -13,6 +13,11 @@ import {
       Button,
       Stack,
       useDisclosure,
+      Tabs, 
+      TabList, 
+      TabPanels, 
+      Tab, 
+      TabPanel, 
       Drawer,
       DrawerBody,
       DrawerHeader,
@@ -50,9 +55,10 @@ export default function Events() {
       
       const { isOpen, onOpen, onClose } = useDisclosure()
       const btnRef = React.useRef()
+      const { colorMode, toggleColorMode } = useColorMode()
+      
       const [selectedLocation, setSelectedLocation] = useState()
       const [events, setEvents] = useState([])
-      const { colorMode, toggleColorMode } = useColorMode()
 
       const handleShowEvents = (location) => {
             const generatedEvents = []
@@ -60,10 +66,12 @@ export default function Events() {
             Object.entries(academies[location]).forEach(([className, classInfo]) => {
                   const classEvents = Array.isArray(classInfo) ? classInfo : [classInfo]
                   classEvents.forEach((event) => {
-                        
-                        generatedEvents.push(...generateRecurringEvents([event],10).map((event) => ({
+                        const eventColor = event.color
+                        generatedEvents.push(...generateRecurringEvents([event],32).map((event) => ({
                               ...event,
-                              title:`${className}`
+                              title: className,
+                              description: event.description ,
+                              color: eventColor 
                               }))
                         )
                   })
@@ -167,18 +175,32 @@ export default function Events() {
                         bg='blackAlpha.600'
                         backdropBlur='2px'/>
                         <ModalContent>
+
                               <ModalHeader as="b">Welcome to Renzo Events!</ModalHeader>
                               <ModalCloseButton />
                               <ModalBody>
-                              <Text >
-                              This application aims to serve all students who are looking to balance their time between Renzo Gracie affiliate gyms in the Greater Houston Area.
-                              <br />
-                              <br />
-                              Use the <Text as="b">'Select Schedule'</Text> button to view an academy's class program.
-                              <br />
-                              <br />
-                              This is an ongoing project with features and fixes to be added. Bookmark this page so you can access it at home, work, or on the go!
-                              </Text>
+                              <Tabs isFitted variant='enclosed'>
+                                    <TabList mb='1em'>
+                                    <Tab>ABOUT</Tab>
+                                    <Tab>CLASS INFO</Tab>
+                                    </TabList>
+                                    <TabPanels>
+                                    <TabPanel>
+                                    <Text >
+                                          This application aims to serve all students who are looking to balance their time between Renzo Gracie affiliate gyms in the Greater Houston Area.
+                                          <br />
+                                          <br />
+                                          Use the <Text as="b">'Select Schedule'</Text> button to view an academy's class program.
+                                          <br />
+                                          <br />
+                                          This is an ongoing project with features and fixes to be added. Bookmark this page so you can access it at home, work, or on the go!
+                                    </Text>
+                                    </TabPanel>
+                                    <TabPanel>
+                                          <Text>Coming Soon!</Text>
+                                    </TabPanel>
+                                    </TabPanels>
+                              </Tabs>
 
                               </ModalBody>
                               <ModalFooter >
@@ -190,6 +212,22 @@ export default function Events() {
                   </Modal>
                   </>
             )
+      }
+
+      function getDarkColor(eventColor){
+            switch (eventColor) {
+                  //Purple
+                  case '#6e23fb':
+                        return(
+                              '#bf8dfc'
+                        )
+                  case '#e58800 ':
+                        return(
+                              '#ffb64c '
+                        ) 
+                  default:
+                        undefined
+                }
       }
       
       function calendarDisplay() {
@@ -209,7 +247,6 @@ export default function Events() {
                   return {};
             }
 
-                
             return (
                         <Calendar
                         localizer={localizer}
@@ -221,7 +258,11 @@ export default function Events() {
                         min={minTime}
                         max={maxTime}
                         dayPropGetter={customDayPropGetter}
-                        
+                        eventPropGetter={(event) => ({
+                              style: {
+                                    backgroundColor: colorMode === 'light' ? event.color : getDarkColor(event.color),
+                              },
+                            })}                    
                         />
             )
       }
@@ -248,7 +289,7 @@ export default function Events() {
             placement='left'
             onClose={onClose}
             finalFocusRef={btnRef}
-                  >
+            >
                   <DrawerOverlay />
                   <DrawerContent>
                         <DrawerCloseButton />
@@ -276,7 +317,7 @@ export default function Events() {
                         {calendarDisplay()}
                   </Box>
             </Flex>
-            <Text color="gray.400" mx={[null, null, null, 32, 32]}>Updated:5.23.23</Text>
+            <Text color="gray.400" mt={1} mx={[null, null, null, 32, 32]}>Updated:5.25.23</Text>
       <Footer />
       </Box>
       )
