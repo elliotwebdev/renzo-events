@@ -260,7 +260,7 @@ export default function Events() {
                               '#bf8dfc'
                         )
                   //Orange (Kids)
-                  case '#e58800 ':
+                  case '#E57300 ':
                         return(
                               '#ffb64c '
                         ) 
