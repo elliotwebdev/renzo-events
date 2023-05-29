@@ -104,7 +104,7 @@ export default function Events() {
             switch (location) {            
                   case "Houston (HQ)":
                         return(
-                              new Date(2023, 0, 1, 20, 30, 0)
+                              new Date(2023, 0, 1, 21, 0, 0)
                         )
                   case "The Grove":
                         return(
@@ -112,11 +112,11 @@ export default function Events() {
                         )
                   case "HTX (Downtown)":
                         return(
-                              new Date(2023, 0, 1, 19, 0, 0)
+                              new Date(2023, 0, 1, 20, 0, 0)
                         )
                   case "Riverstone":
                         return(
-                              new Date(2023, 0, 1, 20, 0, 0)
+                              new Date(2023, 0, 1, 21, 0, 0)
                         )
                   default:
                         return (new Date(2023, 0, 1, 17, 0, 0))
