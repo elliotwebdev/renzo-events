@@ -278,7 +278,7 @@ export default function Events() {
                   if (date.getDate() === new Date().getDate()) {
                         return {
                               style: {
-                                    backgroundColor: colorMode === 'light' ? '#f5fffa' : '#11151d',
+                                    backgroundColor: colorMode === 'light' ? '#E5FFF0' : '#161918',
                               },
                         };
                   }
