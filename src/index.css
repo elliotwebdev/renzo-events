@@ -149,17 +149,6 @@ button.rbc-input::-moz-focus-inner {
   display: none;
 }
 
-/* .rbc-today {
-  background-color: #eaf6ff;
-} */
-/* [data-theme="light"] .rbc-today {
-  background-color: rgba(164, 189, 220, 0.85); 
-}
-
-[data-theme="dark"] .rbc-today {
-  background-color: #707070; 
-} */
-
 .rbc-toolbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -196,13 +185,6 @@ button.rbc-input::-moz-focus-inner {
   line-height: normal;
   white-space: nowrap;
 }
-/*
-[data-theme="light"] .rbc-toolbar button {
-  color: "black" 
-
-[data-theme="dark"] .rbc-toolbar button {
-  color: "white" 
-*/
 
 .rbc-toolbar button:active, .rbc-toolbar button .rbc-active {
   background-image: none;
@@ -316,9 +298,7 @@ button.rbc-input::-moz-focus-inner {
   cursor: inherit;
   pointer-events: none;
 }
-/* .rbc-event.rbc-selected, .rbc-day-slot .rbc-selected.rbc-background-event {
-  background-color: #265985;
-} */
+
 .rbc-event:focus, .rbc-day-slot .rbc-background-event:focus {
   outline: 5px auto #3b99fc;
 }
@@ -606,9 +586,13 @@ button.rbc-input::-moz-focus-inner {
       -ms-flex: none;
           flex: none;
 }
+/* .rbc-time-gutter,
+.rbc-time-column {
+  font-size: 12px;
+} */
 
 .rbc-label {
-  padding: 0 5px;
+  padding: 0 2px;
 }
 
 .rbc-day-slot {
@@ -632,7 +616,7 @@ button.rbc-input::-moz-focus-inner {
   display: -ms-flexbox;
   display: flex;
   max-height: 100%;
-  min-height: 52px;
+  min-height: 5px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
@@ -665,11 +649,14 @@ button.rbc-input::-moz-focus-inner {
   height: 100%;
   min-height: 0.01em;
   font-weight: 600;
+  font-size: 16px;
 }
 
-/* .rbc-day-slot .rbc-time-slot {
-  border-top: 1px solid #f7f7f7;
-} */
+@media (min-width: 62em) {
+  .rbc-day-slot .rbc-event-content {
+    font-size: 14px;
+  }
+}
 
 .rbc-time-view-resources .rbc-time-gutter,
 .rbc-time-view-resources .rbc-time-header-gutter {
@@ -775,7 +762,6 @@ button.rbc-input::-moz-focus-inner {
 .rbc-time-view .rbc-row {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  /* min-height: 20px; */
 }
 
 .rbc-time-header {
@@ -867,7 +853,6 @@ button.rbc-input::-moz-focus-inner {
    -ms-user-select: none;
        user-select: none;
   -webkit-user-select: none;
-  /* background-color: #3174ad; */
 }
 
 [data-theme="light"] .rbc-time-content > .rbc-day-slot {

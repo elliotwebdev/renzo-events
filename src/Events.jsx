@@ -13,30 +13,20 @@ import {
       Button,
       Stack,
       useDisclosure,
-      Tabs, 
-      TabList, 
-      TabPanels, 
-      Tab, 
-      TabPanel, 
       Drawer,
       DrawerBody,
       DrawerHeader,
       DrawerOverlay,
       DrawerContent,
       DrawerCloseButton,
-      Modal,
-      ModalOverlay,
-      ModalContent,
-      ModalHeader,
-      ModalFooter,
-      ModalBody,
-      ModalCloseButton
     } from '@chakra-ui/react'
 import {academies} from './components/Academies'
+import {specialEvents} from './components/SpecialEvents'
 import {generateRecurringEvents} from './components/GenerateEvents'
+import ToolbarButtonDisplay from './components/ToolbarButtonDisplay'
+import getDarkColor from './components/getDarkColor';
 import Footer from './components/Footer'
 import logo from "./assets/BgLogo"
-import { FaMoon, FaSun, FaInfoCircle } from 'react-icons/fa'
 import '/src/index.css';
 
 const localizer = dateFnsLocalizer({
@@ -53,14 +43,13 @@ export default function Events() {
 
       const { isOpen, onOpen, onClose } = useDisclosure()
       const btnRef = React.useRef()
-      const { colorMode, toggleColorMode } = useColorMode()
-      
+      const { colorMode } = useColorMode()
       const [selectedLocation, setSelectedLocation] = useState()
       const [events, setEvents] = useState([])
+      const generatedEvents = []
 
       const handleShowEvents = (location) => {
-            const generatedEvents = []
-
+            
             Object.entries(academies[location]).forEach(([className, classInfo]) => {
                   const classEvents = Array.isArray(classInfo) ? classInfo : [classInfo]
                   classEvents.forEach((event) => {
@@ -68,12 +57,25 @@ export default function Events() {
                         generatedEvents.push(...generateRecurringEvents([event],32).map((event) => ({
                               ...event,
                               title: className,
-                              description: event.description ,
                               color: eventColor 
                               }))
                         )
                   })
             })
+
+            Object.entries(specialEvents[location]).forEach(([className, classInfo]) => {
+                  const classEvents = Array.isArray(classInfo) ? classInfo : [classInfo]
+                  classEvents.forEach((event) => {
+                        const eventColor = event.color
+                        generatedEvents.push(...generateRecurringEvents([event],1).map((event) => ({
+                              ...event,
+                              title: className,
+                              color: eventColor 
+                              }))
+                        )
+                  })
+            })
+
             setEvents(generatedEvents)    
             setSelectedLocation(location)
             onClose();
@@ -167,109 +169,9 @@ export default function Events() {
                   </Button>
         
             )
-      }
-      function ToolbarButtonDisplay() {
-            const { isOpen, onOpen, onClose } = useDisclosure()
-            const directionVariant = useBreakpointValue({
-                  base: "row"
-                  ,
-                  lg: "column"
-            });
-            const styleVariant = useBreakpointValue({
-                  base: {
-                        right: 0,
-                        justifyContent: "end",
-                        gap: 2,
-                        mr: 2,
-                  }
-                  ,
-                  lg: {
-                        
-                        right: 0,
-                        position: "fixed",
-                        justifyContent: "center",
-                        height: "60%",
-                        mr: 8,
-                        gap: 4,
-                        mt:"20vh",
-                  }
-            });
-                
-            
-            return (
-                  <>
-                  <Flex zIndex="2" flexDirection={directionVariant} sx={styleVariant}>
-                        <Button onClick={toggleColorMode}>
-                              {colorMode === 'light' ? <Icon as={FaMoon} /> : <Icon as={FaSun} />}
-                        </Button>
-                        
-                        <Button  onClick={onOpen}>
-                              <Icon as={FaInfoCircle} />
-                        </Button>
-                  </Flex>
-
-                  <Modal isCentered motionPreset='slideInRight' isOpen={isOpen} onClose={onClose}>
-                        <ModalOverlay
-                        backdropFilter='auto'
-                        bg='blackAlpha.600'
-                        backdropBlur='2px'/>
-                        <ModalContent>
-
-                              <ModalHeader as="b">Welcome to Renzo Events!</ModalHeader>
-                              <ModalCloseButton />
-                              <ModalBody>
-                              <Tabs isFitted variant='enclosed'>
-                                    <TabList mb='1em'>
-                                    <Tab>ABOUT</Tab>
-                                    <Tab>CLASS INFO</Tab>
-                                    </TabList>
-                                    <TabPanels>
-                                    <TabPanel>
-                                    <Text >
-                                          This application aims to serve all students who are looking to balance their time between Renzo Gracie affiliate gyms in the Greater Houston Area.
-                                          <br />
-                                          <br />
-                                          Use the <Text as="b">'Select Schedule'</Text> button to view an academy's class program.
-                                          <br />
-                                          <br />
-                                          This is an ongoing project with features and fixes to be added. Bookmark this page so you can access it at home, work, or on the go!
-                                    </Text>
-                                    </TabPanel>
-                                    <TabPanel>
-                                          <Text>Coming Soon!</Text>
-                                    </TabPanel>
-                                    </TabPanels>
-                              </Tabs>
-
-                              </ModalBody>
-                              <ModalFooter >
-                                    <Button colorScheme='messenger' mr={3} onClick={onClose}>
-                                    Close
-                                    </Button>
-                              </ModalFooter>
-                        </ModalContent>
-                  </Modal>
-                  </>
-            )
-      }
-      function getDarkColor(eventColor){
-            switch (eventColor) {
-                  //Purple (Aux Classes)
-                  case '#6e23fb':
-                        return(
-                              '#bf8dfc'
-                        )
-                  //Orange (Kids)
-                  case '#E57300 ':
-                        return(
-                              '#ffb64c '
-                        ) 
-                  default:
-                       return undefined
-                }
-      }    
+      }  
       function calendarDisplay() {
-            const variant = useBreakpointValue({
+            const viewsVariant = useBreakpointValue({
                   base: ['day'],
                   lg: ['day', 'week']
             })
@@ -278,7 +180,7 @@ export default function Events() {
                   if (date.getDate() === new Date().getDate()) {
                         return {
                               style: {
-                                    backgroundColor: colorMode === 'light' ? '#E5FFF0' : '#161918',
+                                    backgroundColor: colorMode === 'light' ? '#E5FFF0' : '#3C3B43',
                               },
                         };
                   }
@@ -291,8 +193,8 @@ export default function Events() {
                         events={events}
                         startAccessor="start"
                         endAccessor="end"
-                        views={variant}
-                        defaultView="day"
+                        views={viewsVariant}
+                        defaultView='day'
                         min={getMinTime(selectedLocation)}
                         max={getMaxTime(selectedLocation)}
                         dayPropGetter={customDayPropGetter}
@@ -333,12 +235,15 @@ export default function Events() {
                         <DrawerHeader>Select an Academy</DrawerHeader>
 
                         <DrawerBody>
-                              <Stack gap={2}>
+                              <Stack gap={2} >
                                     <Button size="lg" colorScheme='messenger' onClick={() => handleShowEvents("Houston (HQ)")}>HOUSTON (HQ)</Button>
                                     <Button size="lg" colorScheme='messenger' onClick={() => handleShowEvents("The Grove")}>THE GROVE</Button>
                                     <Button size="lg" colorScheme='messenger' onClick={() => handleShowEvents("HTX (Downtown)")}>HTX (DOWNTOWN)</Button>
-                                    {/* <Button size="lg" colorScheme='messenger' onClick={() => handleShowEvents("Missouri City")}>Missouri City</Button> */}
                                     <Button size="lg" colorScheme='messenger' onClick={() => handleShowEvents("Riverstone")}>RIVERSTONE</Button>
+                                    <Button size="lg" colorScheme='messenger' isDisabled="true" onClick={() => handleShowEvents("HCU")}>HCU</Button>
+                                    <Button size="lg" colorScheme='messenger' isDisabled="true" onClick={() => handleShowEvents("Katy")}>KATY</Button>
+                                    <Button size="lg" colorScheme='messenger' isDisabled="true" onClick={() => handleShowEvents("Missouri City")}>MISSOURI CITY</Button>
+                                    <Button size="lg" colorScheme='messenger' isDisabled="true" onClick={() => handleShowEvents("Pearland")}>PEARLAND</Button>
                               </Stack>
                         </DrawerBody>
                   </DrawerContent>
@@ -348,13 +253,13 @@ export default function Events() {
             {ToolbarButtonDisplay()}
 
             <Flex py={4} justifyContent="center" alignItems="center" >{LocationTitle()}</Flex>
-            <Flex justifyContent="center" alignItems="center" mx={[null, null, null, 32, 32]} >
+            <Flex justifyContent="center" alignItems="center" mx={[null, null, null, 24, 24]} >
                   {logoDisplay()}
                   <Box  width="100%">      
                         {calendarDisplay()}
                   </Box>
             </Flex>
-            <Text color="gray.400" mt={1} mx={[null, null, null, 32, 32]}>Updated:5.25.23</Text>
+            <Text color="gray.400" mt={1} mx={[null, null, null, 24, 24]}>Updated:6.1.23</Text>
       <Footer />
       </Box>
       )
