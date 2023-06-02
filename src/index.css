@@ -278,7 +278,7 @@ button.rbc-input::-moz-focus-inner {
   -webkit-box-shadow: none;
           box-shadow: none;
   margin: 0;
-  padding: 2px 4px;
+  padding: 0px 2px;
   border-radius: 2px;
   color: #fff;
   cursor: default;
@@ -304,7 +304,12 @@ button.rbc-input::-moz-focus-inner {
 }
 
 .rbc-event-label {
-  font-size: 60%;
+  font-size: 8px;
+}
+@media (min-width: 62em){
+  .rbc-event-label {
+    font-size: 10px;
+  }
 }
 
 .rbc-event-overlaps {
@@ -570,7 +575,7 @@ button.rbc-input::-moz-focus-inner {
 
 .rbc-timeslot-group {
   border-bottom: 1px solid #ddd;
-  min-height: 80px;
+  min-height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -580,16 +585,26 @@ button.rbc-input::-moz-focus-inner {
           flex-flow: column nowrap;
 }
 
+@media (min-width: 62em) {
+  .rbc-timeslot-group {
+    min-height: 65px;
+  }
+}
+
 .rbc-time-gutter,
 .rbc-header-gutter {
+  font-size: 10px;
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
 }
-/* .rbc-time-gutter,
-.rbc-time-column {
-  font-size: 12px;
-} */
+
+@media (min-width: 62em) {
+  .rbc-time-gutter,
+  .rbc-header-gutter {
+    font-size: 12px;
+  }
+}
 
 .rbc-label {
   padding: 0 2px;
@@ -611,12 +626,12 @@ button.rbc-input::-moz-focus-inner {
   right: 0;
 }
 .rbc-day-slot .rbc-event, .rbc-day-slot .rbc-background-event {
-  border: 1px solid #265985;
+  border: 1px solid #444444;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   max-height: 100%;
-  min-height: 5px;
+  min-height: 50px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
@@ -628,6 +643,7 @@ button.rbc-input::-moz-focus-inner {
   position: absolute;
  
 }
+
 .rbc-day-slot .rbc-background-event {
   opacity: 0.75;
 }
@@ -649,7 +665,7 @@ button.rbc-input::-moz-focus-inner {
   height: 100%;
   min-height: 0.01em;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 @media (min-width: 62em) {

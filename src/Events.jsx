@@ -99,7 +99,7 @@ export default function Events() {
                               new Date(2023, 0, 1, 6, 0, 0)
                         )
                   default:
-                        return (new Date(2023, 0, 1, 7, 0, 0))
+                        return (new Date(2023, 0, 1, 6, 0, 0))
                 }
       }
       function getMaxTime(location){
@@ -121,7 +121,7 @@ export default function Events() {
                               new Date(2023, 0, 1, 21, 0, 0)
                         )
                   default:
-                        return (new Date(2023, 0, 1, 17, 0, 0))
+                        return (new Date(2023, 0, 1, 18, 0, 0))
                 }
       }
       function LocationTitle() {
@@ -236,14 +236,14 @@ export default function Events() {
 
                         <DrawerBody>
                               <Stack gap={2} >
-                                    <Button size="lg" colorScheme='messenger' onClick={() => handleShowEvents("Houston (HQ)")}>HOUSTON (HQ)</Button>
-                                    <Button size="lg" colorScheme='messenger' onClick={() => handleShowEvents("The Grove")}>THE GROVE</Button>
-                                    <Button size="lg" colorScheme='messenger' onClick={() => handleShowEvents("HTX (Downtown)")}>HTX (DOWNTOWN)</Button>
-                                    <Button size="lg" colorScheme='messenger' onClick={() => handleShowEvents("Riverstone")}>RIVERSTONE</Button>
-                                    <Button size="lg" colorScheme='messenger' isDisabled="true" onClick={() => handleShowEvents("HCU")}>HCU</Button>
-                                    <Button size="lg" colorScheme='messenger' isDisabled="true" onClick={() => handleShowEvents("Katy")}>KATY</Button>
-                                    <Button size="lg" colorScheme='messenger' isDisabled="true" onClick={() => handleShowEvents("Missouri City")}>MISSOURI CITY</Button>
-                                    <Button size="lg" colorScheme='messenger' isDisabled="true" onClick={() => handleShowEvents("Pearland")}>PEARLAND</Button>
+                                    <Button size="md" colorScheme='messenger' onClick={() => handleShowEvents("Houston (HQ)")}>HOUSTON (HQ)</Button>
+                                    <Button size="md" colorScheme='messenger' onClick={() => handleShowEvents("The Grove")}>THE GROVE</Button>
+                                    <Button size="md" colorScheme='messenger' onClick={() => handleShowEvents("HTX (Downtown)")}>HTX (DOWNTOWN)</Button>
+                                    <Button size="md" colorScheme='messenger' onClick={() => handleShowEvents("Riverstone")}>RIVERSTONE</Button>
+                                    <Button size="md" colorScheme='messenger' isDisabled="true" onClick={() => handleShowEvents("HCU")}>HCU</Button>
+                                    <Button size="md" colorScheme='messenger' isDisabled="true" onClick={() => handleShowEvents("Katy")}>KATY</Button>
+                                    <Button size="md" colorScheme='messenger' isDisabled="true" onClick={() => handleShowEvents("Missouri City")}>MISSOURI CITY</Button>
+                                    <Button size="md" colorScheme='messenger' isDisabled="true" onClick={() => handleShowEvents("Pearland")}>PEARLAND</Button>
                               </Stack>
                         </DrawerBody>
                   </DrawerContent>
@@ -259,7 +259,7 @@ export default function Events() {
                         {calendarDisplay()}
                   </Box>
             </Flex>
-            <Text color="gray.400" mt={1} mx={[null, null, null, 24, 24]}>Updated:6.1.23</Text>
+            <Text color="gray.400" mt={1} mx={[null, null, null, 24, 24]} fontSize={["12px","16px"]}>Updated: 6.1.23</Text>
       <Footer />
       </Box>
       )

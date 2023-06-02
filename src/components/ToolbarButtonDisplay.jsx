@@ -64,7 +64,7 @@ export default function ToolbarButtonDisplay() {
                   </Button>
             </Flex>
 
-            <Modal isCentered motionPreset='slideInRight' scrollBehavior="inside" size={["sm", "lg"]} isOpen={isOpen} onClose={onClose}>
+            <Modal motionPreset='slideInRight' scrollBehavior="outside" size="xl" isOpen={isOpen} onClose={onClose}>
                   <ModalOverlay
                   backdropFilter='auto'
                   bg='blackAlpha.600'
@@ -85,10 +85,11 @@ export default function ToolbarButtonDisplay() {
                                     This application aims to serve all students who are looking to balance their time between Renzo Gracie affiliate gyms in the Greater Houston Area.
                                     <br />
                                     <br />
-                                    Use the <Text as="b">'Select Schedule'</Text> button to view an academy's class program.
+                                    Use the <Text as="b">'Select Schedule'</Text> button to view an academy's class program. Visit this 
+                                    website on your computer or laptop for a extensive weekly view.
                                     <br />
                                     <br />
-                                    This is an ongoing project with features and fixes to be added. Bookmark this page so you can access it at home, work, or on the go!
+                                    This is an ongoing project with features and fixes to be added. Bookmark this page so you can access it at home, work, or on the go.
                               </Text>
                               </TabPanel>
                               <TabPanel>

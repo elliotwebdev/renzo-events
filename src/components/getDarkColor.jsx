@@ -11,7 +11,7 @@ export default function getDarkColor(eventColor){
                         '#bf8dfc'
                   )
             //Orange (Kids)
-            case '#E57300':
+            case '#F08600':
                   return(
                         '#ffb64c'
                   ) 
