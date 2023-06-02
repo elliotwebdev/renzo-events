@@ -37,7 +37,7 @@ export default function ToolbarButtonDisplay() {
                   right: 0,
                   justifyContent: "end",
                   gap: 2,
-                  mr: 2,
+                  mr: 4,
             }
             ,
             lg: {
@@ -46,7 +46,7 @@ export default function ToolbarButtonDisplay() {
                   position: "fixed",
                   justifyContent: "center",
                   height: "60%",
-                  mr: 8,
+                  mr: 4,
                   gap: 4,
                   mt:"20vh",
             }
@@ -55,11 +55,11 @@ export default function ToolbarButtonDisplay() {
       return (
             <>
             <Flex zIndex="2" flexDirection={directionVariant} sx={styleVariant}>
-                  <Button onClick={toggleColorMode}>
+                  <Button size={["md", "lg"]} onClick={toggleColorMode}>
                         {colorMode === 'light' ? <Icon as={FaMoon} /> : <Icon as={FaSun} />}
                   </Button>
                   
-                  <Button  onClick={onOpen}>
+                  <Button  size={["md", "lg"]} onClick={onOpen}>
                         <Icon as={FaInfoCircle} />
                   </Button>
             </Flex>
@@ -113,7 +113,7 @@ export default function ToolbarButtonDisplay() {
                                     <br />
 
                                     <Text as='b'>Kids Classes</Text>
-                                    <Box span w="200px" h="10px" borderRadius="3xl" backgroundColor={colorMode === 'light' ? '#E57300' : getDarkColor('#E57300')}></Box>
+                                    <Box span w="200px" h="10px" borderRadius="3xl" backgroundColor={colorMode === 'light' ? '#F08600' : getDarkColor('#F08600')}></Box>
 
                                     <Text >
                                     These classes are exclusively dedicated to kids' BJJ and may have specific divisions based on 

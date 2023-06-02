@@ -198,6 +198,7 @@ export default function Events() {
                         min={getMinTime(selectedLocation)}
                         max={getMaxTime(selectedLocation)}
                         dayPropGetter={customDayPropGetter}
+                        dayLayoutAlgorithm={"no-overlap"}
                         eventPropGetter={(event) => ({
                               style: {
                                     backgroundColor: colorMode === 'light' ? event.color : getDarkColor(event.color),
