@@ -7,6 +7,18 @@ export const specialEvents = {
                   end: new Date(2023, 5, 3, 12, 0),
                   color: "#E20000"
             },
+            "Jiu Jitsu World League Houston VI @ NRG Arena":
+            {
+                  start: new Date(2023, 5, 24, 8, 0),
+                  end: new Date(2023, 5, 24, 16, 0),
+                  color: "#E20000"
+            },
+            "Houston Summer Championship @ Fast Complex":
+            {
+                  start: new Date(2023, 6, 22, 8, 0),
+                  end: new Date(2023, 6, 22, 16, 0),
+                  color: "#E20000"
+            },
             
       },
       "The Grove":{
@@ -53,13 +65,60 @@ export const specialEvents = {
                   end: new Date(2023, 11, 2, 12, 0),
                   color: "#E20000"
             },
-           
-            ]
+            ],
+            "Jiu Jitsu World League Houston VI @ NRG Arena":
+            {
+                  start: new Date(2023, 5, 24, 8, 0),
+                  end: new Date(2023, 5, 24, 16, 0),
+                  color: "#E20000"
+            },
+            "Houston Summer Championship @ Fast Complex":
+            {
+                  start: new Date(2023, 6, 22, 8, 0),
+                  end: new Date(2023, 6, 22, 16, 0),
+                  color: "#E20000"
+            },
       },
       "HTX (Downtown)":{
-
+            "Jiu Jitsu World League Houston VI @ NRG Arena":
+            {
+                  start: new Date(2023, 5, 24, 8, 0),
+                  end: new Date(2023, 5, 24, 16, 0),
+                  color: "#E20000"
+            },
+            "Houston Summer Championship @ Fast Complex":
+            {
+                  start: new Date(2023, 6, 22, 8, 0),
+                  end: new Date(2023, 6, 22, 16, 0),
+                  color: "#E20000"
+            },
       },
       "Riverstone":{
-
+            "Jiu Jitsu World League Houston VI @ NRG Arena":
+            {
+                  start: new Date(2023, 5, 24, 8, 0),
+                  end: new Date(2023, 5, 24, 16, 0),
+                  color: "#E20000"
+            },
+            "Houston Summer Championship @ Fast Complex":
+            {
+                  start: new Date(2023, 6, 22, 8, 0),
+                  end: new Date(2023, 6, 22, 16, 0),
+                  color: "#E20000"
+            },
+      },
+      "HCU Campus":{
+            "Jiu Jitsu World League Houston VI @ NRG Arena":
+            {
+                  start: new Date(2023, 5, 24, 8, 0),
+                  end: new Date(2023, 5, 24, 16, 0),
+                  color: "#E20000"
+            },
+            "Houston Summer Championship @ Fast Complex":
+            {
+                  start: new Date(2023, 6, 22, 8, 0),
+                  end: new Date(2023, 6, 22, 16, 0),
+                  color: "#E20000"
+            },
       },
 }

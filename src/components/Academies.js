@@ -774,4 +774,74 @@ export const academies = {
             },
       },
 
+      "HCU Campus" : {
+            "BJJ":[
+                  {
+                        //Monday
+                        start: new Date(2023, 4, 1, 18, 0),
+                        end: new Date(2023, 4, 1, 19, 0),
+                  },
+                  {
+                        //Tuesday
+                        start: new Date(2023, 4, 2, 11, 0),
+                        end: new Date(2023, 4, 2, 12, 0),
+                  },
+                  {
+                        start: new Date(2023, 4, 2, 18, 0),
+                        end: new Date(2023, 4, 2, 19, 0),
+                  },
+                  {
+                        //Wednesday
+                        start: new Date(2023, 4, 3, 18, 0),
+                        end: new Date(2023, 4, 3, 19, 0),
+                  },
+                  {
+                        //Thursday
+                        start: new Date(2023, 4, 4, 11, 0),
+                        end: new Date(2023, 4, 4, 12, 0),
+                  },
+                  {
+                        start: new Date(2023, 4, 4, 18, 0),
+                        end: new Date(2023, 4, 4, 19, 0),
+                  },
+                  {
+                        //Saturday
+                        start: new Date(2023, 4, 6, 11, 0),
+                        end: new Date(2023, 4, 6, 12, 0),
+                  },
+            ],
+            "Kids BJJ":[
+                  {
+                        //Monday
+                        start: new Date(2023, 4, 1, 17, 0),
+                        end: new Date(2023, 4, 1, 18, 0),
+                        color: "#F08600"
+                  },
+                  {
+                        //Tuesday
+                        start: new Date(2023, 4, 2, 17, 0),
+                        end: new Date(2023, 4, 2, 18, 0),
+                        color: "#F08600"
+                  },
+                  {
+                        //Wednesday
+                        start: new Date(2023, 4, 3, 17, 0),
+                        end: new Date(2023, 4, 3, 18, 0),
+                        color: "#F08600"
+                  },
+                  {
+                        //Thursday
+                        start: new Date(2023, 4, 4, 17, 0),
+                        end: new Date(2023, 4, 4, 18, 0),
+                        color: "#F08600"
+                  },
+                  {
+                        //Saturday
+                        start: new Date(2023, 4, 6, 10, 0),
+                        end: new Date(2023, 4, 6, 11, 0),
+                        color: "#F08600"
+                  },
+            ]
+      }
+
 }  

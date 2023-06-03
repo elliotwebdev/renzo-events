@@ -98,6 +98,10 @@ export default function Events() {
                         return(
                               new Date(2023, 0, 1, 6, 0, 0)
                         )
+                  case "HCU Campus":
+                        return(
+                              new Date(2023, 0, 1, 9, 0, 0)
+                        )
                   default:
                         return (new Date(2023, 0, 1, 6, 0, 0))
                 }
@@ -119,6 +123,10 @@ export default function Events() {
                   case "Riverstone":
                         return(
                               new Date(2023, 0, 1, 21, 0, 0)
+                        )
+                  case "HCU Campus":
+                        return(
+                              new Date(2023, 0, 1, 19, 0, 0)
                         )
                   default:
                         return (new Date(2023, 0, 1, 18, 0, 0))
@@ -239,9 +247,9 @@ export default function Events() {
                               <Stack gap={2} >
                                     <Button size="md" colorScheme='messenger' onClick={() => handleShowEvents("Houston (HQ)")}>HOUSTON (HQ)</Button>
                                     <Button size="md" colorScheme='messenger' onClick={() => handleShowEvents("The Grove")}>THE GROVE</Button>
+                                    <Button size="md" colorScheme='messenger' onClick={() => handleShowEvents("HCU Campus")}>HCU CAMPUS</Button>
                                     <Button size="md" colorScheme='messenger' onClick={() => handleShowEvents("HTX (Downtown)")}>HTX (DOWNTOWN)</Button>
                                     <Button size="md" colorScheme='messenger' onClick={() => handleShowEvents("Riverstone")}>RIVERSTONE</Button>
-                                    <Button size="md" colorScheme='messenger' isDisabled="true" onClick={() => handleShowEvents("HCU")}>HCU</Button>
                                     <Button size="md" colorScheme='messenger' isDisabled="true" onClick={() => handleShowEvents("Katy")}>KATY</Button>
                                     <Button size="md" colorScheme='messenger' isDisabled="true" onClick={() => handleShowEvents("Missouri City")}>MISSOURI CITY</Button>
                                     <Button size="md" colorScheme='messenger' isDisabled="true" onClick={() => handleShowEvents("Pearland")}>PEARLAND</Button>
