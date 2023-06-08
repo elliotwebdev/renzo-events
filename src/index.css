@@ -884,7 +884,7 @@ button.rbc-input::-moz-focus-inner {
   z-index: 3;
   left: 0;
   right: 0;
-  height: 5px;
+  height: 3px;
   background-color: #74ad31;
   pointer-events: none;
 }

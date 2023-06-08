@@ -13,6 +13,18 @@ export const specialEvents = {
                   end: new Date(2023, 5, 24, 16, 0),
                   color: "#E20000"
             },
+            "Helena Jiu Jitsu Girl | Kids Gi Seminar":
+            {
+                  start: new Date(2023, 6, 8, 10, 0),
+                  end: new Date(2023, 6, 8, 11, 0),
+                  color: "#E20000"
+            },
+            "Helena Jiu Jitsu Girl | Adults No-Gi Seminar":
+            {
+                  start: new Date(2023, 6, 8, 11, 0),
+                  end: new Date(2023, 6, 8, 13, 0),
+                  color: "#E20000"
+            },
             "Houston Summer Championship @ Fast Complex":
             {
                   start: new Date(2023, 6, 22, 8, 0),
@@ -22,6 +34,12 @@ export const specialEvents = {
             
       },
       "The Grove":{
+            "Helena Jiu Jitsu Girl | Women's No-Gi Seminar":
+            {
+                  start: new Date(2023, 6, 7, 18, 0),
+                  end: new Date(2023, 6, 7, 20, 0),
+                  color: "#E20000"
+            },
             "Kids Team Renzo Prep & Scrimmage": [
             {
                   //Saturday

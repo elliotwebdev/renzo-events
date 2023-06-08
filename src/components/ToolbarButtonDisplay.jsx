@@ -85,7 +85,7 @@ export default function ToolbarButtonDisplay() {
                                     This application aims to serve all students who are looking to balance their time between Renzo Gracie affiliate gyms in the Greater Houston Area.
                                     <br />
                                     <br />
-                                    Use the <Text as="b">'Select Schedule'</Text> button to view an academy's class program. Visit this 
+                                    Use the <Text textColor={colorMode === 'light' ? '#0078ff' : getDarkColor('#0078ff')} as="b">'Select Schedule'</Text> button to view an academy's class program. Visit this 
                                     website on your computer or laptop for a extensive weekly view.
                                     <br />
                                     <br />
