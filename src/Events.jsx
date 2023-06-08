@@ -253,6 +253,42 @@ export default function Events() {
                         
                         <DrawerBody>
                               <Flex height={["40em", "100%"]} gap={5}>
+                              <ButtonGroup color="white" size="md">
+                                    <Stack gap={[2, 3]} >    
+                                          <IconButton as="a" bgGradient='linear(to-br, purple.500, red.600)' _hover={{ bg: "blackAlpha.400" }} 
+                                          href={linkVariant("renzograciehouston")} icon={<TfiInstagram/>}/>
+
+                                          <IconButton as="a" bgGradient='linear(to-bl, red.600, yellow.500)' _hover={{ bg: "blackAlpha.400" }}
+                                          href={linkVariant("renzograciethegrove")} icon={<TfiInstagram/>}/>
+
+                                          <IconButton as="a" bgGradient='linear(to-br, yellow.600, pink.500)' _hover={{ bg: "blackAlpha.400" }}
+                                          href={linkVariant("renzograciehoustonhcucampus")} icon={<TfiInstagram/>}/>
+
+                                          <IconButton as="a" bgGradient='linear(to-bl, pink.500, purple.500)' _hover={{ bg: "blackAlpha.400" }}
+                                          href={linkVariant("renzogracie_htx")} icon={<TfiInstagram/>}/>
+
+                                          <IconButton as="a" bgGradient='linear(to-br, purple.500, red.600)' _hover={{ bg: "blackAlpha.400" }}
+                                          href={linkVariant("renzogracieriverstone")} icon={<TfiInstagram/>}/>
+
+                                          <IconButton isDisabled="true" bgGradient='linear(to-br, purple.500, red.600)' _hover={{ bg: "blackAlpha.400" }}
+                                           icon={<TfiInstagram/>}/>
+                                          <IconButton isDisabled="true" bgGradient='linear(to-br, purple.500, red.600)' _hover={{ bg: "blackAlpha.400" }}
+                                           icon={<TfiInstagram/>}/>
+                                          <IconButton isDisabled="true" bgGradient='linear(to-br, purple.500, red.600)' _hover={{ bg: "blackAlpha.400" }}
+                                           icon={<TfiInstagram/>}/>
+                                          <IconButton isDisabled="true" bgGradient='linear(to-br, purple.500, red.600)' _hover={{ bg: "blackAlpha.400" }}
+                                           icon={<TfiInstagram/>}/>
+                                          <IconButton isDisabled="true" bgGradient='linear(to-br, purple.500, red.600)' _hover={{ bg: "blackAlpha.400" }}
+                                           icon={<TfiInstagram/>}/>
+                                          <IconButton isDisabled="true" bgGradient='linear(to-br, purple.500, red.600)' _hover={{ bg: "blackAlpha.400" }}
+                                           icon={<TfiInstagram/>}/>
+                                          <IconButton isDisabled="true" bgGradient='linear(to-br, purple.500, red.600)' _hover={{ bg: "blackAlpha.400" }}
+                                           icon={<TfiInstagram/>}/>
+                                         
+                                    </Stack>
+                                    </ButtonGroup>
+
+                                    <Divider orientation='vertical' />
                                     <ButtonGroup size="md" colorScheme='messenger'>
                                     <Stack gap={[2, 3]} >
                                           
@@ -271,27 +307,7 @@ export default function Events() {
                                     </Stack>
                                     </ButtonGroup>
 
-                                    <Divider orientation='vertical' />
-
-                                    <ButtonGroup color="white" size="md">
-                                    <Stack gap={[2, 3]} >    
-                                          <IconButton as="a" bgGradient='linear(to-br, purple.500, red.600)' _hover={{ bg: "blackAlpha.400" }} 
-                                          href={linkVariant("renzograciehouston")} icon={<TfiInstagram/>}/>
-
-                                          <IconButton as="a" bgGradient='linear(to-bl, red.600, yellow.500)' _hover={{ bg: "blackAlpha.400" }}
-                                          href={linkVariant("renzograciethegrove")} icon={<TfiInstagram/>}/>
-
-                                          <IconButton as="a" bgGradient='linear(to-br, yellow.600, pink.500)' _hover={{ bg: "blackAlpha.400" }}
-                                          href={linkVariant("renzograciehoustonhcucampus")} icon={<TfiInstagram/>}/>
-
-                                          <IconButton as="a" bgGradient='linear(to-bl, pink.500, purple.500)' _hover={{ bg: "blackAlpha.400" }}
-                                          href={linkVariant("renzogracie_htx")} icon={<TfiInstagram/>}/>
-
-                                          <IconButton as="a" bgGradient='linear(to-br, purple.500, red.600)' _hover={{ bg: "blackAlpha.400" }}
-                                          href={linkVariant("renzogracieriverstone")} icon={<TfiInstagram/>}/>
-                                         
-                                    </Stack>
-                                    </ButtonGroup>
+                                    
                               
                               </Flex>
                         </DrawerBody>
