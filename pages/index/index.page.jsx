@@ -252,7 +252,7 @@ function Page() {
 
             <Box  width="100%">      
                   {calendarDisplay()}
-                  <Text color="blackAlpha" mt={1} fontSize={["12px","16px"]}>Updated:6.7.23</Text>
+                  <Text color="blackAlpha" mt={1} fontSize={["12px","16px"]}>Updated:6.12.23</Text>
             </Box>
 
       </Flex>
