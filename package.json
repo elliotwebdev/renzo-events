@@ -1,35 +1,35 @@
 {
-  "name": "go-roll-today",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "npm run server",
+    "prod": "npm run lint && npm run build && npm run server:prod",
     "build": "vite build",
-    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "server": "node ./server",
+    "server:prod": "cross-env NODE_ENV=production node ./server",
+    "lint": "eslint . --max-warnings 0"
   },
   "dependencies": {
-    "@chakra-ui/react": "^2.6.0",
-    "@emotion/react": "^11.10.8",
-    "@emotion/styled": "^11.10.8",
-    "@fontsource-variable/montserrat": "^5.0.1",
-    "@fontsource/teko": "^5.0.0",
-    "date-fns": "^2.29.3",
-    "framer-motion": "^10.12.4",
-    "react": "^18.2.0",
-    "react-big-calendar": "^1.6.9",
-    "react-dom": "^18.2.0",
-    "react-icons": "^4.8.0"
-  },
-  "devDependencies": {
-    "@types/react": "^18.0.28",
-    "@types/react-dom": "^18.0.11",
-    "@vitejs/plugin-react": "^4.0.0",
+    "@chakra-ui/react": "^2.7.0",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource-variable/montserrat": "^5.0.4",
+    "@fontsource/teko": "^5.0.3",
+    "@vitejs/plugin-react": "^3.0.0",
+    "compression": "^1.7.4",
+    "cross-env": "^7.0.3",
+    "date-fns": "^2.30.0",
     "eslint": "^8.38.0",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.3.4",
-    "vite": "^4.3.2"
+    "express": "^4.18.1",
+    "framer-motion": "^10.12.16",
+    "node-sass": "^9.0.0",
+    "prop-types": "15.8.1",
+    "react": "^18.2.0",
+    "react-big-calendar": "^1.8.1",
+    "react-dom": "^18.2.0",
+    "sirv": "^2.0.2",
+    "vite": "^4.0.3",
+    "vite-plugin-ssr": "^0.4.131"
   }
 }

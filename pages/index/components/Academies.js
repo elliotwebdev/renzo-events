@@ -1,5 +1,10 @@
 export const academies = {
+      //default props
+      minTime: new Date(2023, 0, 1, 8, 0, 0),
+      maxTime: new Date(2023, 0, 1, 18, 0, 0),
       "Houston (HQ)":{
+            minTime: new Date(2023, 0, 1, 6, 0, 0),
+            maxTime: new Date(2023, 0, 1, 21, 0, 0),
             "BJJ": [
             {    
                   // Monday
@@ -323,6 +328,8 @@ export const academies = {
       },
 
       "The Grove":{
+            minTime: new Date(2023, 0, 1, 5, 0, 0),
+            maxTime: new Date(2023, 0, 1, 21, 0, 0),
             "BJJ": [
                   {    
                         // Monday
@@ -497,6 +504,8 @@ export const academies = {
             
       },
       "HTX (Downtown)":{
+            minTime: new Date(2023, 0, 1, 7, 0, 0),
+            maxTime: new Date(2023, 0, 1, 20, 0, 0),
             "BJJ": [
                   {    
                         // Monday
@@ -605,6 +614,8 @@ export const academies = {
       },
 
       "Riverstone":{
+            minTime: new Date(2023, 0, 1, 6, 0, 0),
+            maxTime: new Date(2023, 0, 1, 21, 0, 0),
             "BJJ": [
                   {    
                         // Monday
@@ -775,6 +786,8 @@ export const academies = {
       },
 
       "HCU Campus" : {
+            minTime:  new Date(2023, 0, 1, 9, 0, 0),
+            maxTime: new Date(2023, 0, 1, 19, 0, 0),
             "BJJ":[
                   {
                         //Monday

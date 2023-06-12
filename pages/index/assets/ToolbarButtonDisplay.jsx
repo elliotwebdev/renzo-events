@@ -14,13 +14,17 @@ import {
       Flex,
       Button,
       Text,
+      Heading,
       useDisclosure,
       useBreakpointValue,
       useColorMode,
       Icon,
+      IconButton,
       Box
       } from '@chakra-ui/react'
-import { FaMoon, FaSun, FaInfoCircle } from 'react-icons/fa'
+import SvgInfo from "./InfoIcon"
+import SvgMoon from "./MoonIcon"
+import SvgSun from "./SunIcon"
 import getDarkColor from './getDarkColor';
 
 export default function ToolbarButtonDisplay() {
@@ -55,13 +59,8 @@ export default function ToolbarButtonDisplay() {
       return (
             <>
             <Flex zIndex="2" flexDirection={directionVariant} sx={styleVariant}>
-                  <Button size={["md", "lg"]} onClick={toggleColorMode}>
-                        {colorMode === 'light' ? <Icon as={FaMoon} /> : <Icon as={FaSun} />}
-                  </Button>
-                  
-                  <Button  size={["md", "lg"]} onClick={onOpen}>
-                        <Icon as={FaInfoCircle} />
-                  </Button>
+                  <IconButton aria-label='Color Mode Switch' size={["md", "lg"]} onClick={toggleColorMode} icon={<Icon as={colorMode === 'light' ? SvgMoon : SvgSun} />} />
+                  <IconButton aria-label='Info Button' size={["md", "lg"]} onClick={onOpen} icon={<Icon as={SvgInfo} />} />             
             </Flex>
 
             <Modal motionPreset='slideInRight' scrollBehavior="outside" size="xl" isOpen={isOpen} onClose={onClose}>
@@ -71,7 +70,7 @@ export default function ToolbarButtonDisplay() {
                   backdropBlur='2px'/>
                   <ModalContent>
 
-                        <ModalHeader as="b">Welcome to Renzo Events!</ModalHeader>
+                        <ModalHeader><Heading>Welcome to Renzo Events!</Heading></ModalHeader>
                         <ModalCloseButton />
                         <ModalBody>
                         <Tabs isFitted variant='enclosed'>
@@ -81,7 +80,7 @@ export default function ToolbarButtonDisplay() {
                               </TabList>
                               <TabPanels>
                               <TabPanel>
-                              <Text >
+                              <Text>
                                     This application aims to serve all students who are looking to balance their time between Renzo Gracie affiliate gyms in the Greater Houston Area.
                                     <br />
                                     <br />

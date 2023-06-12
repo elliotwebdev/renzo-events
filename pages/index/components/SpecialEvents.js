@@ -1,16 +1,16 @@
 export const specialEvents = {
       "Houston (HQ)":{
-            "OPEN MAT | All Classes Cancelled Today": 
-            {
-                  //Saturday
-                  start: new Date(2023, 5, 3, 10, 1),
-                  end: new Date(2023, 5, 3, 12, 0),
-                  color: "#E20000"
-            },
             "Jiu Jitsu World League Houston VI @ NRG Arena":
             {
                   start: new Date(2023, 5, 24, 8, 0),
                   end: new Date(2023, 5, 24, 16, 0),
+                  color: "#E20000"
+            },
+            "9 Year Anniversary Seminar & Team Party": 
+            {
+                  //Saturday
+                  start: new Date(2023, 6, 1, 10, 0),
+                  end: new Date(2023, 6, 1, 14, 0),
                   color: "#E20000"
             },
             "Helena Jiu Jitsu Girl | Kids Gi Seminar":
