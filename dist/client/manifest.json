@@ -1,0 +1,144 @@
+{
+  "_chunk-078aa1fb.js": {
+    "file": "assets/chunks/chunk-078aa1fb.js"
+  },
+  "_chunk-ab94efa3.js": {
+    "file": "assets/chunks/chunk-ab94efa3.js"
+  },
+  "_chunk-c3fec98b.js": {
+    "file": "assets/chunks/chunk-c3fec98b.js",
+    "imports": [
+      "_chunk-ab94efa3.js"
+    ]
+  },
+  "node_modules/@fontsource-variable/montserrat/files/montserrat-cyrillic-ext-wght-normal.woff2": {
+    "file": "assets/static/montserrat-cyrillic-ext-wght-normal.3fef5946.woff2",
+    "src": "node_modules/@fontsource-variable/montserrat/files/montserrat-cyrillic-ext-wght-normal.woff2"
+  },
+  "node_modules/@fontsource-variable/montserrat/files/montserrat-cyrillic-wght-normal.woff2": {
+    "file": "assets/static/montserrat-cyrillic-wght-normal.a8447cde.woff2",
+    "src": "node_modules/@fontsource-variable/montserrat/files/montserrat-cyrillic-wght-normal.woff2"
+  },
+  "node_modules/@fontsource-variable/montserrat/files/montserrat-latin-ext-wght-normal.woff2": {
+    "file": "assets/static/montserrat-latin-ext-wght-normal.cffe1393.woff2",
+    "src": "node_modules/@fontsource-variable/montserrat/files/montserrat-latin-ext-wght-normal.woff2"
+  },
+  "node_modules/@fontsource-variable/montserrat/files/montserrat-latin-wght-normal.woff2": {
+    "file": "assets/static/montserrat-latin-wght-normal.ae919a7c.woff2",
+    "src": "node_modules/@fontsource-variable/montserrat/files/montserrat-latin-wght-normal.woff2"
+  },
+  "node_modules/@fontsource-variable/montserrat/files/montserrat-vietnamese-wght-normal.woff2": {
+    "file": "assets/static/montserrat-vietnamese-wght-normal.56544b89.woff2",
+    "src": "node_modules/@fontsource-variable/montserrat/files/montserrat-vietnamese-wght-normal.woff2"
+  },
+  "node_modules/@fontsource/teko/files/teko-devanagari-600-normal.woff": {
+    "file": "assets/static/teko-devanagari-600-normal.e4268d40.woff",
+    "src": "node_modules/@fontsource/teko/files/teko-devanagari-600-normal.woff"
+  },
+  "node_modules/@fontsource/teko/files/teko-devanagari-600-normal.woff2": {
+    "file": "assets/static/teko-devanagari-600-normal.42bb2f48.woff2",
+    "src": "node_modules/@fontsource/teko/files/teko-devanagari-600-normal.woff2"
+  },
+  "node_modules/@fontsource/teko/files/teko-latin-600-normal.woff": {
+    "file": "assets/static/teko-latin-600-normal.f0296d3c.woff",
+    "src": "node_modules/@fontsource/teko/files/teko-latin-600-normal.woff"
+  },
+  "node_modules/@fontsource/teko/files/teko-latin-600-normal.woff2": {
+    "file": "assets/static/teko-latin-600-normal.47d687c9.woff2",
+    "src": "node_modules/@fontsource/teko/files/teko-latin-600-normal.woff2"
+  },
+  "node_modules/@fontsource/teko/files/teko-latin-ext-600-normal.woff": {
+    "file": "assets/static/teko-latin-ext-600-normal.22440678.woff",
+    "src": "node_modules/@fontsource/teko/files/teko-latin-ext-600-normal.woff"
+  },
+  "node_modules/@fontsource/teko/files/teko-latin-ext-600-normal.woff2": {
+    "file": "assets/static/teko-latin-ext-600-normal.8c5e1408.woff2",
+    "src": "node_modules/@fontsource/teko/files/teko-latin-ext-600-normal.woff2"
+  },
+  "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
+    "dynamicImports": [
+      "pages/index/index.page.jsx",
+      "renderer/_error.page.jsx",
+      "renderer/_default.page.client.jsx"
+    ],
+    "file": "assets/entries/entry-server-routing.a296510c.js",
+    "imports": [
+      "_chunk-078aa1fb.js"
+    ],
+    "isEntry": true,
+    "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js"
+  },
+  "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
+    "dynamicImports": [
+      "pages/index/index.page.jsx",
+      "renderer/_error.page.jsx",
+      "renderer/_default.page.client.jsx"
+    ],
+    "file": "assets/entries/entry-client-routing.ef36cd32.js",
+    "imports": [
+      "_chunk-078aa1fb.js"
+    ],
+    "isEntry": true,
+    "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js"
+  },
+  "pages/index/index.page.css": {
+    "file": "assets/static/index.page.9ebd2831.css",
+    "src": "pages/index/index.page.css"
+  },
+  "pages/index/index.page.jsx": {
+    "css": [
+      "assets/static/index.page.9ebd2831.css"
+    ],
+    "file": "assets/entries/pages_index_index.page.cba21ab5.js",
+    "imports": [
+      "_chunk-ab94efa3.js",
+      "_chunk-c3fec98b.js"
+    ],
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": "pages/index/index.page.jsx"
+  },
+  "renderer/_default.page.client.css": {
+    "file": "assets/static/default.page.client.fb39f416.css",
+    "src": "renderer/_default.page.client.css"
+  },
+  "renderer/_default.page.client.jsx": {
+    "assets": [
+      "assets/static/montserrat-cyrillic-ext-wght-normal.3fef5946.woff2",
+      "assets/static/montserrat-cyrillic-wght-normal.a8447cde.woff2",
+      "assets/static/montserrat-vietnamese-wght-normal.56544b89.woff2",
+      "assets/static/montserrat-latin-ext-wght-normal.cffe1393.woff2",
+      "assets/static/montserrat-latin-wght-normal.ae919a7c.woff2",
+      "assets/static/teko-devanagari-600-normal.42bb2f48.woff2",
+      "assets/static/teko-devanagari-600-normal.e4268d40.woff",
+      "assets/static/teko-latin-ext-600-normal.8c5e1408.woff2",
+      "assets/static/teko-latin-ext-600-normal.22440678.woff",
+      "assets/static/teko-latin-600-normal.47d687c9.woff2",
+      "assets/static/teko-latin-600-normal.f0296d3c.woff"
+    ],
+    "css": [
+      "assets/static/default.page.client.fb39f416.css"
+    ],
+    "file": "assets/entries/renderer_default.page.client.11a3a177.js",
+    "imports": [
+      "_chunk-ab94efa3.js",
+      "_chunk-c3fec98b.js"
+    ],
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": "renderer/_default.page.client.jsx"
+  },
+  "renderer/_error.page.jsx": {
+    "file": "assets/entries/renderer_error.page.1f92cb2a.js",
+    "imports": [
+      "_chunk-ab94efa3.js"
+    ],
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": "renderer/_error.page.jsx"
+  },
+  "renderer/logo.svg": {
+    "file": "assets/static/logo.0f62d96c.svg",
+    "src": "renderer/logo.svg"
+  }
+}
