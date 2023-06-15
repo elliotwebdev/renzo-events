@@ -6,6 +6,12 @@ export const specialEvents = {
                   end: new Date(2023, 5, 24, 16, 0),
                   color: "#E20000"
             },
+            "1 YR Anniversary OPEN MAT @ RG Mont Belvieu | Gym Closed for Event ":
+            {
+                  start: new Date(2023, 5, 17, 12, 0),
+                  end: new Date(2023, 5, 17, 14, 30),
+                  color: "#E20000"
+            },
             "9 Year Anniversary Seminar & Team Party": 
             {
                   //Saturday
@@ -112,6 +118,12 @@ export const specialEvents = {
             },
       },
       "Riverstone":{
+            "1 YR Anniversary OPEN MAT @ RG Mont Belvieu | Gym Closed for Event ":
+            {
+                  start: new Date(2023, 5, 17, 12, 0),
+                  end: new Date(2023, 5, 17, 14, 30),
+                  color: "#E20000"
+            },
             "Jiu Jitsu World League Houston VI @ NRG Arena":
             {
                   start: new Date(2023, 5, 24, 8, 0),
