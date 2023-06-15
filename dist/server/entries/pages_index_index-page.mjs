@@ -776,6 +776,11 @@ const specialEvents = {
       end: new Date(2023, 5, 24, 16, 0),
       color: "#E20000"
     },
+    "1 YR Anniversary OPEN MAT @ RG Mont Belvieu | Gym Closed for Event ": {
+      start: new Date(2023, 5, 17, 12, 0),
+      end: new Date(2023, 5, 17, 14, 30),
+      color: "#E20000"
+    },
     "9 Year Anniversary Seminar & Team Party": {
       //Saturday
       start: new Date(2023, 6, 1, 10, 0),
@@ -872,6 +877,11 @@ const specialEvents = {
     }
   },
   "Riverstone": {
+    "1 YR Anniversary OPEN MAT @ RG Mont Belvieu | Gym Closed for Event ": {
+      start: new Date(2023, 5, 17, 12, 0),
+      end: new Date(2023, 5, 17, 14, 30),
+      color: "#E20000"
+    },
     "Jiu Jitsu World League Houston VI @ NRG Arena": {
       start: new Date(2023, 5, 24, 8, 0),
       end: new Date(2023, 5, 24, 16, 0),
@@ -1372,7 +1382,7 @@ function Page() {
       /* @__PURE__ */ jsx(Box, { pos: "absolute", mt: 10, children: /* @__PURE__ */ jsx(Icon, { as: SvgLogo, width: ["250px", "600px"], height: ["250px", "600px"], zIndex: -1 }) }),
       /* @__PURE__ */ jsxs(Box, { width: "100%", children: [
         calendarDisplay(),
-        /* @__PURE__ */ jsx(Text, { color: "blackAlpha", mt: 1, fontSize: ["12px", "16px"], children: "Updated:6.7.23" })
+        /* @__PURE__ */ jsx(Text, { color: "blackAlpha", mt: 1, fontSize: ["12px", "16px"], children: "Updated:6.15.23" })
       ] })
     ] }),
     /* @__PURE__ */ jsx(Footer, {})

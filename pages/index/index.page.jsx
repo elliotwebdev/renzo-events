@@ -252,11 +252,7 @@ function Page() {
 
             <Box  width="100%">      
                   {calendarDisplay()}
-<<<<<<< Updated upstream
-                  <Text color="blackAlpha" mt={1} fontSize={["12px","16px"]}>Updated:6.7.23</Text>
-=======
                   <Text color="blackAlpha" mt={1} fontSize={["12px","16px"]}>Updated:6.15.23</Text>
->>>>>>> Stashed changes
             </Box>
 
       </Flex>
