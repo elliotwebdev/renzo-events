@@ -46,7 +46,7 @@ const academies = {
         end: new Date(2023, 4, 4, 19, 30)
       }
     ],
-    "No-Gi BJJ": [
+    "No-GI BJJ": [
       {
         //Tuesday
         start: new Date(2023, 4, 2, 12, 0),
@@ -220,7 +220,7 @@ const academies = {
         color: "#F08600"
       }
     ],
-    "No-Gi Kids BJJ (7-11 y.o)": [
+    "No-GI Kids BJJ (7-11 y.o)": [
       {
         //Wednesday
         start: new Date(2023, 4, 3, 17, 30),
@@ -260,7 +260,7 @@ const academies = {
         color: "#F08600"
       }
     ],
-    "No-Gi Kids BJJ (4-6 y.o)": {
+    "No-GI Kids BJJ (4-6 y.o)": {
       //Wednesday
       start: new Date(2023, 4, 3, 17, 0),
       end: new Date(2023, 4, 3, 17, 30),
@@ -351,7 +351,7 @@ const academies = {
       start: new Date(2023, 4, 2, 12, 0),
       end: new Date(2023, 4, 2, 13, 0)
     },
-    "All Ages No-Gi BJJ": {
+    "All Ages No-GI BJJ": {
       //Thursday
       start: new Date(2023, 4, 4, 12, 0),
       end: new Date(2023, 4, 4, 13, 0)
@@ -361,7 +361,7 @@ const academies = {
       start: new Date(2023, 4, 6, 11, 0),
       end: new Date(2023, 4, 6, 12, 0)
     },
-    "No-Gi BJJ": [
+    "No-GI BJJ": [
       {
         //Wednesday
         start: new Date(2023, 4, 3, 20, 0),
@@ -442,12 +442,12 @@ const academies = {
         color: "#F08600"
       }
     ],
-    "No-Gi CHAMPS (Kids 4'11 & Under)": {
+    "No-GI CHAMPS (Kids 4'11 & Under)": {
       start: new Date(2023, 4, 4, 17, 0),
       end: new Date(2023, 4, 4, 18, 0),
       color: "#F08600"
     },
-    "No-Gi LIONS (Kids 5' & Up)": {
+    "No-GI LIONS (Kids 5' & Up)": {
       start: new Date(2023, 4, 4, 18, 0),
       end: new Date(2023, 4, 4, 19, 0),
       color: "#F08600"
@@ -499,7 +499,7 @@ const academies = {
         end: new Date(2023, 4, 5, 8, 0)
       }
     ],
-    "No-Gi BJJ": [
+    "No-GI BJJ": [
       {
         // Monday
         start: new Date(2023, 4, 1, 12, 0),
@@ -591,7 +591,7 @@ const academies = {
         end: new Date(2023, 4, 5, 12, 0)
       }
     ],
-    "No-Gi BJJ": [
+    "No-GI BJJ": [
       {
         // Wednesday
         start: new Date(2023, 4, 3, 11, 0),
@@ -678,19 +678,19 @@ const academies = {
       end: new Date(2023, 4, 2, 19, 0),
       color: "#F08600"
     },
-    "No-Gi Advanced Kids BJJ": {
+    "No-GI Advanced Kids BJJ": {
       // Thursday
       start: new Date(2023, 4, 4, 18, 30),
       end: new Date(2023, 4, 4, 19, 0),
       color: "#F08600"
     },
-    "No-Gi Kids BJJ (4-6 y.o)": {
+    "No-GI Kids BJJ (4-6 y.o)": {
       //Thursday
       start: new Date(2023, 4, 4, 17, 0),
       end: new Date(2023, 4, 4, 17, 30),
       color: "#F08600"
     },
-    "No-Gi Kids BJJ (7-11 y.o)": {
+    "No-GI Kids BJJ (7-11 y.o)": {
       //Thursday
       start: new Date(2023, 4, 4, 17, 30),
       end: new Date(2023, 4, 4, 18, 30),
@@ -767,6 +767,249 @@ const academies = {
         color: "#F08600"
       }
     ]
+  },
+  "Katy": {
+    minTime: new Date(2023, 0, 1, 15, 0, 0),
+    maxTime: new Date(2023, 0, 1, 23, 0, 0),
+    "BJJ": [
+      {
+        //Monday
+        start: new Date(2023, 4, 1, 19, 0),
+        end: new Date(2023, 4, 1, 20, 0)
+      },
+      {
+        //Tuesday
+        start: new Date(2023, 4, 2, 19, 0),
+        end: new Date(2023, 4, 2, 20, 0)
+      },
+      {
+        //Wednesday
+        start: new Date(2023, 4, 3, 19, 0),
+        end: new Date(2023, 4, 3, 20, 0)
+      }
+    ],
+    "No-GI BJJ": [
+      {
+        //Thursday
+        start: new Date(2023, 4, 4, 19, 0),
+        end: new Date(2023, 4, 4, 20, 0)
+      },
+      {
+        //Friday
+        start: new Date(2023, 4, 5, 19, 0),
+        end: new Date(2023, 4, 5, 20, 0)
+      }
+    ],
+    "Champions (Kids 7-14 y.o)": [
+      {
+        //Monday
+        start: new Date(2023, 4, 1, 18, 0),
+        end: new Date(2023, 4, 1, 19, 0),
+        color: "#F08600"
+      },
+      {
+        //Tuesday
+        start: new Date(2023, 4, 2, 18, 0),
+        end: new Date(2023, 4, 2, 19, 0),
+        color: "#F08600"
+      },
+      {
+        //Wednesday
+        start: new Date(2023, 4, 3, 18, 0),
+        end: new Date(2023, 4, 3, 19, 0),
+        color: "#F08600"
+      }
+    ],
+    "No-GI Champions (Kids 7-14 y.o)": [
+      {
+        //Thursday
+        start: new Date(2023, 4, 4, 18, 0),
+        end: new Date(2023, 4, 4, 19, 0),
+        color: "#F08600"
+      },
+      {
+        //Friday
+        start: new Date(2023, 4, 5, 18, 0),
+        end: new Date(2023, 4, 5, 19, 0),
+        color: "#F08600"
+      }
+    ]
+  },
+  "Mont Belvieu": {
+    minTime: new Date(2023, 0, 1, 10, 0, 0),
+    maxTime: new Date(2023, 0, 1, 21, 0, 0),
+    "BJJ": [
+      {
+        //Monday
+        start: new Date(2023, 4, 1, 11, 0),
+        end: new Date(2023, 4, 1, 12, 0)
+      },
+      {
+        start: new Date(2023, 4, 1, 18, 30),
+        end: new Date(2023, 4, 1, 19, 30)
+      },
+      {
+        //Tuesday
+        start: new Date(2023, 4, 2, 18, 30),
+        end: new Date(2023, 4, 2, 19, 30)
+      },
+      {
+        //Wednesday
+        start: new Date(2023, 4, 3, 11, 0),
+        end: new Date(2023, 4, 3, 12, 0)
+      },
+      {
+        start: new Date(2023, 4, 3, 18, 30),
+        end: new Date(2023, 4, 3, 19, 30)
+      },
+      {
+        //Thursday
+        start: new Date(2023, 4, 4, 11, 0),
+        end: new Date(2023, 4, 4, 12, 0)
+      },
+      {
+        //Friday
+        start: new Date(2023, 4, 5, 18, 30),
+        end: new Date(2023, 4, 5, 19, 30)
+      }
+    ],
+    "Advanced Adult BJJ": [
+      {
+        //Monday
+        start: new Date(2023, 4, 1, 19, 30),
+        end: new Date(2023, 4, 1, 20, 0)
+      },
+      {
+        //Tuesday
+        start: new Date(2023, 4, 2, 19, 30),
+        end: new Date(2023, 4, 2, 20, 0)
+      },
+      {
+        //Wednesday
+        start: new Date(2023, 4, 3, 19, 30),
+        end: new Date(2023, 4, 3, 20, 0)
+      },
+      {
+        //Thursday
+        start: new Date(2023, 4, 4, 19, 30),
+        end: new Date(2023, 4, 4, 20, 0)
+      }
+    ],
+    "No-GI BJJ": [
+      {
+        //Tuesday
+        start: new Date(2023, 4, 2, 11, 0),
+        end: new Date(2023, 4, 2, 12, 0)
+      },
+      {
+        //Thursday
+        start: new Date(2023, 4, 4, 18, 30),
+        end: new Date(2023, 4, 4, 19, 30)
+      },
+      {
+        //Friday
+        start: new Date(2023, 4, 5, 11, 0),
+        end: new Date(2023, 4, 5, 12, 0)
+      }
+    ],
+    "OPEN MAT": {
+      start: new Date(2023, 4, 6, 10, 0),
+      end: new Date(2023, 4, 6, 12, 0)
+    },
+    "Kids BJJ (4-6 y.o)": [
+      {
+        //Monday
+        start: new Date(2023, 4, 1, 17, 0),
+        end: new Date(2023, 4, 1, 17, 30),
+        color: "#F08600"
+      },
+      {
+        //Wednesday
+        start: new Date(2023, 4, 3, 17, 0),
+        end: new Date(2023, 4, 3, 17, 30),
+        color: "#F08600"
+      },
+      {
+        //Friday
+        start: new Date(2023, 4, 5, 17, 0),
+        end: new Date(2023, 4, 5, 17, 30),
+        color: "#F08600"
+      }
+    ],
+    "Kids BJJ (7-12 y.o)": [
+      {
+        //Monday
+        start: new Date(2023, 4, 1, 17, 30),
+        end: new Date(2023, 4, 1, 18, 30),
+        color: "#F08600"
+      },
+      {
+        //Wednesday
+        start: new Date(2023, 4, 3, 17, 30),
+        end: new Date(2023, 4, 3, 18, 30),
+        color: "#F08600"
+      },
+      {
+        //Friday
+        start: new Date(2023, 4, 5, 17, 30),
+        end: new Date(2023, 4, 5, 18, 30),
+        color: "#F08600"
+      }
+    ],
+    "No-GI Kids BJJ (7-12 y.o)": [
+      {
+        //Tuesday
+        start: new Date(2023, 4, 2, 17, 30),
+        end: new Date(2023, 4, 2, 18, 30),
+        color: "#F08600"
+      },
+      {
+        //Thursday
+        start: new Date(2023, 4, 4, 17, 30),
+        end: new Date(2023, 4, 4, 18, 30),
+        color: "#F08600"
+      }
+    ],
+    "Adult Kickboxing": [
+      {
+        //Monday
+        start: new Date(2023, 4, 1, 17, 30),
+        end: new Date(2023, 4, 1, 18, 15),
+        color: "#6e23fb"
+      },
+      {
+        //Wednesday
+        start: new Date(2023, 4, 3, 17, 30),
+        end: new Date(2023, 4, 3, 18, 15),
+        color: "#6e23fb"
+      },
+      {
+        //Friday
+        start: new Date(2023, 4, 5, 17, 30),
+        end: new Date(2023, 4, 5, 18, 15),
+        color: "#6e23fb"
+      }
+    ],
+    "Kids Wrestling": [
+      {
+        //Monday
+        start: new Date(2023, 4, 1, 18, 30),
+        end: new Date(2023, 4, 1, 19, 30),
+        color: "#6e23fb"
+      },
+      {
+        //Wednesday
+        start: new Date(2023, 4, 3, 18, 30),
+        end: new Date(2023, 4, 3, 19, 30),
+        color: "#6e23fb"
+      },
+      {
+        //Thursday
+        start: new Date(2023, 4, 4, 18, 30),
+        end: new Date(2023, 4, 4, 19, 30),
+        color: "#6e23fb"
+      }
+    ]
   }
 };
 const specialEvents = {
@@ -774,11 +1017,6 @@ const specialEvents = {
     "Jiu Jitsu World League Houston VI @ NRG Arena": {
       start: new Date(2023, 5, 24, 8, 0),
       end: new Date(2023, 5, 24, 16, 0),
-      color: "#E20000"
-    },
-    "1 YR Anniversary OPEN MAT @ RG Mont Belvieu | Gym Closed for Event ": {
-      start: new Date(2023, 5, 17, 12, 0),
-      end: new Date(2023, 5, 17, 14, 30),
       color: "#E20000"
     },
     "9 Year Anniversary Seminar & Team Party": {
@@ -877,9 +1115,21 @@ const specialEvents = {
     }
   },
   "Riverstone": {
-    "1 YR Anniversary OPEN MAT @ RG Mont Belvieu | Gym Closed for Event ": {
-      start: new Date(2023, 5, 17, 12, 0),
-      end: new Date(2023, 5, 17, 14, 30),
+    "Jiu Jitsu World League Houston VI @ NRG Arena": {
+      start: new Date(2023, 5, 24, 8, 0),
+      end: new Date(2023, 5, 24, 16, 0),
+      color: "#E20000"
+    },
+    "Houston Summer Championship @ Fast Complex": {
+      start: new Date(2023, 6, 22, 8, 0),
+      end: new Date(2023, 6, 22, 16, 0),
+      color: "#E20000"
+    }
+  },
+  "HCU Campus": {
+    "Jiu Jitsu Open House": {
+      start: new Date(2023, 5, 24, 10, 0),
+      end: new Date(2023, 5, 24, 13, 0),
       color: "#E20000"
     },
     "Jiu Jitsu World League Houston VI @ NRG Arena": {
@@ -893,7 +1143,19 @@ const specialEvents = {
       color: "#E20000"
     }
   },
-  "HCU Campus": {
+  "Katy": {
+    "Jiu Jitsu World League Houston VI @ NRG Arena": {
+      start: new Date(2023, 5, 24, 8, 0),
+      end: new Date(2023, 5, 24, 16, 0),
+      color: "#E20000"
+    },
+    "Houston Summer Championship @ Fast Complex": {
+      start: new Date(2023, 6, 22, 8, 0),
+      end: new Date(2023, 6, 22, 16, 0),
+      color: "#E20000"
+    }
+  },
+  "Mont Belvieu": {
     "Jiu Jitsu World League Houston VI @ NRG Arena": {
       start: new Date(2023, 5, 24, 8, 0),
       end: new Date(2023, 5, 24, 16, 0),
@@ -1343,12 +1605,32 @@ function Page() {
                     color: "white",
                     bgGradient: "linear(to-br, purple.500, red.600)",
                     _hover: { bg: "blackAlpha.600" },
+                    href: linkAcademy("renzograciekaty"),
+                    icon: /* @__PURE__ */ jsx(SvgSocial, {})
+                  }
+                ),
+                /* @__PURE__ */ jsx(
+                  IconButton,
+                  {
+                    as: "a",
+                    color: "white",
+                    bgGradient: "linear(to-bl, red.600, yellow.500)",
+                    _hover: { bg: "blackAlpha.600" },
+                    href: linkAcademy("renzograciembv"),
+                    icon: /* @__PURE__ */ jsx(SvgSocial, {})
+                  }
+                ),
+                /* @__PURE__ */ jsx(
+                  IconButton,
+                  {
+                    as: "a",
+                    color: "white",
+                    bgGradient: "linear(to-br, yellow.600, pink.500)",
+                    _hover: { bg: "blackAlpha.600" },
                     href: linkAcademy("renzogracieriverstone"),
                     icon: /* @__PURE__ */ jsx(SvgSocial, {})
                   }
                 ),
-                /* @__PURE__ */ jsx(IconButton, { isDisabled: true, bgGradient: "linear(to-br, purple.500, red.600)", _hover: { bg: "blackAlpha.400" }, icon: /* @__PURE__ */ jsx(SvgSocial, {}) }),
-                /* @__PURE__ */ jsx(IconButton, { isDisabled: true, bgGradient: "linear(to-br, purple.500, red.600)", _hover: { bg: "blackAlpha.400" }, icon: /* @__PURE__ */ jsx(SvgSocial, {}) }),
                 /* @__PURE__ */ jsx(IconButton, { isDisabled: true, bgGradient: "linear(to-br, purple.500, red.600)", _hover: { bg: "blackAlpha.400" }, icon: /* @__PURE__ */ jsx(SvgSocial, {}) }),
                 /* @__PURE__ */ jsx(IconButton, { isDisabled: true, bgGradient: "linear(to-br, purple.500, red.600)", _hover: { bg: "blackAlpha.400" }, icon: /* @__PURE__ */ jsx(SvgSocial, {}) }),
                 /* @__PURE__ */ jsx(IconButton, { isDisabled: true, bgGradient: "linear(to-br, purple.500, red.600)", _hover: { bg: "blackAlpha.400" }, icon: /* @__PURE__ */ jsx(SvgSocial, {}) }),
@@ -1361,14 +1643,14 @@ function Page() {
                 /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("The Grove"), children: "THE GROVE" }),
                 /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("HCU Campus"), children: "HCU CAMPUS" }),
                 /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("HTX (Downtown)"), children: "HTX (DOWNTOWN)" }),
+                /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("Katy"), children: "KATY" }),
+                /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("Mont Belvieu"), children: "MONT BELVIEU" }),
                 /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("Riverstone"), children: "RIVERSTONE" }),
-                /* @__PURE__ */ jsx(Button, { isDisabled: true, onClick: () => handleShowEvents("Katy"), children: "KATY" }),
                 /* @__PURE__ */ jsx(Button, { isDisabled: true, onClick: () => handleShowEvents("Missouri City"), children: "MISSOURI CITY" }),
                 /* @__PURE__ */ jsx(Button, { isDisabled: true, onClick: () => handleShowEvents("Pearland"), children: "PEARLAND" }),
                 /* @__PURE__ */ jsx(Button, { isDisabled: true, onClick: () => handleShowEvents("Pearland"), children: "HUFFMAN" }),
                 /* @__PURE__ */ jsx(Button, { isDisabled: true, onClick: () => handleShowEvents("Pearland"), children: "ATASCOCITA" }),
-                /* @__PURE__ */ jsx(Button, { isDisabled: true, onClick: () => handleShowEvents("Pearland"), children: "THE WOODLANDS" }),
-                /* @__PURE__ */ jsx(Button, { isDisabled: true, onClick: () => handleShowEvents("Pearland"), children: "MONT BELVIEU" })
+                /* @__PURE__ */ jsx(Button, { isDisabled: true, onClick: () => handleShowEvents("Pearland"), children: "THE WOODLANDS" })
               ] }) })
             ] }) })
           ] })
@@ -1379,10 +1661,10 @@ function Page() {
     /* @__PURE__ */ jsx(ToolbarButtonDisplay, {}),
     /* @__PURE__ */ jsx(Flex, { py: 4, justifyContent: "center", alignItems: "center", children: /* @__PURE__ */ jsx(Heading, { size: ["xl", "3xl"], children: selectedLocation ? `Schedule for ${selectedLocation}` : "Go Roll Today!" }) }),
     /* @__PURE__ */ jsxs(Flex, { justifyContent: "center", alignItems: "center", mx: [null, null, null, 24, 24], children: [
-      /* @__PURE__ */ jsx(Box, { pos: "absolute", mt: 10, children: /* @__PURE__ */ jsx(Icon, { as: SvgLogo, width: ["250px", "600px"], height: ["250px", "600px"], zIndex: -1 }) }),
+      /* @__PURE__ */ jsx(Box, { pos: "absolute", mt: 2, children: /* @__PURE__ */ jsx(Icon, { as: SvgLogo, width: ["250px", "500px"], height: ["250px", "500px"], zIndex: -1 }) }),
       /* @__PURE__ */ jsxs(Box, { width: "100%", children: [
         calendarDisplay(),
-        /* @__PURE__ */ jsx(Text, { color: "blackAlpha", mt: 1, fontSize: ["12px", "16px"], children: "Updated:6.15.23" })
+        /* @__PURE__ */ jsx(Text, { color: "blackAlpha", mt: 1, fontSize: ["12px", "16px"], children: "Updated:6.18.23" })
       ] })
     ] }),
     /* @__PURE__ */ jsx(Footer, {})

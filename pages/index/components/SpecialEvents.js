@@ -6,12 +6,6 @@ export const specialEvents = {
                   end: new Date(2023, 5, 24, 16, 0),
                   color: "#E20000"
             },
-            "1 YR Anniversary OPEN MAT @ RG Mont Belvieu | Gym Closed for Event ":
-            {
-                  start: new Date(2023, 5, 17, 12, 0),
-                  end: new Date(2023, 5, 17, 14, 30),
-                  color: "#E20000"
-            },
             "9 Year Anniversary Seminar & Team Party": 
             {
                   //Saturday
@@ -118,10 +112,24 @@ export const specialEvents = {
             },
       },
       "Riverstone":{
-            "1 YR Anniversary OPEN MAT @ RG Mont Belvieu | Gym Closed for Event ":
+            "Jiu Jitsu World League Houston VI @ NRG Arena":
             {
-                  start: new Date(2023, 5, 17, 12, 0),
-                  end: new Date(2023, 5, 17, 14, 30),
+                  start: new Date(2023, 5, 24, 8, 0),
+                  end: new Date(2023, 5, 24, 16, 0),
+                  color: "#E20000"
+            },
+            "Houston Summer Championship @ Fast Complex":
+            {
+                  start: new Date(2023, 6, 22, 8, 0),
+                  end: new Date(2023, 6, 22, 16, 0),
+                  color: "#E20000"
+            },
+      },
+      "HCU Campus":{
+            "Jiu Jitsu Open House":
+            {
+                  start: new Date(2023, 5, 24, 10, 0),
+                  end: new Date(2023, 5, 24, 13, 0),
                   color: "#E20000"
             },
             "Jiu Jitsu World League Houston VI @ NRG Arena":
@@ -137,7 +145,21 @@ export const specialEvents = {
                   color: "#E20000"
             },
       },
-      "HCU Campus":{
+      "Katy":{
+            "Jiu Jitsu World League Houston VI @ NRG Arena":
+            {
+                  start: new Date(2023, 5, 24, 8, 0),
+                  end: new Date(2023, 5, 24, 16, 0),
+                  color: "#E20000"
+            },
+            "Houston Summer Championship @ Fast Complex":
+            {
+                  start: new Date(2023, 6, 22, 8, 0),
+                  end: new Date(2023, 6, 22, 16, 0),
+                  color: "#E20000"
+            },
+      },
+      "Mont Belvieu":{
             "Jiu Jitsu World League Houston VI @ NRG Arena":
             {
                   start: new Date(2023, 5, 24, 8, 0),

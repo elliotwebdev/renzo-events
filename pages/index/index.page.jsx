@@ -160,7 +160,8 @@ function Page() {
             }
       function linkAcademy(academy) {
             return("https://www.instagram.com/" + academy)
-      };
+      }
+
 
   //-------MAIN JSX-----------
   
@@ -196,10 +197,14 @@ function Page() {
                                     href={linkAcademy("renzogracie_htx")} icon={<SvgSocial/>}/>
 
                                     <IconButton as="a" color="white" bgGradient='linear(to-br, purple.500, red.600)' _hover={{ bg: "blackAlpha.600" }}
+                                    href={linkAcademy("renzograciekaty")} icon={<SvgSocial/>}/>
+
+                                    <IconButton as="a" color="white" bgGradient='linear(to-bl, red.600, yellow.500)' _hover={{ bg: "blackAlpha.600" }}
+                                    href={linkAcademy("renzograciembv")} icon={<SvgSocial/>}/>
+
+                                    <IconButton as="a" color="white" bgGradient='linear(to-br, yellow.600, pink.500)' _hover={{ bg: "blackAlpha.600" }}
                                     href={linkAcademy("renzogracieriverstone")} icon={<SvgSocial/>}/>
 
-                                    <IconButton isDisabled bgGradient='linear(to-br, purple.500, red.600)' _hover={{ bg: "blackAlpha.400" }} icon={<SvgSocial/>}/>
-                                    <IconButton isDisabled bgGradient='linear(to-br, purple.500, red.600)' _hover={{ bg: "blackAlpha.400" }} icon={<SvgSocial/>}/>
                                     <IconButton isDisabled bgGradient='linear(to-br, purple.500, red.600)' _hover={{ bg: "blackAlpha.400" }} icon={<SvgSocial/>}/>
                                     <IconButton isDisabled bgGradient='linear(to-br, purple.500, red.600)' _hover={{ bg: "blackAlpha.400" }} icon={<SvgSocial/>}/>
                                     <IconButton isDisabled bgGradient='linear(to-br, purple.500, red.600)' _hover={{ bg: "blackAlpha.400" }} icon={<SvgSocial/>}/>
@@ -217,19 +222,16 @@ function Page() {
                                     <Button  onClick={() => handleShowEvents("The Grove")}>THE GROVE</Button>
                                     <Button  onClick={() => handleShowEvents("HCU Campus")}>HCU CAMPUS</Button>
                                     <Button  onClick={() => handleShowEvents("HTX (Downtown)")}>HTX (DOWNTOWN)</Button>
+                                    <Button  onClick={() => handleShowEvents("Katy")}>KATY</Button>
+                                    <Button  onClick={() => handleShowEvents("Mont Belvieu")}>MONT BELVIEU</Button>
                                     <Button  onClick={() => handleShowEvents("Riverstone")}>RIVERSTONE</Button>
-                                    <Button  isDisabled onClick={() => handleShowEvents("Katy")}>KATY</Button>
                                     <Button  isDisabled onClick={() => handleShowEvents("Missouri City")}>MISSOURI CITY</Button>
                                     <Button  isDisabled onClick={() => handleShowEvents("Pearland")}>PEARLAND</Button>
                                     <Button  isDisabled onClick={() => handleShowEvents("Pearland")}>HUFFMAN</Button>
                                     <Button  isDisabled onClick={() => handleShowEvents("Pearland")}>ATASCOCITA</Button>
                                     <Button  isDisabled onClick={() => handleShowEvents("Pearland")}>THE WOODLANDS</Button>
-                                    <Button  isDisabled onClick={() => handleShowEvents("Pearland")}>MONT BELVIEU</Button>
-                              </Stack>
+                              </Stack>           
                               </ButtonGroup>
-
-                              
-                        
                         </Flex>
                   </DrawerBody>
             </DrawerContent>
@@ -246,13 +248,13 @@ function Page() {
       
       <Flex justifyContent="center" alignItems="center" mx={[null, null, null, 24, 24]} >
            
-            <Box pos="absolute" mt={10}  >
-                  <Icon as={SvgLogo} width={["250px", "600px"]} height={["250px", "600px"]} zIndex={-1} />
+            <Box pos="absolute" mt={2}  >
+                  <Icon as={SvgLogo} width={["250px", "500px"]} height={["250px", "500px"]} zIndex={-1} />
             </Box>
 
             <Box  width="100%">      
                   {calendarDisplay()}
-                  <Text color="blackAlpha" mt={1} fontSize={["12px","16px"]}>Updated:6.15.23</Text>
+                  <Text color="blackAlpha" mt={1} fontSize={["12px","16px"]}>Updated:6.18.23</Text>
             </Box>
 
       </Flex>

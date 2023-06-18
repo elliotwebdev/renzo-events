@@ -1,4 +1,11 @@
 import PropTypes from 'prop-types'
+import {
+  Flex,
+  Heading,
+  Text,
+  Stack,
+  Button,
+} from '@chakra-ui/react'
 
 export { Page }
 
@@ -9,15 +16,24 @@ function Page({ is404 }) {
   if (is404) {
     return (
       <>
-        <h1>404 Page Not Found</h1>
-        <p>This page could not be found.</p>
+        <Flex mt={20} justifyContent="center" textAlign="center">
+          <Stack>
+            <Heading>Error 404</Heading>
+            <Text>This page could not be found.</Text>
+            <Button colorScheme="messenger" as="a" href="https://renzo.events">Return to Renzo Events</Button>
+          </Stack>
+        </Flex>
       </>
     )
   } else {
     return (
       <>
-        <h1>500 Internal Error</h1>
-        <p>Something went wrong.</p>
+        <Flex mt={20} justifyContent="center" textAlign="center">
+          <Stack>
+            <Heading>Internal Error 500</Heading>
+            <Text>Something went wrong.</Text>
+          </Stack>
+        </Flex>
       </>
     )
   }

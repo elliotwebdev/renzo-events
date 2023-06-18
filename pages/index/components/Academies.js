@@ -47,7 +47,7 @@ export const academies = {
             },
             ],
 
-            "No-Gi BJJ":[
+            "No-GI BJJ":[
             {
                   //Tuesday
                   start: new Date(2023, 4, 2, 12, 0),
@@ -223,7 +223,7 @@ export const academies = {
                   color: "#F08600"
             },
             ],
-            "No-Gi Kids BJJ (7-11 y.o)":[
+            "No-GI Kids BJJ (7-11 y.o)":[
             {
                   //Wednesday
                   start: new Date(2023, 4, 3, 17, 30),
@@ -264,7 +264,7 @@ export const academies = {
             },
 
             ],
-            "No-Gi Kids BJJ (4-6 y.o)": 
+            "No-GI Kids BJJ (4-6 y.o)": 
             {
                   //Wednesday
                   start: new Date(2023, 4, 3, 17, 0),
@@ -381,7 +381,7 @@ export const academies = {
                         end: new Date(2023, 4, 2, 13, 0),
       
                   },
-                  "All Ages No-Gi BJJ":
+                  "All Ages No-GI BJJ":
                   {     
                         //Thursday
                         start: new Date(2023, 4, 4, 12, 0),
@@ -394,7 +394,7 @@ export const academies = {
                         end: new Date(2023, 4, 6, 12, 0),
                         
                   },
-                  "No-Gi BJJ":[
+                  "No-GI BJJ":[
 
                   {
                         //Wednesday
@@ -478,13 +478,13 @@ export const academies = {
                   },
                   ],
       
-                  "No-Gi CHAMPS (Kids 4'11 & Under)": 
+                  "No-GI CHAMPS (Kids 4'11 & Under)": 
                   {
                         start: new Date(2023, 4, 4, 17, 0),
                         end: new Date(2023, 4, 4, 18, 0),
                         color: "#F08600",
                   },
-                  "No-Gi LIONS (Kids 5' & Up)": 
+                  "No-GI LIONS (Kids 5' & Up)": 
                   {
                         start: new Date(2023, 4, 4, 18, 0),
                         end: new Date(2023, 4, 4, 19, 0),
@@ -548,7 +548,7 @@ export const academies = {
                   },
                   
             ],
-            "No-Gi BJJ": [
+            "No-GI BJJ": [
                   {    
                         // Monday
                         start: new Date(2023, 4, 1, 12, 0),
@@ -658,7 +658,7 @@ export const academies = {
            
                   },
             ],
-            "No-Gi BJJ": [
+            "No-GI BJJ": [
                   {    
                         // Wednesday
                         start: new Date(2023, 4, 3, 11, 0),
@@ -760,7 +760,7 @@ export const academies = {
                         color: "#F08600"
            
                   },
-            "No-Gi Advanced Kids BJJ": 
+            "No-GI Advanced Kids BJJ": 
                   {    
                         // Thursday
                         start: new Date(2023, 4, 4, 18, 30),
@@ -769,14 +769,14 @@ export const academies = {
       
                   },
 
-            "No-Gi Kids BJJ (4-6 y.o)":{    
+            "No-GI Kids BJJ (4-6 y.o)":{    
                   //Thursday
                   start: new Date(2023, 4, 4, 17, 0),
                   end: new Date(2023, 4, 4, 17, 30),
                   color: "#F08600"
      
             },
-            "No-Gi Kids BJJ (7-11 y.o)":{    
+            "No-GI Kids BJJ (7-11 y.o)":{    
                   //Thursday
                   start: new Date(2023, 4, 4, 17, 30),
                   end: new Date(2023, 4, 4, 18, 30),
@@ -855,6 +855,254 @@ export const academies = {
                         color: "#F08600"
                   },
             ]
-      }
+      },
+
+      "Katy": {
+            minTime:  new Date(2023, 0, 1, 15, 0, 0),
+            maxTime: new Date(2023, 0, 1, 23, 0, 0),
+            "BJJ":[
+                  {
+                        //Monday
+                        start: new Date(2023, 4, 1, 19, 0),
+                        end: new Date(2023, 4, 1, 20, 0),
+                  },
+                  {
+                        //Tuesday
+                        start: new Date(2023, 4, 2, 19, 0),
+                        end: new Date(2023, 4, 2, 20, 0),
+                  },
+                  {
+                        //Wednesday
+                        start: new Date(2023, 4, 3, 19, 0),
+                        end: new Date(2023, 4, 3, 20, 0),
+                  },
+            ],
+            "No-GI BJJ":[
+                  {
+                        //Thursday
+                        start: new Date(2023, 4, 4, 19, 0),
+                        end: new Date(2023, 4, 4, 20, 0),
+                        
+                  },
+                  {
+                        //Friday
+                        start: new Date(2023, 4, 5, 19, 0),
+                        end: new Date(2023, 4, 5, 20, 0),
+                  },
+            ],
+            "Champions (Kids 7-14 y.o)":[
+                  {
+                        //Monday
+                        start: new Date(2023, 4, 1, 18, 0),
+                        end: new Date(2023, 4, 1, 19, 0),
+                        color: "#F08600"
+                  },
+                  {
+                        //Tuesday
+                        start: new Date(2023, 4, 2, 18, 0),
+                        end: new Date(2023, 4, 2, 19, 0),
+                        color: "#F08600"
+                  },
+                  {
+                        //Wednesday
+                        start: new Date(2023, 4, 3, 18, 0),
+                        end: new Date(2023, 4, 3, 19, 0),
+                        color: "#F08600"
+                  },
+            ],
+            "No-GI Champions (Kids 7-14 y.o)":[
+                  {
+                        //Thursday
+                        start: new Date(2023, 4, 4, 18, 0),
+                        end: new Date(2023, 4, 4, 19, 0),
+                        color: "#F08600"
+                        
+                  },
+                  {
+                        //Friday
+                        start: new Date(2023, 4, 5, 18, 0),
+                        end: new Date(2023, 4, 5, 19, 0),
+                        color: "#F08600"
+                  },
+            ],
+      },
+
+      "Mont Belvieu": {
+            minTime:  new Date(2023, 0, 1, 10, 0, 0),
+            maxTime: new Date(2023, 0, 1, 21, 0, 0),
+            "BJJ":[
+                  {
+                        //Monday
+                        start: new Date(2023, 4, 1, 11, 0),
+                        end: new Date(2023, 4, 1, 12, 0),
+                  },
+                  {
+                        start: new Date(2023, 4, 1, 18, 30),
+                        end: new Date(2023, 4, 1, 19, 30),
+                  },
+                  {
+                        //Tuesday
+                        start: new Date(2023, 4, 2, 18, 30),
+                        end: new Date(2023, 4, 2, 19, 30),
+                  },
+                  {
+                        //Wednesday
+                        start: new Date(2023, 4, 3, 11, 0),
+                        end: new Date(2023, 4, 3, 12, 0),
+                  },
+                  {
+                        start: new Date(2023, 4, 3, 18, 30),
+                        end: new Date(2023, 4, 3, 19, 30),
+                  },
+                  {
+                        //Thursday
+                        start: new Date(2023, 4, 4, 11, 0),
+                        end: new Date(2023, 4, 4, 12, 0),
+                  },
+                  {
+                        //Friday
+                        start: new Date(2023, 4, 5, 18, 30),
+                        end: new Date(2023, 4, 5, 19, 30),
+                  },
+            ],
+            "Advanced Adult BJJ":[
+                  {
+                        //Monday
+                        start: new Date(2023, 4, 1, 19, 30),
+                        end: new Date(2023, 4, 1, 20, 0),
+                  },
+                  {
+                        //Tuesday
+                        start: new Date(2023, 4, 2, 19, 30),
+                        end: new Date(2023, 4, 2, 20, 0),
+                  },
+                  {
+                        //Wednesday
+                        start: new Date(2023, 4, 3, 19, 30),
+                        end: new Date(2023, 4, 3, 20, 0),
+                  },
+                  {
+                        //Thursday
+                        start: new Date(2023, 4, 4, 19, 30),
+                        end: new Date(2023, 4, 4, 20, 0),
+                  },
+            ],
+            "No-GI BJJ":[
+                  {
+                        //Tuesday
+                        start: new Date(2023, 4, 2, 11, 0),
+                        end: new Date(2023, 4, 2, 12, 0)
+                  },
+                  {
+                        //Thursday
+                        start: new Date(2023, 4, 4, 18, 30),
+                        end: new Date(2023, 4, 4, 19, 30)
+                  },
+                  {
+                        //Friday
+                        start: new Date(2023, 4, 5, 11, 0),
+                        end: new Date(2023, 4, 5, 12, 0)
+                  }
+            ],
+            "OPEN MAT":
+            {
+                  start: new Date(2023, 4, 6, 10, 0),
+                  end: new Date(2023, 4, 6, 12, 0)
+            },
+            "Kids BJJ (4-6 y.o)":[
+                  {
+                        //Monday
+                        start: new Date(2023, 4, 1, 17, 0),
+                        end: new Date(2023, 4, 1, 17, 30),
+                        color: "#F08600"
+                  },
+                  {
+                        //Wednesday
+                        start: new Date(2023, 4, 3, 17, 0),
+                        end: new Date(2023, 4, 3, 17, 30),
+                        color: "#F08600"
+                  },
+                  {
+                        //Friday
+                        start: new Date(2023, 4, 5, 17, 0),
+                        end: new Date(2023, 4, 5, 17, 30),
+                        color: "#F08600"
+                  },
+            ],
+            "Kids BJJ (7-12 y.o)":[
+                  {
+                        //Monday
+                        start: new Date(2023, 4, 1, 17, 30),
+                        end: new Date(2023, 4, 1, 18, 30),
+                        color: "#F08600"
+                  },
+                  {
+                        //Wednesday
+                        start: new Date(2023, 4, 3, 17, 30),
+                        end: new Date(2023, 4, 3, 18, 30),
+                        color: "#F08600"
+                  },
+                  {
+                        //Friday
+                        start: new Date(2023, 4, 5, 17, 30),
+                        end: new Date(2023, 4, 5, 18, 30),
+                        color: "#F08600"
+                  },
+            ],
+            "No-GI Kids BJJ (7-12 y.o)":[
+                  {
+                        //Tuesday
+                        start: new Date(2023, 4, 2, 17, 30),
+                        end: new Date(2023, 4, 2, 18, 30),
+                        color: "#F08600"
+                  },
+                  {
+                        //Thursday
+                        start: new Date(2023, 4, 4, 17, 30),
+                        end: new Date(2023, 4, 4, 18, 30),
+                        color: "#F08600"
+                  },     
+            ],
+            "Adult Kickboxing":[
+                  {
+                        //Monday
+                        start: new Date(2023, 4, 1, 17, 30),
+                        end: new Date(2023, 4, 1, 18, 15),
+                        color: '#6e23fb',
+                  },
+                  {
+                        //Wednesday
+                        start: new Date(2023, 4, 3, 17, 30),
+                        end: new Date(2023, 4, 3, 18, 15),
+                        color: '#6e23fb',
+                  },
+                  {
+                        //Friday
+                        start: new Date(2023, 4, 5, 17, 30),
+                        end: new Date(2023, 4, 5, 18, 15),
+                        color: '#6e23fb',
+                  },    
+            ],
+            "Kids Wrestling":[
+                  {
+                        //Monday
+                        start: new Date(2023, 4, 1, 18, 30),
+                        end: new Date(2023, 4, 1, 19, 30),
+                        color: '#6e23fb',
+                  },
+                  {
+                        //Wednesday
+                        start: new Date(2023, 4, 3, 18, 30),
+                        end: new Date(2023, 4, 3, 19, 30),
+                        color: '#6e23fb',
+                  },
+                  {
+                        //Thursday
+                        start: new Date(2023, 4, 4, 18, 30),
+                        end: new Date(2023, 4, 4, 19, 30),
+                        color: '#6e23fb',
+                  },    
+            ],
+      } 
 
 }  
