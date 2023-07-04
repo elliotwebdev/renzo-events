@@ -1010,21 +1010,191 @@ const academies = {
         color: "#6e23fb"
       }
     ]
+  },
+  "Pearland": {
+    minTime: new Date(2023, 0, 1, 6, 0, 0),
+    maxTime: new Date(2023, 0, 1, 21, 0, 0),
+    "BJJ": [
+      {
+        //Monday
+        start: new Date(2023, 4, 1, 12, 0),
+        end: new Date(2023, 4, 1, 13, 0)
+      },
+      {
+        start: new Date(2023, 4, 1, 18, 30),
+        end: new Date(2023, 4, 1, 19, 30)
+      },
+      {
+        //Tuesday
+        start: new Date(2023, 4, 2, 6, 0),
+        end: new Date(2023, 4, 2, 7, 0)
+      },
+      {
+        //Wednesday
+        start: new Date(2023, 4, 3, 18, 30),
+        end: new Date(2023, 4, 3, 19, 30)
+      },
+      {
+        //Thursday
+        start: new Date(2023, 4, 4, 6, 0),
+        end: new Date(2023, 4, 4, 7, 0)
+      },
+      {
+        //Saturday
+        start: new Date(2023, 4, 6, 11, 30),
+        end: new Date(2023, 4, 6, 12, 30)
+      }
+    ],
+    "Lunchbox Crew (BJJ Class)": {
+      //Friday
+      start: new Date(2023, 4, 5, 12, 0),
+      end: new Date(2023, 4, 5, 13, 0)
+    },
+    "No-GI BJJ": [
+      {
+        //Tuesday
+        start: new Date(2023, 4, 2, 18, 30),
+        end: new Date(2023, 4, 2, 19, 30)
+      },
+      {
+        //Wednesday
+        start: new Date(2023, 4, 3, 12, 0),
+        end: new Date(2023, 4, 3, 13, 0)
+      }
+    ],
+    "Live Training": [
+      {
+        //Monday
+        start: new Date(2023, 4, 1, 13, 0),
+        end: new Date(2023, 4, 1, 13, 30)
+      },
+      {
+        start: new Date(2023, 4, 1, 19, 30),
+        end: new Date(2023, 4, 1, 20, 0)
+      },
+      {
+        //Tuesday
+        start: new Date(2023, 4, 2, 19, 30),
+        end: new Date(2023, 4, 2, 20, 0)
+      },
+      {
+        //Wednesday
+        start: new Date(2023, 4, 3, 13, 0),
+        end: new Date(2023, 4, 3, 13, 30)
+      },
+      {
+        start: new Date(2023, 4, 3, 19, 30),
+        end: new Date(2023, 4, 3, 20, 0)
+      },
+      {
+        //Thursday
+        start: new Date(2023, 4, 4, 18, 30),
+        end: new Date(2023, 4, 4, 20, 0)
+      },
+      {
+        //Friday
+        start: new Date(2023, 4, 5, 13, 0),
+        end: new Date(2023, 4, 5, 13, 30)
+      }
+    ],
+    "Striking Class": [
+      {
+        //Monday
+        start: new Date(2023, 4, 1, 6, 0),
+        end: new Date(2023, 4, 1, 7, 0),
+        color: "#6e23fb"
+      },
+      {
+        //Tuesday
+        start: new Date(2023, 4, 2, 12, 0),
+        end: new Date(2023, 4, 2, 13, 0),
+        color: "#6e23fb"
+      },
+      {
+        //Wednesday
+        start: new Date(2023, 4, 3, 6, 0),
+        end: new Date(2023, 4, 3, 7, 0),
+        color: "#6e23fb"
+      },
+      {
+        //Thursday
+        start: new Date(2023, 4, 4, 12, 0),
+        end: new Date(2023, 4, 4, 13, 0),
+        color: "#6e23fb"
+      }
+    ],
+    "Kids BJJ (4-6 y.o)": [
+      {
+        //Monday
+        start: new Date(2023, 4, 1, 17, 0),
+        end: new Date(2023, 4, 1, 17, 30),
+        color: "#F08600"
+      },
+      {
+        //Wednesday
+        start: new Date(2023, 4, 3, 17, 0),
+        end: new Date(2023, 4, 3, 17, 30),
+        color: "#F08600"
+      },
+      {
+        //Saturday
+        start: new Date(2023, 4, 6, 10, 0),
+        end: new Date(2023, 4, 6, 10, 30),
+        color: "#F08600"
+      }
+    ],
+    "Kids BJJ (7-11 y.o)": [
+      {
+        //Monday
+        start: new Date(2023, 4, 1, 17, 30),
+        end: new Date(2023, 4, 1, 18, 30),
+        color: "#F08600"
+      },
+      {
+        //Wednesday
+        start: new Date(2023, 4, 3, 17, 30),
+        end: new Date(2023, 4, 3, 18, 30),
+        color: "#F08600"
+      },
+      {
+        //Saturday
+        start: new Date(2023, 4, 6, 10, 30),
+        end: new Date(2023, 4, 6, 11, 30),
+        color: "#F08600"
+      }
+    ],
+    "No-GI Kids BJJ (4-6 y.o)": [
+      {
+        //Tuesday
+        start: new Date(2023, 4, 2, 17, 0),
+        end: new Date(2023, 4, 2, 17, 30),
+        color: "#F08600"
+      },
+      {
+        //Thursday
+        start: new Date(2023, 4, 4, 17, 0),
+        end: new Date(2023, 4, 4, 17, 30),
+        color: "#F08600"
+      }
+    ],
+    "No-GI Kids BJJ (7-11 y.o)": [
+      {
+        //Tuesday
+        start: new Date(2023, 4, 2, 17, 30),
+        end: new Date(2023, 4, 2, 18, 30),
+        color: "#F08600"
+      },
+      {
+        //Thursday
+        start: new Date(2023, 4, 4, 17, 30),
+        end: new Date(2023, 4, 4, 18, 30),
+        color: "#F08600"
+      }
+    ]
   }
 };
 const specialEvents = {
   "Houston (HQ)": {
-    "Jiu Jitsu World League Houston VI @ NRG Arena": {
-      start: new Date(2023, 5, 24, 8, 0),
-      end: new Date(2023, 5, 24, 16, 0),
-      color: "#E20000"
-    },
-    "9 Year Anniversary Seminar & Team Party": {
-      //Saturday
-      start: new Date(2023, 6, 1, 10, 0),
-      end: new Date(2023, 6, 1, 14, 0),
-      color: "#E20000"
-    },
     "Helena Jiu Jitsu Girl | Kids Gi Seminar": {
       start: new Date(2023, 6, 8, 10, 0),
       end: new Date(2023, 6, 8, 11, 0),
@@ -1048,18 +1218,6 @@ const specialEvents = {
       color: "#E20000"
     },
     "Kids Team Renzo Prep & Scrimmage": [
-      {
-        //Saturday
-        start: new Date(2023, 5, 3, 10, 30),
-        end: new Date(2023, 5, 3, 12, 0),
-        color: "#E20000"
-      },
-      {
-        //Saturday
-        start: new Date(2023, 6, 1, 10, 30),
-        end: new Date(2023, 6, 1, 12, 0),
-        color: "#E20000"
-      },
       {
         //Saturday
         start: new Date(2023, 7, 5, 10, 30),
@@ -1091,11 +1249,6 @@ const specialEvents = {
         color: "#E20000"
       }
     ],
-    "Jiu Jitsu World League Houston VI @ NRG Arena": {
-      start: new Date(2023, 5, 24, 8, 0),
-      end: new Date(2023, 5, 24, 16, 0),
-      color: "#E20000"
-    },
     "Houston Summer Championship @ Fast Complex": {
       start: new Date(2023, 6, 22, 8, 0),
       end: new Date(2023, 6, 22, 16, 0),
@@ -1103,11 +1256,6 @@ const specialEvents = {
     }
   },
   "HTX (Downtown)": {
-    "Jiu Jitsu World League Houston VI @ NRG Arena": {
-      start: new Date(2023, 5, 24, 8, 0),
-      end: new Date(2023, 5, 24, 16, 0),
-      color: "#E20000"
-    },
     "Houston Summer Championship @ Fast Complex": {
       start: new Date(2023, 6, 22, 8, 0),
       end: new Date(2023, 6, 22, 16, 0),
@@ -1115,11 +1263,6 @@ const specialEvents = {
     }
   },
   "Riverstone": {
-    "Jiu Jitsu World League Houston VI @ NRG Arena": {
-      start: new Date(2023, 5, 24, 8, 0),
-      end: new Date(2023, 5, 24, 16, 0),
-      color: "#E20000"
-    },
     "Houston Summer Championship @ Fast Complex": {
       start: new Date(2023, 6, 22, 8, 0),
       end: new Date(2023, 6, 22, 16, 0),
@@ -1127,16 +1270,6 @@ const specialEvents = {
     }
   },
   "HCU Campus": {
-    "Jiu Jitsu Open House": {
-      start: new Date(2023, 5, 24, 10, 0),
-      end: new Date(2023, 5, 24, 13, 0),
-      color: "#E20000"
-    },
-    "Jiu Jitsu World League Houston VI @ NRG Arena": {
-      start: new Date(2023, 5, 24, 8, 0),
-      end: new Date(2023, 5, 24, 16, 0),
-      color: "#E20000"
-    },
     "Houston Summer Championship @ Fast Complex": {
       start: new Date(2023, 6, 22, 8, 0),
       end: new Date(2023, 6, 22, 16, 0),
@@ -1144,11 +1277,6 @@ const specialEvents = {
     }
   },
   "Katy": {
-    "Jiu Jitsu World League Houston VI @ NRG Arena": {
-      start: new Date(2023, 5, 24, 8, 0),
-      end: new Date(2023, 5, 24, 16, 0),
-      color: "#E20000"
-    },
     "Houston Summer Championship @ Fast Complex": {
       start: new Date(2023, 6, 22, 8, 0),
       end: new Date(2023, 6, 22, 16, 0),
@@ -1156,11 +1284,13 @@ const specialEvents = {
     }
   },
   "Mont Belvieu": {
-    "Jiu Jitsu World League Houston VI @ NRG Arena": {
-      start: new Date(2023, 5, 24, 8, 0),
-      end: new Date(2023, 5, 24, 16, 0),
+    "Houston Summer Championship @ Fast Complex": {
+      start: new Date(2023, 6, 22, 8, 0),
+      end: new Date(2023, 6, 22, 16, 0),
       color: "#E20000"
-    },
+    }
+  },
+  "Pearland": {
     "Houston Summer Championship @ Fast Complex": {
       start: new Date(2023, 6, 22, 8, 0),
       end: new Date(2023, 6, 22, 16, 0),
@@ -1627,11 +1757,21 @@ function Page() {
                     color: "white",
                     bgGradient: "linear(to-br, yellow.600, pink.500)",
                     _hover: { bg: "blackAlpha.600" },
+                    href: linkAcademy("renzograciepearland"),
+                    icon: /* @__PURE__ */ jsx(SvgSocial, {})
+                  }
+                ),
+                /* @__PURE__ */ jsx(
+                  IconButton,
+                  {
+                    as: "a",
+                    color: "white",
+                    bgGradient: "linear(to-br, pink.500, purple.500)",
+                    _hover: { bg: "blackAlpha.600" },
                     href: linkAcademy("renzogracieriverstone"),
                     icon: /* @__PURE__ */ jsx(SvgSocial, {})
                   }
                 ),
-                /* @__PURE__ */ jsx(IconButton, { isDisabled: true, bgGradient: "linear(to-br, purple.500, red.600)", _hover: { bg: "blackAlpha.400" }, icon: /* @__PURE__ */ jsx(SvgSocial, {}) }),
                 /* @__PURE__ */ jsx(IconButton, { isDisabled: true, bgGradient: "linear(to-br, purple.500, red.600)", _hover: { bg: "blackAlpha.400" }, icon: /* @__PURE__ */ jsx(SvgSocial, {}) }),
                 /* @__PURE__ */ jsx(IconButton, { isDisabled: true, bgGradient: "linear(to-br, purple.500, red.600)", _hover: { bg: "blackAlpha.400" }, icon: /* @__PURE__ */ jsx(SvgSocial, {}) }),
                 /* @__PURE__ */ jsx(IconButton, { isDisabled: true, bgGradient: "linear(to-br, purple.500, red.600)", _hover: { bg: "blackAlpha.400" }, icon: /* @__PURE__ */ jsx(SvgSocial, {}) }),
@@ -1645,9 +1785,30 @@ function Page() {
                 /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("HTX (Downtown)"), children: "HTX (DOWNTOWN)" }),
                 /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("Katy"), children: "KATY" }),
                 /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("Mont Belvieu"), children: "MONT BELVIEU" }),
+                /* @__PURE__ */ jsx(
+                  Button,
+                  {
+                    _after: {
+                      position: "absolute",
+                      top: "-5px",
+                      right: "-25px",
+                      width: "48px",
+                      height: "24px",
+                      borderRadius: "5px",
+                      backgroundColor: "#FF8700",
+                      color: "black",
+                      fontSize: "12px",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      content: '"New"'
+                    },
+                    onClick: () => handleShowEvents("Pearland"),
+                    children: "PEARLAND"
+                  }
+                ),
                 /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("Riverstone"), children: "RIVERSTONE" }),
                 /* @__PURE__ */ jsx(Button, { isDisabled: true, onClick: () => handleShowEvents("Missouri City"), children: "MISSOURI CITY" }),
-                /* @__PURE__ */ jsx(Button, { isDisabled: true, onClick: () => handleShowEvents("Pearland"), children: "PEARLAND" }),
                 /* @__PURE__ */ jsx(Button, { isDisabled: true, onClick: () => handleShowEvents("Pearland"), children: "HUFFMAN" }),
                 /* @__PURE__ */ jsx(Button, { isDisabled: true, onClick: () => handleShowEvents("Pearland"), children: "ATASCOCITA" }),
                 /* @__PURE__ */ jsx(Button, { isDisabled: true, onClick: () => handleShowEvents("Pearland"), children: "THE WOODLANDS" })
@@ -1664,7 +1825,7 @@ function Page() {
       /* @__PURE__ */ jsx(Box, { pos: "absolute", mt: 2, children: /* @__PURE__ */ jsx(Icon, { as: SvgLogo, width: ["250px", "500px"], height: ["250px", "500px"], zIndex: -1 }) }),
       /* @__PURE__ */ jsxs(Box, { width: "100%", children: [
         calendarDisplay(),
-        /* @__PURE__ */ jsx(Text, { color: "blackAlpha", mt: 1, fontSize: ["12px", "16px"], children: "Updated:6.18.23" })
+        /* @__PURE__ */ jsx(Text, { color: "blackAlpha", mt: 1, fontSize: ["12px", "16px"], children: "Updated:7.4.23" })
       ] })
     ] }),
     /* @__PURE__ */ jsx(Footer, {})
