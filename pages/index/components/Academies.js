@@ -635,6 +635,11 @@ export const academies = {
            
                   },
                   {    
+                        start: new Date(2023, 4, 2, 11, 0),
+                        end: new Date(2023, 4, 2, 12, 0),
+           
+                  },
+                  {    
                         start: new Date(2023, 4, 2, 19, 0),
                         end: new Date(2023, 4, 2, 20, 0),
            
@@ -649,6 +654,11 @@ export const academies = {
                         //Thursday
                         start: new Date(2023, 4, 4, 6, 0),
                         end: new Date(2023, 4, 4, 7, 0),
+           
+                  },
+                  {    
+                        start: new Date(2023, 4, 4, 11, 0),
+                        end: new Date(2023, 4, 4, 12, 0),
            
                   },
                   {    

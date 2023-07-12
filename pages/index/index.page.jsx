@@ -228,8 +228,8 @@ function Page() {
                                     <Button  onClick={() => handleShowEvents("Mont Belvieu")}>MONT BELVIEU</Button>
                                     <Button  _after={{ position: "absolute",
                                           top: "-5px",
-                                          right: "-25px",
-                                          width: "48px",
+                                          right: "-15px",
+                                          width: "32px",
                                           height: "24px",
                                           borderRadius: "5px",
                                           backgroundColor: "#FF8700",
@@ -240,7 +240,19 @@ function Page() {
                                           alignItems: "center",
                                           content: '"New"'}} 
                                           onClick={() => handleShowEvents("Pearland")}>PEARLAND</Button>
-                                    <Button  onClick={() => handleShowEvents("Riverstone")}>RIVERSTONE</Button>
+                                    <Button  _after={{ position: "absolute",
+                                          top: "-5px",
+                                          right: "-15px",
+                                          width: "32px",
+                                          height: "24px",
+                                          borderRadius: "5px",
+                                          backgroundColor: "#FF8700",
+                                          color: "black",
+                                          fontSize: "12px",
+                                          display: "flex",
+                                          justifyContent: "center",
+                                          alignItems: "center",
+                                          content: '"New"'}} onClick={() => handleShowEvents("Riverstone")}>RIVERSTONE</Button>
                                     <Button  isDisabled onClick={() => handleShowEvents("Missouri City")}>MISSOURI CITY</Button>
                                     <Button  isDisabled onClick={() => handleShowEvents("Pearland")}>HUFFMAN</Button>
                                     <Button  isDisabled onClick={() => handleShowEvents("Pearland")}>ATASCOCITA</Button>
@@ -269,7 +281,7 @@ function Page() {
 
             <Box  width="100%">      
                   {calendarDisplay()}
-                  <Text color="blackAlpha" mt={1} fontSize={["12px","16px"]}>Updated:7.4.23</Text>
+                  <Text color="blackAlpha" mt={1} fontSize={["12px","16px"]}>Updated:7.11.23</Text>
             </Box>
 
       </Flex>

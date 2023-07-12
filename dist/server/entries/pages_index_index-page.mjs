@@ -572,6 +572,10 @@ const academies = {
         end: new Date(2023, 4, 2, 7, 0)
       },
       {
+        start: new Date(2023, 4, 2, 11, 0),
+        end: new Date(2023, 4, 2, 12, 0)
+      },
+      {
         start: new Date(2023, 4, 2, 19, 0),
         end: new Date(2023, 4, 2, 20, 0)
       },
@@ -584,6 +588,10 @@ const academies = {
         //Thursday
         start: new Date(2023, 4, 4, 6, 0),
         end: new Date(2023, 4, 4, 7, 0)
+      },
+      {
+        start: new Date(2023, 4, 4, 11, 0),
+        end: new Date(2023, 4, 4, 12, 0)
       },
       {
         //Friday
@@ -1791,8 +1799,8 @@ function Page() {
                     _after: {
                       position: "absolute",
                       top: "-5px",
-                      right: "-25px",
-                      width: "48px",
+                      right: "-15px",
+                      width: "32px",
                       height: "24px",
                       borderRadius: "5px",
                       backgroundColor: "#FF8700",
@@ -1807,7 +1815,21 @@ function Page() {
                     children: "PEARLAND"
                   }
                 ),
-                /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("Riverstone"), children: "RIVERSTONE" }),
+                /* @__PURE__ */ jsx(Button, { _after: {
+                  position: "absolute",
+                  top: "-5px",
+                  right: "-15px",
+                  width: "32px",
+                  height: "24px",
+                  borderRadius: "5px",
+                  backgroundColor: "#FF8700",
+                  color: "black",
+                  fontSize: "12px",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  content: '"New"'
+                }, onClick: () => handleShowEvents("Riverstone"), children: "RIVERSTONE" }),
                 /* @__PURE__ */ jsx(Button, { isDisabled: true, onClick: () => handleShowEvents("Missouri City"), children: "MISSOURI CITY" }),
                 /* @__PURE__ */ jsx(Button, { isDisabled: true, onClick: () => handleShowEvents("Pearland"), children: "HUFFMAN" }),
                 /* @__PURE__ */ jsx(Button, { isDisabled: true, onClick: () => handleShowEvents("Pearland"), children: "ATASCOCITA" }),
@@ -1825,7 +1847,7 @@ function Page() {
       /* @__PURE__ */ jsx(Box, { pos: "absolute", mt: 2, children: /* @__PURE__ */ jsx(Icon, { as: SvgLogo, width: ["250px", "500px"], height: ["250px", "500px"], zIndex: -1 }) }),
       /* @__PURE__ */ jsxs(Box, { width: "100%", children: [
         calendarDisplay(),
-        /* @__PURE__ */ jsx(Text, { color: "blackAlpha", mt: 1, fontSize: ["12px", "16px"], children: "Updated:7.4.23" })
+        /* @__PURE__ */ jsx(Text, { color: "blackAlpha", mt: 1, fontSize: ["12px", "16px"], children: "Updated:7.11.23" })
       ] })
     ] }),
     /* @__PURE__ */ jsx(Footer, {})
