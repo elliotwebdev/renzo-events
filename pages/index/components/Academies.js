@@ -624,8 +624,8 @@ export const academies = {
            
                   },
                   {    
-                        start: new Date(2023, 4, 1, 18, 30),
-                        end: new Date(2023, 4, 1, 19, 30),
+                        start: new Date(2023, 4, 1, 19, 0),
+                        end: new Date(2023, 4, 1, 20, 0),
            
                   },
                   {    
@@ -634,11 +634,7 @@ export const academies = {
                         end: new Date(2023, 4, 2, 7, 0),
            
                   },
-                  {    
-                        start: new Date(2023, 4, 2, 11, 0),
-                        end: new Date(2023, 4, 2, 12, 0),
-           
-                  },
+                  
                   {    
                         start: new Date(2023, 4, 2, 19, 0),
                         end: new Date(2023, 4, 2, 20, 0),
@@ -646,8 +642,8 @@ export const academies = {
                   },
                   {    
                         //Wednesday
-                        start: new Date(2023, 4, 3, 18, 30),
-                        end: new Date(2023, 4, 3, 19, 30),
+                        start: new Date(2023, 4, 3, 19, 0),
+                        end: new Date(2023, 4, 3, 20, 0),
            
                   },
                   {    
@@ -657,17 +653,20 @@ export const academies = {
            
                   },
                   {    
-                        start: new Date(2023, 4, 4, 11, 0),
-                        end: new Date(2023, 4, 4, 12, 0),
+                        // Thursday
+                        start: new Date(2023, 4, 4, 19, 0),
+                        end: new Date(2023, 4, 4, 20, 0),
            
                   },
-                  {    
-                        //Friday
-                        start: new Date(2023, 4, 5, 11, 0),
-                        end: new Date(2023, 4, 5, 12, 0),
-           
-                  },
+                  
             ],
+            "Brunch Samurais (BJJ Class)":
+            {    
+                  //Friday
+                  start: new Date(2023, 4, 5, 11, 0),
+                  end: new Date(2023, 4, 5, 12, 0),
+     
+            },
             "No-GI BJJ": [
                   {    
                         // Wednesday
@@ -675,12 +674,7 @@ export const academies = {
                         end: new Date(2023, 4, 3, 12, 0),
            
                   },
-                  {    
-                        // Thursday
-                        start: new Date(2023, 4, 4, 19, 0),
-                        end: new Date(2023, 4, 4, 20, 0),
-           
-                  },
+                  
                   {    
                         //Saturday
                         start: new Date(2023, 4, 6, 9, 0),
@@ -688,20 +682,7 @@ export const academies = {
            
                   },
             ],
-            "Live Training": [
-                  {    
-                        // Monday
-                        start: new Date(2023, 4, 1, 19, 30),
-                        end: new Date(2023, 4, 1, 20, 0),
-           
-                  },
-                  {    
-                        // Wednesday
-                        start: new Date(2023, 4, 3, 19, 30),
-                        end: new Date(2023, 4, 3, 20, 0),
-           
-                  },
-            ],
+            
             "Kids BJJ (4-6 y.o)": [
                   {    
                         // Monday
@@ -732,25 +713,49 @@ export const academies = {
            
                   },
             ],
-            "Kids BJJ (7-11 y.o)": [
+            "Kids BJJ (7-11 y.o) LVL 1": [
                   {    
                         // Monday
                         start: new Date(2023, 4, 1, 17, 30),
-                        end: new Date(2023, 4, 1, 18, 30),
+                        end: new Date(2023, 4, 1, 18, 0),
                         color: "#F08600"
            
                   },
                   {    
                         // Tuesday
                         start: new Date(2023, 4, 2, 17, 30),
-                        end: new Date(2023, 4, 2, 18, 30),
+                        end: new Date(2023, 4, 2, 18, 0),
                         color: "#F08600"
            
                   },
                   {    
                         // Wednesday
                         start: new Date(2023, 4, 3, 17, 30),
-                        end: new Date(2023, 4, 3, 18, 30),
+                        end: new Date(2023, 4, 3, 18, 0),
+                        color: "#F08600"
+           
+                  },
+                  
+            ],
+            "Kids BJJ (7-11 y.o) ALL LVLS": [
+                  {    
+                        // Monday
+                        start: new Date(2023, 4, 1, 18, 0),
+                        end: new Date(2023, 4, 1, 19, 0),
+                        color: "#F08600"
+           
+                  },
+                  {    
+                        // Tuesday
+                        start: new Date(2023, 4, 2, 18, 0),
+                        end: new Date(2023, 4, 2, 19, 0),
+                        color: "#F08600"
+           
+                  },
+                  {    
+                        // Wednesday
+                        start: new Date(2023, 4, 3, 18, 0),
+                        end: new Date(2023, 4, 3, 19, 0),
                         color: "#F08600"
            
                   },
@@ -762,22 +767,7 @@ export const academies = {
            
                   },
             ],
-            "Advanced Kids BJJ": 
-                  {    
-                        // Tuesday
-                        start: new Date(2023, 4, 2, 18, 30),
-                        end: new Date(2023, 4, 2, 19, 0),
-                        color: "#F08600"
-           
-                  },
-            "No-GI Advanced Kids BJJ": 
-                  {    
-                        // Thursday
-                        start: new Date(2023, 4, 4, 18, 30),
-                        end: new Date(2023, 4, 4, 19, 0),
-                        color: "#F08600"
-      
-                  },
+
 
             "No-GI Kids BJJ (4-6 y.o)":{    
                   //Thursday
@@ -786,10 +776,17 @@ export const academies = {
                   color: "#F08600"
      
             },
-            "No-GI Kids BJJ (7-11 y.o)":{    
+            "No-GI Kids BJJ (7-11 y.o) LVL 1":{    
                   //Thursday
                   start: new Date(2023, 4, 4, 17, 30),
-                  end: new Date(2023, 4, 4, 18, 30),
+                  end: new Date(2023, 4, 4, 18, 0),
+                  color: "#F08600"
+     
+            },
+            "No-GI Kids BJJ (7-11 y.o) ALL LVLS":{    
+                  //Thursday
+                  start: new Date(2023, 4, 4, 18, 0),
+                  end: new Date(2023, 4, 4, 19, 0),
                   color: "#F08600"
      
             },

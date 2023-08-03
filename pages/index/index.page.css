@@ -575,7 +575,7 @@ button.rbc-input::-moz-focus-inner {
 
 .rbc-timeslot-group {
   border-bottom: 1px solid #ddd;
-  min-height: 50px;
+  min-height: 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -587,7 +587,7 @@ button.rbc-input::-moz-focus-inner {
 
 @media (min-width: 62em) {
   .rbc-timeslot-group {
-    min-height: 65px;
+    min-height: 6rem;
   }
 }
 

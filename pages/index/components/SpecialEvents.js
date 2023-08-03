@@ -18,6 +18,44 @@ export const specialEvents = {
                   end: new Date(2023, 6, 22, 16, 0),
                   color: "#E20000"
             },
+            "No-Gi Seminar w/ Abraham La Montagne | OPEN MAT to Follow ":
+            {
+                  start: new Date(2023, 7, 19, 10, 0),
+                  end: new Date(2023, 7, 19, 12, 0),
+                  color: "#E20000"
+            },
+            "OPEN MAT": [
+                  {
+                        //Saturday
+                        start: new Date(2023, 7, 5, 10, 0),
+                        end: new Date(2023, 7, 5, 12, 0),
+                        color: "#E20000"
+                  },
+                  {
+                        //Saturday
+                        start: new Date(2023, 8, 2, 10, 0),
+                        end: new Date(2023, 8, 2, 12, 0),
+                        color: "#E20000"
+                  },
+                  {
+                        //Saturday
+                        start: new Date(2023, 9, 7, 10, 0),
+                        end: new Date(2023, 9, 7, 12, 0),
+                        color: "#E20000"
+                  },
+                  {
+                        //Saturday
+                        start: new Date(2023, 10, 4, 10, 0),
+                        end: new Date(2023, 10, 4, 12, 0),
+                        color: "#E20000"
+                  },
+                  {
+                        //Saturday
+                        start: new Date(2023, 11, 2, 10, 0),
+                        end: new Date(2023, 11, 2, 12, 0),
+                        color: "#E20000"
+                  },
+                  ],
             
       },
       "The Grove":{

@@ -124,7 +124,7 @@ export default function ToolbarButtonDisplay() {
                                     <Box span w="200px" h="10px" borderRadius="3xl" backgroundColor={colorMode === 'light' ? '#E20000' : getDarkColor('#E20000')}></Box>
 
                                     <Text >
-                                    These events are either organized by the Houston BJJ community or by Houston Team Renzo Gracie and typically coincide with class cancellations at the academy. 
+                                    These events are either organized by the Houston BJJ community or by Houston Team Renzo Gracie and typically coincide with <Text as="b">class cancellations</Text> at the academy. 
                                     For more details about these events, please refer to the academy's social media pages.
                                     </Text>
          
