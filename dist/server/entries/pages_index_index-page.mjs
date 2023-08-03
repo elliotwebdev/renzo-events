@@ -563,8 +563,8 @@ const academies = {
         end: new Date(2023, 4, 1, 12, 0)
       },
       {
-        start: new Date(2023, 4, 1, 18, 30),
-        end: new Date(2023, 4, 1, 19, 30)
+        start: new Date(2023, 4, 1, 19, 0),
+        end: new Date(2023, 4, 1, 20, 0)
       },
       {
         // Tuesday
@@ -572,17 +572,13 @@ const academies = {
         end: new Date(2023, 4, 2, 7, 0)
       },
       {
-        start: new Date(2023, 4, 2, 11, 0),
-        end: new Date(2023, 4, 2, 12, 0)
-      },
-      {
         start: new Date(2023, 4, 2, 19, 0),
         end: new Date(2023, 4, 2, 20, 0)
       },
       {
         //Wednesday
-        start: new Date(2023, 4, 3, 18, 30),
-        end: new Date(2023, 4, 3, 19, 30)
+        start: new Date(2023, 4, 3, 19, 0),
+        end: new Date(2023, 4, 3, 20, 0)
       },
       {
         //Thursday
@@ -590,15 +586,16 @@ const academies = {
         end: new Date(2023, 4, 4, 7, 0)
       },
       {
-        start: new Date(2023, 4, 4, 11, 0),
-        end: new Date(2023, 4, 4, 12, 0)
-      },
-      {
-        //Friday
-        start: new Date(2023, 4, 5, 11, 0),
-        end: new Date(2023, 4, 5, 12, 0)
+        // Thursday
+        start: new Date(2023, 4, 4, 19, 0),
+        end: new Date(2023, 4, 4, 20, 0)
       }
     ],
+    "Brunch Samurais (BJJ Class)": {
+      //Friday
+      start: new Date(2023, 4, 5, 11, 0),
+      end: new Date(2023, 4, 5, 12, 0)
+    },
     "No-GI BJJ": [
       {
         // Wednesday
@@ -606,26 +603,9 @@ const academies = {
         end: new Date(2023, 4, 3, 12, 0)
       },
       {
-        // Thursday
-        start: new Date(2023, 4, 4, 19, 0),
-        end: new Date(2023, 4, 4, 20, 0)
-      },
-      {
         //Saturday
         start: new Date(2023, 4, 6, 9, 0),
         end: new Date(2023, 4, 6, 10, 0)
-      }
-    ],
-    "Live Training": [
-      {
-        // Monday
-        start: new Date(2023, 4, 1, 19, 30),
-        end: new Date(2023, 4, 1, 20, 0)
-      },
-      {
-        // Wednesday
-        start: new Date(2023, 4, 3, 19, 30),
-        end: new Date(2023, 4, 3, 20, 0)
       }
     ],
     "Kids BJJ (4-6 y.o)": [
@@ -654,23 +634,43 @@ const academies = {
         color: "#F08600"
       }
     ],
-    "Kids BJJ (7-11 y.o)": [
+    "Kids BJJ (7-11 y.o) LVL 1": [
       {
         // Monday
         start: new Date(2023, 4, 1, 17, 30),
-        end: new Date(2023, 4, 1, 18, 30),
+        end: new Date(2023, 4, 1, 18, 0),
         color: "#F08600"
       },
       {
         // Tuesday
         start: new Date(2023, 4, 2, 17, 30),
-        end: new Date(2023, 4, 2, 18, 30),
+        end: new Date(2023, 4, 2, 18, 0),
         color: "#F08600"
       },
       {
         // Wednesday
         start: new Date(2023, 4, 3, 17, 30),
-        end: new Date(2023, 4, 3, 18, 30),
+        end: new Date(2023, 4, 3, 18, 0),
+        color: "#F08600"
+      }
+    ],
+    "Kids BJJ (7-11 y.o) ALL LVLS": [
+      {
+        // Monday
+        start: new Date(2023, 4, 1, 18, 0),
+        end: new Date(2023, 4, 1, 19, 0),
+        color: "#F08600"
+      },
+      {
+        // Tuesday
+        start: new Date(2023, 4, 2, 18, 0),
+        end: new Date(2023, 4, 2, 19, 0),
+        color: "#F08600"
+      },
+      {
+        // Wednesday
+        start: new Date(2023, 4, 3, 18, 0),
+        end: new Date(2023, 4, 3, 19, 0),
         color: "#F08600"
       },
       {
@@ -680,28 +680,22 @@ const academies = {
         color: "#F08600"
       }
     ],
-    "Advanced Kids BJJ": {
-      // Tuesday
-      start: new Date(2023, 4, 2, 18, 30),
-      end: new Date(2023, 4, 2, 19, 0),
-      color: "#F08600"
-    },
-    "No-GI Advanced Kids BJJ": {
-      // Thursday
-      start: new Date(2023, 4, 4, 18, 30),
-      end: new Date(2023, 4, 4, 19, 0),
-      color: "#F08600"
-    },
     "No-GI Kids BJJ (4-6 y.o)": {
       //Thursday
       start: new Date(2023, 4, 4, 17, 0),
       end: new Date(2023, 4, 4, 17, 30),
       color: "#F08600"
     },
-    "No-GI Kids BJJ (7-11 y.o)": {
+    "No-GI Kids BJJ (7-11 y.o) LVL 1": {
       //Thursday
       start: new Date(2023, 4, 4, 17, 30),
-      end: new Date(2023, 4, 4, 18, 30),
+      end: new Date(2023, 4, 4, 18, 0),
+      color: "#F08600"
+    },
+    "No-GI Kids BJJ (7-11 y.o) ALL LVLS": {
+      //Thursday
+      start: new Date(2023, 4, 4, 18, 0),
+      end: new Date(2023, 4, 4, 19, 0),
       color: "#F08600"
     }
   },
@@ -1217,7 +1211,44 @@ const specialEvents = {
       start: new Date(2023, 6, 22, 8, 0),
       end: new Date(2023, 6, 22, 16, 0),
       color: "#E20000"
-    }
+    },
+    "No-Gi Seminar w/ Abraham La Montagne | OPEN MAT to Follow ": {
+      start: new Date(2023, 7, 19, 10, 0),
+      end: new Date(2023, 7, 19, 12, 0),
+      color: "#E20000"
+    },
+    "OPEN MAT": [
+      {
+        //Saturday
+        start: new Date(2023, 7, 5, 10, 0),
+        end: new Date(2023, 7, 5, 12, 0),
+        color: "#E20000"
+      },
+      {
+        //Saturday
+        start: new Date(2023, 8, 2, 10, 0),
+        end: new Date(2023, 8, 2, 12, 0),
+        color: "#E20000"
+      },
+      {
+        //Saturday
+        start: new Date(2023, 9, 7, 10, 0),
+        end: new Date(2023, 9, 7, 12, 0),
+        color: "#E20000"
+      },
+      {
+        //Saturday
+        start: new Date(2023, 10, 4, 10, 0),
+        end: new Date(2023, 10, 4, 12, 0),
+        color: "#E20000"
+      },
+      {
+        //Saturday
+        start: new Date(2023, 11, 2, 10, 0),
+        end: new Date(2023, 11, 2, 12, 0),
+        color: "#E20000"
+      }
+    ]
   },
   "The Grove": {
     "Helena Jiu Jitsu Girl | Women's No-Gi Seminar": {
@@ -1460,7 +1491,11 @@ function ToolbarButtonDisplay() {
               /* @__PURE__ */ jsx("br", {}),
               /* @__PURE__ */ jsx(Text, { as: "b", children: "Special Events" }),
               /* @__PURE__ */ jsx(Box, { span: true, w: "200px", h: "10px", borderRadius: "3xl", backgroundColor: colorMode === "light" ? "#E20000" : getDarkColor("#E20000") }),
-              /* @__PURE__ */ jsx(Text, { children: "These events are either organized by the Houston BJJ community or by Houston Team Renzo Gracie and typically coincide with class cancellations at the academy. For more details about these events, please refer to the academy's social media pages." })
+              /* @__PURE__ */ jsxs(Text, { children: [
+                "These events are either organized by the Houston BJJ community or by Houston Team Renzo Gracie and typically coincide with ",
+                /* @__PURE__ */ jsx(Text, { as: "b", children: "class cancellations" }),
+                " at the academy. For more details about these events, please refer to the academy's social media pages."
+              ] })
             ] })
           ] })
         ] }) }),
@@ -1847,7 +1882,7 @@ function Page() {
       /* @__PURE__ */ jsx(Box, { pos: "absolute", mt: 2, children: /* @__PURE__ */ jsx(Icon, { as: SvgLogo, width: ["250px", "500px"], height: ["250px", "500px"], zIndex: -1 }) }),
       /* @__PURE__ */ jsxs(Box, { width: "100%", children: [
         calendarDisplay(),
-        /* @__PURE__ */ jsx(Text, { color: "blackAlpha", mt: 1, fontSize: ["12px", "16px"], children: "Updated:7.11.23" })
+        /* @__PURE__ */ jsx(Text, { color: "blackAlpha", mt: 1, fontSize: ["12px", "16px"], children: "Updated:8.2.23" })
       ] })
     ] }),
     /* @__PURE__ */ jsx(Footer, {})

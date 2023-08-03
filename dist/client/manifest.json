@@ -67,7 +67,7 @@
       "renderer/_error.page.jsx",
       "renderer/_default.page.client.jsx"
     ],
-    "file": "assets/entries/entry-server-routing.6d2bc70b.js",
+    "file": "assets/entries/entry-server-routing.dd02e04a.js",
     "imports": [
       "_chunk-078aa1fb.js"
     ],
@@ -80,7 +80,7 @@
       "renderer/_error.page.jsx",
       "renderer/_default.page.client.jsx"
     ],
-    "file": "assets/entries/entry-client-routing.8bc58023.js",
+    "file": "assets/entries/entry-client-routing.5943eb97.js",
     "imports": [
       "_chunk-078aa1fb.js"
     ],
@@ -88,14 +88,14 @@
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js"
   },
   "pages/index/index.page.css": {
-    "file": "assets/static/index.page.9ebd2831.css",
+    "file": "assets/static/index.page.d50f565c.css",
     "src": "pages/index/index.page.css"
   },
   "pages/index/index.page.jsx": {
     "css": [
-      "assets/static/index.page.9ebd2831.css"
+      "assets/static/index.page.d50f565c.css"
     ],
-    "file": "assets/entries/pages_index_index.page.45265d4b.js",
+    "file": "assets/entries/pages_index_index.page.034574dc.js",
     "imports": [
       "_chunk-bd971313.js",
       "_chunk-1551e9a9.js",
