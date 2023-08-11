@@ -37,8 +37,11 @@ async function render(pageContext) {
         Renzo Gracie HTX, Houston Downtown BJJ, Renzo Gracie Riverstone, Huffman, Lake Houston, Pearland, Missourci City, Mont Belvieu, Renzo Gracie Huffman, Renzo Gracie Lake Houston,
         Renzo Gracie Pearland, Renzo Gracie Missourci City, Renzo Gracie Mont Belvieu, womens bjj, women only self defense  houston bjj schedule, bjj schedule, bjj calendar, renzo gracie schedule, renzo gracie
         events">
-        <meta property="og:title" content="Renzo Events | Houston" />
+        <meta property="og:title" content="${title}" />
+        <meta property="og:description" content="${desc}" />
         <meta property="og:image" content="${logoUrl}" />
+        <meta property="og:url" content="https://renzo.events" /> 
+        <meta property="og:type" content="website" />
         <title>${title}</title>
       </head>
       <body>
