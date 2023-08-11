@@ -261,7 +261,7 @@ function Page() {
                                     <Button  onClick={() => handleShowEvents("Huffman")}>HUFFMAN</Button>
                                     <Button  onClick={() => handleShowEvents("The Woodlands")}>THE WOODLANDS</Button>
                                     <Button  isDisabled onClick={() => handleShowEvents("Missouri City")}>MISSOURI CITY</Button>
-                                    <Button  isDisabled onClick={() => handleShowEvents("Pearland")}>ATASCOCITA</Button>
+                                    <Button  isDisabled onClick={() => handleShowEvents("Pearland")}>LAKE HOUSTON</Button>
                               </Stack>           
                               </ButtonGroup>
                         </Flex>
