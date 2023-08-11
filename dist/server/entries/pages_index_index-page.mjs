@@ -71,20 +71,20 @@ const academies = {
         end: new Date(2023, 4, 5, 19, 30)
       }
     ],
-    "Wrestling": [
-      {
-        //Tuesday
-        start: new Date(2023, 4, 2, 11, 30),
-        end: new Date(2023, 4, 2, 12, 0),
-        color: "#6e23fb"
-      },
-      {
-        //Thursday
-        start: new Date(2023, 4, 4, 11, 30),
-        end: new Date(2023, 4, 4, 12, 0),
-        color: "#6e23fb"
-      }
-    ],
+    // "Wrestling":[
+    // {
+    //       //Tuesday
+    //       start: new Date(2023, 4, 2, 11, 30),
+    //       end: new Date(2023, 4, 2, 12, 0),
+    //       color: '#6e23fb',
+    // },
+    // {
+    //       //Thursday
+    //       start: new Date(2023, 4, 4, 11, 30),
+    //       end: new Date(2023, 4, 4, 12, 0),
+    //       color: '#6e23fb',
+    // },
+    // ],
     "Adults Muay Thai": [
       {
         //Monday
@@ -1193,37 +1193,281 @@ const academies = {
         color: "#F08600"
       }
     ]
+  },
+  "The Woodlands": {
+    minTime: new Date(2023, 0, 1, 5, 0, 0),
+    maxTime: new Date(2023, 0, 1, 20, 0, 0),
+    "BJJ": [
+      {
+        //Monday
+        start: new Date(2023, 4, 1, 11, 0),
+        end: new Date(2023, 4, 1, 12, 0)
+      },
+      {
+        start: new Date(2023, 4, 1, 18, 0),
+        end: new Date(2023, 4, 1, 20, 0)
+      },
+      {
+        //Tuesday
+        start: new Date(2023, 4, 2, 19, 0),
+        end: new Date(2023, 4, 2, 20, 0)
+      },
+      {
+        //Wednesday
+        start: new Date(2023, 4, 3, 11, 0),
+        end: new Date(2023, 4, 3, 12, 0)
+      },
+      {
+        start: new Date(2023, 4, 3, 18, 0),
+        end: new Date(2023, 4, 3, 20, 0)
+      },
+      {
+        //Thursday
+        start: new Date(2023, 4, 4, 11, 0),
+        end: new Date(2023, 4, 4, 12, 0)
+      }
+    ],
+    "No-GI BJJ": [
+      {
+        //Monday
+        start: new Date(2023, 4, 1, 5, 0),
+        end: new Date(2023, 4, 1, 6, 0)
+      },
+      {
+        //Tuesday
+        start: new Date(2023, 4, 2, 11, 0),
+        end: new Date(2023, 4, 2, 12, 0)
+      },
+      {
+        //Wed
+        start: new Date(2023, 4, 3, 5, 0),
+        end: new Date(2023, 4, 3, 6, 0)
+      },
+      {
+        //Thursday
+        start: new Date(2023, 4, 4, 19, 0),
+        end: new Date(2023, 4, 4, 20, 0)
+      }
+    ],
+    "OPEN MAT": {
+      //Saturday
+      start: new Date(2023, 4, 6, 8, 0),
+      end: new Date(2023, 4, 6, 9, 30)
+    },
+    "No-Gi OPEN MAT": [
+      {
+        //Friday
+        start: new Date(2023, 4, 5, 5, 0),
+        end: new Date(2023, 4, 5, 6, 0)
+      },
+      {
+        start: new Date(2023, 4, 5, 11, 0),
+        end: new Date(2023, 4, 5, 12, 0)
+      }
+    ],
+    "Muay Thai / Kickboxing": [
+      {
+        //Monday
+        start: new Date(2023, 4, 1, 6, 30),
+        end: new Date(2023, 4, 1, 7, 30),
+        color: "#6e23fb"
+      },
+      {
+        //Tuesday
+        start: new Date(2023, 4, 2, 18, 0),
+        end: new Date(2023, 4, 2, 19, 0),
+        color: "#6e23fb"
+      },
+      {
+        //Wednesday
+        start: new Date(2023, 4, 3, 6, 30),
+        end: new Date(2023, 4, 3, 7, 30),
+        color: "#6e23fb"
+      },
+      {
+        //Thursday
+        start: new Date(2023, 4, 4, 18, 0),
+        end: new Date(2023, 4, 4, 19, 0),
+        color: "#6e23fb"
+      },
+      {
+        //Friday
+        start: new Date(2023, 4, 5, 6, 30),
+        end: new Date(2023, 4, 5, 7, 30),
+        color: "#6e23fb"
+      }
+    ],
+    "Women's Kickboxing": [
+      {
+        //Monday
+        start: new Date(2023, 4, 1, 8, 30),
+        end: new Date(2023, 4, 1, 9, 30),
+        color: "#6e23fb"
+      },
+      {
+        //Wednesday
+        start: new Date(2023, 4, 3, 8, 30),
+        end: new Date(2023, 4, 3, 9, 30),
+        color: "#6e23fb"
+      },
+      {
+        //Friday
+        start: new Date(2023, 4, 5, 8, 30),
+        end: new Date(2023, 4, 5, 9, 30),
+        color: "#6e23fb"
+      }
+    ],
+    "Youth Kickboxing": [
+      {
+        //Tuesday
+        start: new Date(2023, 4, 2, 16, 0),
+        end: new Date(2023, 4, 2, 16, 45),
+        color: "#6e23fb"
+      },
+      {
+        //Thursday
+        start: new Date(2023, 4, 4, 16, 0),
+        end: new Date(2023, 4, 4, 16, 45),
+        color: "#6e23fb"
+      }
+    ],
+    "Kids BJJ": [
+      {
+        //Monday
+        start: new Date(2023, 4, 1, 17, 0),
+        end: new Date(2023, 4, 1, 18, 0),
+        color: "#F08600"
+      },
+      {
+        //Tuesday
+        start: new Date(2023, 4, 2, 17, 0),
+        end: new Date(2023, 4, 2, 18, 0),
+        color: "#F08600"
+      },
+      {
+        //Thursday
+        start: new Date(2023, 4, 4, 17, 0),
+        end: new Date(2023, 4, 4, 18, 0),
+        color: "#F08600"
+      }
+    ],
+    "Kids BJJ (No-Gi)": {
+      //Wednesday
+      start: new Date(2023, 4, 3, 17, 0),
+      end: new Date(2023, 4, 3, 18, 0),
+      color: "#F08600"
+    },
+    "Kids Wrestling (No-Gi)": {
+      //Friday
+      start: new Date(2023, 4, 5, 17, 0),
+      end: new Date(2023, 4, 5, 18, 0),
+      color: "#F08600"
+    },
+    "Kids BJJ OPEN MAT (No-Gi)": {
+      //Saturday
+      start: new Date(2023, 4, 6, 10, 0),
+      end: new Date(2023, 4, 6, 11, 0),
+      color: "#F08600"
+    }
+  },
+  "Huffman": {
+    minTime: new Date(2023, 0, 1, 11, 0, 0),
+    maxTime: new Date(2023, 0, 1, 21, 0, 0),
+    "BJJ": [
+      {
+        //Tuesday
+        start: new Date(2023, 4, 2, 11, 0),
+        end: new Date(2023, 4, 2, 12, 0)
+      },
+      {
+        start: new Date(2023, 4, 2, 19, 0),
+        end: new Date(2023, 4, 2, 20, 0)
+      },
+      {
+        //Tuesday
+        start: new Date(2023, 4, 4, 11, 0),
+        end: new Date(2023, 4, 4, 12, 0)
+      },
+      {
+        start: new Date(2023, 4, 4, 19, 0),
+        end: new Date(2023, 4, 4, 20, 0)
+      }
+    ],
+    "No-GI BJJ": [
+      {
+        //Monday
+        start: new Date(2023, 4, 1, 11, 0),
+        end: new Date(2023, 4, 1, 12, 0)
+      },
+      {
+        start: new Date(2023, 4, 1, 19, 0),
+        end: new Date(2023, 4, 1, 20, 0)
+      },
+      {
+        //Wednesday
+        start: new Date(2023, 4, 3, 11, 0),
+        end: new Date(2023, 4, 3, 12, 0)
+      },
+      {
+        start: new Date(2023, 4, 3, 19, 0),
+        end: new Date(2023, 4, 3, 20, 0)
+      }
+    ],
+    "OPEN MAT": [
+      {
+        //Friday
+        start: new Date(2023, 4, 5, 11, 0),
+        end: new Date(2023, 4, 5, 12, 0)
+      },
+      {
+        //Friday
+        start: new Date(2023, 4, 5, 19, 0),
+        end: new Date(2023, 4, 5, 20, 0)
+      }
+    ],
+    "Adult MMA": [
+      {
+        //Monday
+        start: new Date(2023, 4, 1, 20, 0),
+        end: new Date(2023, 4, 1, 21, 0),
+        color: "#6e23fb"
+      },
+      {
+        //Wednesday
+        start: new Date(2023, 4, 3, 20, 0),
+        end: new Date(2023, 4, 3, 21, 0),
+        color: "#6e23fb"
+      }
+    ],
+    "Kids BJJ": [
+      {
+        //Tuesday
+        start: new Date(2023, 4, 2, 18, 0),
+        end: new Date(2023, 4, 2, 19, 0),
+        color: "#F08600"
+      },
+      {
+        //Thursday
+        start: new Date(2023, 4, 4, 18, 0),
+        end: new Date(2023, 4, 4, 19, 0),
+        color: "#F08600"
+      }
+    ]
   }
 };
 const specialEvents = {
   "Houston (HQ)": {
-    "Helena Jiu Jitsu Girl | Kids Gi Seminar": {
-      start: new Date(2023, 6, 8, 10, 0),
-      end: new Date(2023, 6, 8, 11, 0),
-      color: "#E20000"
-    },
-    "Helena Jiu Jitsu Girl | Adults No-Gi Seminar": {
-      start: new Date(2023, 6, 8, 11, 0),
-      end: new Date(2023, 6, 8, 13, 0),
-      color: "#E20000"
-    },
-    "Houston Summer Championship @ Fast Complex": {
-      start: new Date(2023, 6, 22, 8, 0),
-      end: new Date(2023, 6, 22, 16, 0),
-      color: "#E20000"
-    },
     "No-Gi Seminar w/ Abraham La Montagne | OPEN MAT to Follow ": {
       start: new Date(2023, 7, 19, 10, 0),
       end: new Date(2023, 7, 19, 12, 0),
       color: "#E20000"
     },
+    "Master Renzo Gracie Seminar": {
+      start: new Date(2023, 7, 12, 10, 0),
+      end: new Date(2023, 7, 12, 12, 0),
+      color: "#E20000"
+    },
     "OPEN MAT": [
-      {
-        //Saturday
-        start: new Date(2023, 7, 5, 10, 0),
-        end: new Date(2023, 7, 5, 12, 0),
-        color: "#E20000"
-      },
       {
         //Saturday
         start: new Date(2023, 8, 2, 10, 0),
@@ -1251,18 +1495,7 @@ const specialEvents = {
     ]
   },
   "The Grove": {
-    "Helena Jiu Jitsu Girl | Women's No-Gi Seminar": {
-      start: new Date(2023, 6, 7, 18, 0),
-      end: new Date(2023, 6, 7, 20, 0),
-      color: "#E20000"
-    },
     "Kids Team Renzo Prep & Scrimmage": [
-      {
-        //Saturday
-        start: new Date(2023, 7, 5, 10, 30),
-        end: new Date(2023, 7, 5, 12, 0),
-        color: "#E20000"
-      },
       {
         //Saturday
         start: new Date(2023, 8, 2, 10, 30),
@@ -1288,51 +1521,65 @@ const specialEvents = {
         color: "#E20000"
       }
     ],
-    "Houston Summer Championship @ Fast Complex": {
-      start: new Date(2023, 6, 22, 8, 0),
-      end: new Date(2023, 6, 22, 16, 0),
+    "Master Renzo Gracie Seminar @ RGH HQ Location": {
+      start: new Date(2023, 7, 12, 10, 0),
+      end: new Date(2023, 7, 12, 12, 0),
       color: "#E20000"
     }
   },
   "HTX (Downtown)": {
-    "Houston Summer Championship @ Fast Complex": {
-      start: new Date(2023, 6, 22, 8, 0),
-      end: new Date(2023, 6, 22, 16, 0),
+    "Master Renzo Gracie Seminar @ RGH HQ Location": {
+      start: new Date(2023, 7, 12, 10, 0),
+      end: new Date(2023, 7, 12, 12, 0),
       color: "#E20000"
     }
   },
   "Riverstone": {
-    "Houston Summer Championship @ Fast Complex": {
-      start: new Date(2023, 6, 22, 8, 0),
-      end: new Date(2023, 6, 22, 16, 0),
+    "Master Renzo Gracie Seminar @ RGH HQ Location": {
+      start: new Date(2023, 7, 12, 10, 0),
+      end: new Date(2023, 7, 12, 12, 0),
       color: "#E20000"
     }
   },
   "HCU Campus": {
-    "Houston Summer Championship @ Fast Complex": {
-      start: new Date(2023, 6, 22, 8, 0),
-      end: new Date(2023, 6, 22, 16, 0),
+    "Master Renzo Gracie Seminar @ RGH HQ Location": {
+      start: new Date(2023, 7, 12, 10, 0),
+      end: new Date(2023, 7, 12, 12, 0),
       color: "#E20000"
     }
   },
   "Katy": {
-    "Houston Summer Championship @ Fast Complex": {
-      start: new Date(2023, 6, 22, 8, 0),
-      end: new Date(2023, 6, 22, 16, 0),
+    "Master Renzo Gracie Seminar @ RGH HQ Location": {
+      start: new Date(2023, 7, 12, 10, 0),
+      end: new Date(2023, 7, 12, 12, 0),
       color: "#E20000"
     }
   },
   "Mont Belvieu": {
-    "Houston Summer Championship @ Fast Complex": {
-      start: new Date(2023, 6, 22, 8, 0),
-      end: new Date(2023, 6, 22, 16, 0),
+    "Master Renzo Gracie Seminar @ RGH HQ Location": {
+      start: new Date(2023, 7, 12, 10, 0),
+      end: new Date(2023, 7, 12, 12, 0),
       color: "#E20000"
     }
   },
   "Pearland": {
-    "Houston Summer Championship @ Fast Complex": {
-      start: new Date(2023, 6, 22, 8, 0),
-      end: new Date(2023, 6, 22, 16, 0),
+    "Master Renzo Gracie Seminar @ RGH HQ Location": {
+      start: new Date(2023, 7, 12, 10, 0),
+      end: new Date(2023, 7, 12, 12, 0),
+      color: "#E20000"
+    }
+  },
+  "The Woodlands": {
+    "Master Renzo Gracie Seminar @ RGH HQ Location": {
+      start: new Date(2023, 7, 12, 10, 0),
+      end: new Date(2023, 7, 12, 12, 0),
+      color: "#E20000"
+    }
+  },
+  "Huffman": {
+    "Master Renzo Gracie Seminar @ RGH HQ Location": {
+      start: new Date(2023, 7, 12, 10, 0),
+      end: new Date(2023, 7, 12, 12, 0),
       color: "#E20000"
     }
   }
@@ -1815,8 +2062,28 @@ function Page() {
                     icon: /* @__PURE__ */ jsx(SvgSocial, {})
                   }
                 ),
-                /* @__PURE__ */ jsx(IconButton, { isDisabled: true, bgGradient: "linear(to-br, purple.500, red.600)", _hover: { bg: "blackAlpha.400" }, icon: /* @__PURE__ */ jsx(SvgSocial, {}) }),
-                /* @__PURE__ */ jsx(IconButton, { isDisabled: true, bgGradient: "linear(to-br, purple.500, red.600)", _hover: { bg: "blackAlpha.400" }, icon: /* @__PURE__ */ jsx(SvgSocial, {}) }),
+                /* @__PURE__ */ jsx(
+                  IconButton,
+                  {
+                    as: "a",
+                    color: "white",
+                    bgGradient: "linear(to-br, purple.500, red.600)",
+                    _hover: { bg: "blackAlpha.600" },
+                    href: linkAcademy("renzograciehuffman"),
+                    icon: /* @__PURE__ */ jsx(SvgSocial, {})
+                  }
+                ),
+                /* @__PURE__ */ jsx(
+                  IconButton,
+                  {
+                    as: "a",
+                    color: "white",
+                    bgGradient: "linear(to-bl, red.600, yellow.500)",
+                    _hover: { bg: "blackAlpha.600" },
+                    href: linkAcademy("renzo_gracie_the_woodlands"),
+                    icon: /* @__PURE__ */ jsx(SvgSocial, {})
+                  }
+                ),
                 /* @__PURE__ */ jsx(IconButton, { isDisabled: true, bgGradient: "linear(to-br, purple.500, red.600)", _hover: { bg: "blackAlpha.400" }, icon: /* @__PURE__ */ jsx(SvgSocial, {}) }),
                 /* @__PURE__ */ jsx(IconButton, { isDisabled: true, bgGradient: "linear(to-br, purple.500, red.600)", _hover: { bg: "blackAlpha.400" }, icon: /* @__PURE__ */ jsx(SvgSocial, {}) })
               ] }) }),
@@ -1865,10 +2132,10 @@ function Page() {
                   alignItems: "center",
                   content: '"New"'
                 }, onClick: () => handleShowEvents("Riverstone"), children: "RIVERSTONE" }),
+                /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("Huffman"), children: "HUFFMAN" }),
+                /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("The Woodlands"), children: "THE WOODLANDS" }),
                 /* @__PURE__ */ jsx(Button, { isDisabled: true, onClick: () => handleShowEvents("Missouri City"), children: "MISSOURI CITY" }),
-                /* @__PURE__ */ jsx(Button, { isDisabled: true, onClick: () => handleShowEvents("Pearland"), children: "HUFFMAN" }),
-                /* @__PURE__ */ jsx(Button, { isDisabled: true, onClick: () => handleShowEvents("Pearland"), children: "ATASCOCITA" }),
-                /* @__PURE__ */ jsx(Button, { isDisabled: true, onClick: () => handleShowEvents("Pearland"), children: "THE WOODLANDS" })
+                /* @__PURE__ */ jsx(Button, { isDisabled: true, onClick: () => handleShowEvents("Pearland"), children: "ATASCOCITA" })
               ] }) })
             ] }) })
           ] })
@@ -1882,7 +2149,7 @@ function Page() {
       /* @__PURE__ */ jsx(Box, { pos: "absolute", mt: 2, children: /* @__PURE__ */ jsx(Icon, { as: SvgLogo, width: ["250px", "500px"], height: ["250px", "500px"], zIndex: -1 }) }),
       /* @__PURE__ */ jsxs(Box, { width: "100%", children: [
         calendarDisplay(),
-        /* @__PURE__ */ jsx(Text, { color: "blackAlpha", mt: 1, fontSize: ["12px", "16px"], children: "Updated:8.2.23" })
+        /* @__PURE__ */ jsx(Text, { color: "blackAlpha", mt: 1, fontSize: ["12px", "16px"], children: "Updated:8.11.23" })
       ] })
     ] }),
     /* @__PURE__ */ jsx(Footer, {})

@@ -208,8 +208,13 @@ function Page() {
                                     <IconButton as="a" color="white" bgGradient='linear(to-br, pink.500, purple.500)' _hover={{ bg: "blackAlpha.600" }}
                                     href={linkAcademy("renzogracieriverstone")} icon={<SvgSocial/>}/>
 
-                                    <IconButton isDisabled bgGradient='linear(to-br, purple.500, red.600)' _hover={{ bg: "blackAlpha.400" }} icon={<SvgSocial/>}/>
-                                    <IconButton isDisabled bgGradient='linear(to-br, purple.500, red.600)' _hover={{ bg: "blackAlpha.400" }} icon={<SvgSocial/>}/>
+                                    <IconButton as="a" color="white" bgGradient='linear(to-br, purple.500, red.600)' _hover={{ bg: "blackAlpha.600" }}
+                                    href={linkAcademy("renzograciehuffman")} icon={<SvgSocial/>}/>
+
+                                    <IconButton as="a" color="white" bgGradient='linear(to-bl, red.600, yellow.500)' _hover={{ bg: "blackAlpha.600" }}
+                                    href={linkAcademy("renzo_gracie_the_woodlands")} icon={<SvgSocial/>}/>
+
+                                    
                                     <IconButton isDisabled bgGradient='linear(to-br, purple.500, red.600)' _hover={{ bg: "blackAlpha.400" }} icon={<SvgSocial/>}/>
                                     <IconButton isDisabled bgGradient='linear(to-br, purple.500, red.600)' _hover={{ bg: "blackAlpha.400" }} icon={<SvgSocial/>}/>
                                     
@@ -253,10 +258,10 @@ function Page() {
                                           justifyContent: "center",
                                           alignItems: "center",
                                           content: '"New"'}} onClick={() => handleShowEvents("Riverstone")}>RIVERSTONE</Button>
+                                    <Button  onClick={() => handleShowEvents("Huffman")}>HUFFMAN</Button>
+                                    <Button  onClick={() => handleShowEvents("The Woodlands")}>THE WOODLANDS</Button>
                                     <Button  isDisabled onClick={() => handleShowEvents("Missouri City")}>MISSOURI CITY</Button>
-                                    <Button  isDisabled onClick={() => handleShowEvents("Pearland")}>HUFFMAN</Button>
                                     <Button  isDisabled onClick={() => handleShowEvents("Pearland")}>ATASCOCITA</Button>
-                                    <Button  isDisabled onClick={() => handleShowEvents("Pearland")}>THE WOODLANDS</Button>
                               </Stack>           
                               </ButtonGroup>
                         </Flex>
@@ -281,7 +286,7 @@ function Page() {
 
             <Box  width="100%">      
                   {calendarDisplay()}
-                  <Text color="blackAlpha" mt={1} fontSize={["12px","16px"]}>Updated:8.2.23</Text>
+                  <Text color="blackAlpha" mt={1} fontSize={["12px","16px"]}>Updated:8.11.23</Text>
             </Box>
 
       </Flex>
