@@ -3,7 +3,8 @@ import React, { useState } from "react";
 import { dateFnsLocalizer, Calendar } from "react-big-calendar";
 import { addWeeks, format, parse, startOfWeek, getDay } from "date-fns";
 import enUS from "date-fns/locale/en-US/index.js";
-import { useColorMode, useDisclosure, useBreakpointValue, Flex, IconButton, Icon, Modal, ModalOverlay, ModalContent, ModalHeader, Heading, ModalCloseButton, ModalBody, Tabs, TabList, Tab, TabPanels, TabPanel, Text, Box, ModalFooter, Button, Drawer, DrawerOverlay, DrawerContent, DrawerCloseButton, DrawerHeader, DrawerBody, ButtonGroup, Stack, Divider } from "@chakra-ui/react";
+import { useColorMode, useDisclosure, useBreakpointValue, Flex, IconButton, Icon, Modal, ModalOverlay, ModalContent, ModalHeader, Heading, ModalCloseButton, ModalBody, Tabs, TabList, Tab, TabPanels, TabPanel, Text, Box, FormControl, FormLabel, Textarea, FormErrorMessage, Button, ModalFooter, Drawer, DrawerOverlay, DrawerContent, DrawerCloseButton, DrawerHeader, DrawerBody, ButtonGroup, Stack, Divider } from "@chakra-ui/react";
+import { useForm } from "react-hook-form";
 import "react/jsx-runtime";
 const academies = {
   //default props
@@ -71,20 +72,20 @@ const academies = {
         end: new Date(2023, 4, 5, 19, 30)
       }
     ],
-    // "Wrestling":[
-    // {
-    //       //Tuesday
-    //       start: new Date(2023, 4, 2, 11, 30),
-    //       end: new Date(2023, 4, 2, 12, 0),
-    //       color: '#6e23fb',
-    // },
-    // {
-    //       //Thursday
-    //       start: new Date(2023, 4, 4, 11, 30),
-    //       end: new Date(2023, 4, 4, 12, 0),
-    //       color: '#6e23fb',
-    // },
-    // ],
+    "Wrestling": [
+      {
+        //Monday
+        start: new Date(2023, 4, 1, 11, 30),
+        end: new Date(2023, 4, 1, 12, 0),
+        color: "#6e23fb"
+      },
+      {
+        //Friday
+        start: new Date(2023, 4, 5, 11, 30),
+        end: new Date(2023, 4, 5, 12, 0),
+        color: "#6e23fb"
+      }
+    ],
     "Adults Muay Thai": [
       {
         //Monday
@@ -291,6 +292,11 @@ const academies = {
       //Monday
       start: new Date(2023, 4, 1, 11, 0),
       end: new Date(2023, 4, 1, 12, 0)
+    },
+    "Women LEO Only Class": {
+      //Monday
+      start: new Date(2023, 4, 4, 11, 0),
+      end: new Date(2023, 4, 4, 12, 0)
     },
     "Defending Pins & Escapes": {
       //Monday
@@ -1672,6 +1678,10 @@ function ToolbarButtonDisplay() {
     base: "row",
     lg: "column"
   });
+  const {
+    register,
+    formState: { errors, isSubmitting }
+  } = useForm();
   const styleVariant = useBreakpointValue({
     base: {
       right: 0,
@@ -1692,7 +1702,30 @@ function ToolbarButtonDisplay() {
   return /* @__PURE__ */ jsxs(Fragment, { children: [
     /* @__PURE__ */ jsxs(Flex, { zIndex: "2", flexDirection: directionVariant, sx: styleVariant, children: [
       /* @__PURE__ */ jsx(IconButton, { "aria-label": "Color Mode Switch", size: ["md", "lg"], onClick: toggleColorMode, icon: /* @__PURE__ */ jsx(Icon, { as: colorMode === "light" ? SvgMoon : SvgSun }) }),
-      /* @__PURE__ */ jsx(IconButton, { "aria-label": "Info Button", size: ["md", "lg"], onClick: onOpen, icon: /* @__PURE__ */ jsx(Icon, { as: SvgInfo }) })
+      /* @__PURE__ */ jsx(
+        IconButton,
+        {
+          _after: {
+            position: "absolute",
+            bottom: "-2px",
+            right: "-2px",
+            width: "20px",
+            height: "16px",
+            borderRadius: "5px",
+            backgroundColor: "#FF8700",
+            color: "black",
+            fontSize: "12px",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            content: '"!"'
+          },
+          "aria-label": "Info Button",
+          size: ["md", "lg"],
+          onClick: onOpen,
+          icon: /* @__PURE__ */ jsx(Icon, { as: SvgInfo })
+        }
+      )
     ] }),
     /* @__PURE__ */ jsxs(Modal, { motionPreset: "slideInRight", scrollBehavior: "outside", size: "xl", isOpen, onClose, children: [
       /* @__PURE__ */ jsx(
@@ -1709,11 +1742,26 @@ function ToolbarButtonDisplay() {
         /* @__PURE__ */ jsx(ModalBody, { children: /* @__PURE__ */ jsxs(Tabs, { isFitted: true, variant: "enclosed", children: [
           /* @__PURE__ */ jsxs(TabList, { mb: "1em", children: [
             /* @__PURE__ */ jsx(Tab, { fontSize: "md", children: "ABOUT" }),
-            /* @__PURE__ */ jsx(Tab, { fontSize: "md", children: "CLASS INFO" })
+            /* @__PURE__ */ jsx(Tab, { fontSize: "md", children: "CLASS INFO" }),
+            /* @__PURE__ */ jsx(Tab, { _after: {
+              position: "absolute",
+              top: "5rem",
+              right: "1rem",
+              width: "32px",
+              height: "24px",
+              borderRadius: "5px",
+              backgroundColor: "#FF8700",
+              color: "black",
+              fontSize: "12px",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              content: '"New"'
+            }, fontSize: "md", children: "FEEDBACK" })
           ] }),
           /* @__PURE__ */ jsxs(TabPanels, { children: [
             /* @__PURE__ */ jsx(TabPanel, { children: /* @__PURE__ */ jsxs(Text, { children: [
-              "This application aims to serve all students who are looking to balance their time between Renzo Gracie affiliate gyms in the Greater Houston Area.",
+              "This application aims to serve all students & staff who are looking to balance their time between Renzo Gracie affiliate gyms in the Greater Houston Area.",
               /* @__PURE__ */ jsx("br", {}),
               /* @__PURE__ */ jsx("br", {}),
               "Use the ",
@@ -1725,23 +1773,59 @@ function ToolbarButtonDisplay() {
             ] }) }),
             /* @__PURE__ */ jsxs(TabPanel, { children: [
               /* @__PURE__ */ jsx(Text, { as: "b", children: "Brazilian Jiu Jitsu" }),
-              /* @__PURE__ */ jsx(Box, { span: true, w: "200px", h: "10px", borderRadius: "3xl", backgroundColor: colorMode === "light" ? "#0078ff" : getDarkColor("#0078ff") }),
+              /* @__PURE__ */ jsx(Box, { span: "true", w: "200px", h: "10px", borderRadius: "3xl", backgroundColor: colorMode === "light" ? "#0078ff" : getDarkColor("#0078ff") }),
               /* @__PURE__ */ jsx(Text, { children: "BJJ classes encompass a range of levels, from fundamental techniques to live training sessions. Additionally, there are classes available specifically for No-Gi training, which do not require the use of a traditional uniform." }),
               /* @__PURE__ */ jsx("br", {}),
               /* @__PURE__ */ jsx(Text, { as: "b", children: "Auxiliary Classes" }),
-              /* @__PURE__ */ jsx(Box, { span: true, w: "200px", h: "10px", borderRadius: "3xl", backgroundColor: colorMode === "light" ? "#6e23fb" : getDarkColor("#6e23fb") }),
+              /* @__PURE__ */ jsx(Box, { span: "true", w: "200px", h: "10px", borderRadius: "3xl", backgroundColor: colorMode === "light" ? "#6e23fb" : getDarkColor("#6e23fb") }),
               /* @__PURE__ */ jsx(Text, { children: "Auxiliary classes serve as valuable supplements to one's growth in Brazilian Jiu-Jitsu. These classes offer additional training opportunities that complement and enhance the skills and physical conditioning required for BJJ. These will range from other martial arts to fitness sessions. Check with your academy for more information." }),
               /* @__PURE__ */ jsx("br", {}),
               /* @__PURE__ */ jsx(Text, { as: "b", children: "Kids Classes" }),
-              /* @__PURE__ */ jsx(Box, { span: true, w: "200px", h: "10px", borderRadius: "3xl", backgroundColor: colorMode === "light" ? "#F08600" : getDarkColor("#F08600") }),
+              /* @__PURE__ */ jsx(Box, { span: "true", w: "200px", h: "10px", borderRadius: "3xl", backgroundColor: colorMode === "light" ? "#F08600" : getDarkColor("#F08600") }),
               /* @__PURE__ */ jsx(Text, { children: "These classes are exclusively dedicated to kids' BJJ and may have specific divisions based on age and height established by each academy. Check with your academy for more information." }),
               /* @__PURE__ */ jsx("br", {}),
               /* @__PURE__ */ jsx(Text, { as: "b", children: "Special Events" }),
-              /* @__PURE__ */ jsx(Box, { span: true, w: "200px", h: "10px", borderRadius: "3xl", backgroundColor: colorMode === "light" ? "#E20000" : getDarkColor("#E20000") }),
+              /* @__PURE__ */ jsx(Box, { span: "true", w: "200px", h: "10px", borderRadius: "3xl", backgroundColor: colorMode === "light" ? "#E20000" : getDarkColor("#E20000") }),
               /* @__PURE__ */ jsxs(Text, { children: [
                 "These events are either organized by the Houston BJJ community or by Houston Team Renzo Gracie and typically coincide with ",
                 /* @__PURE__ */ jsx(Text, { as: "b", children: "class cancellations" }),
                 " at the academy. For more details about these events, please refer to the academy's social media pages."
+              ] })
+            ] }),
+            /* @__PURE__ */ jsxs(TabPanel, { children: [
+              /* @__PURE__ */ jsxs(Text, { mb: 6, children: [
+                "Are you enjoying what the site provides? Have any suggestions that would improve your experience?",
+                /* @__PURE__ */ jsx("br", {}),
+                /* @__PURE__ */ jsx("br", {}),
+                "Leave a message and share words of encouragment or ways the calendar could enhance your visit!"
+              ] }),
+              /* @__PURE__ */ jsxs("form", { method: "POST", action: "https://formsubmit.co/92cb9ddf59f1e62ddc366d8322abea72", children: [
+                /* @__PURE__ */ jsxs(FormControl, { mb: 6, isInvalid: errors.message, children: [
+                  /* @__PURE__ */ jsx(FormLabel, { htmlFor: "message" }),
+                  /* @__PURE__ */ jsx(
+                    Textarea,
+                    {
+                      id: "message",
+                      placeholder: "Message",
+                      style: { fontSize: "1.2em" },
+                      ...register("message", {
+                        required: "This is required",
+                        minLength: { value: 4, message: "Minimum length should be 10" }
+                      })
+                    }
+                  ),
+                  /* @__PURE__ */ jsx(FormErrorMessage, { children: errors.message && errors.message.message })
+                ] }),
+                /* @__PURE__ */ jsx(
+                  Button,
+                  {
+                    mt: 2,
+                    colorScheme: "messenger",
+                    isLoading: isSubmitting,
+                    type: "submit",
+                    children: "Submit"
+                  }
+                )
               ] })
             ] })
           ] })
@@ -1869,7 +1953,7 @@ function Page() {
       classEvents.forEach((event) => {
         const eventColor = event.color;
         generatedEvents.push(
-          ...generateRecurringEvents([event], 32).map((event2) => ({
+          ...generateRecurringEvents([event], 52).map((event2) => ({
             ...event2,
             title: className,
             color: eventColor
@@ -2089,7 +2173,21 @@ function Page() {
               ] }) }),
               /* @__PURE__ */ jsx(Divider, { orientation: "vertical" }),
               /* @__PURE__ */ jsx(ButtonGroup, { size: ["md", "lg"], colorScheme: "messenger", children: /* @__PURE__ */ jsxs(Stack, { gap: [2, 3], children: [
-                /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("Houston (HQ)"), children: "HOUSTON (HQ)" }),
+                /* @__PURE__ */ jsx(Button, { _after: {
+                  position: "absolute",
+                  top: "-5px",
+                  right: "-15px",
+                  width: "32px",
+                  height: "24px",
+                  borderRadius: "5px",
+                  backgroundColor: "#FF8700",
+                  color: "black",
+                  fontSize: "12px",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  content: '"New"'
+                }, onClick: () => handleShowEvents("Houston (HQ)"), children: "HOUSTON (HQ)" }),
                 /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("The Grove"), children: "THE GROVE" }),
                 /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("HCU Campus"), children: "HCU CAMPUS" }),
                 /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("HTX (Downtown)"), children: "HTX (DOWNTOWN)" }),
@@ -2149,7 +2247,7 @@ function Page() {
       /* @__PURE__ */ jsx(Box, { pos: "absolute", mt: 2, children: /* @__PURE__ */ jsx(Icon, { as: SvgLogo, width: ["250px", "500px"], height: ["250px", "500px"], zIndex: -1 }) }),
       /* @__PURE__ */ jsxs(Box, { width: "100%", children: [
         calendarDisplay(),
-        /* @__PURE__ */ jsx(Text, { color: "blackAlpha", mt: 1, fontSize: ["12px", "16px"], children: "Updated:8.11.23" })
+        /* @__PURE__ */ jsx(Text, { color: "blackAlpha", mt: 1, fontSize: ["12px", "16px"], children: "Last Updated 8.17.23" })
       ] })
     ] }),
     /* @__PURE__ */ jsx(Footer, {})

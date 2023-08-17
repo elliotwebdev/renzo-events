@@ -20,12 +20,17 @@ import {
       useColorMode,
       Icon,
       IconButton,
-      Box
+      Box,
+      FormErrorMessage, 
+      FormLabel, 
+      FormControl, 
+      Textarea 
       } from '@chakra-ui/react'
 import SvgInfo from "./InfoIcon"
 import SvgMoon from "./MoonIcon"
 import SvgSun from "./SunIcon"
 import getDarkColor from './getDarkColor';
+import { useForm } from 'react-hook-form'
 
 export default function ToolbarButtonDisplay() {
       const { colorMode, toggleColorMode } = useColorMode()
@@ -35,6 +40,10 @@ export default function ToolbarButtonDisplay() {
             ,
             lg: "column"
       })
+      const {
+            register,
+            formState: { errors, isSubmitting },
+          } = useForm()
 
       const styleVariant = useBreakpointValue({
             base: {
@@ -60,7 +69,20 @@ export default function ToolbarButtonDisplay() {
             <>
             <Flex zIndex="2" flexDirection={directionVariant} sx={styleVariant}>
                   <IconButton aria-label='Color Mode Switch' size={["md", "lg"]} onClick={toggleColorMode} icon={<Icon as={colorMode === 'light' ? SvgMoon : SvgSun} />} />
-                  <IconButton aria-label='Info Button' size={["md", "lg"]} onClick={onOpen} icon={<Icon as={SvgInfo} />} />             
+                  <IconButton _after={{ position: "absolute",
+                                          bottom: "-2px",
+                                          right: "-2px",
+                                          width: "20px",
+                                          height: "16px",
+                                          borderRadius: "5px",
+                                          backgroundColor: "#FF8700",
+                                          color: "black",
+                                          fontSize: "12px",
+                                          display: "flex",
+                                          justifyContent: "center",
+                                          alignItems: "center",
+                                          content: '"!"'}}
+                                          aria-label='Info Button' size={["md", "lg"]} onClick={onOpen} icon={<Icon as={SvgInfo} />} />             
             </Flex>
 
             <Modal motionPreset='slideInRight' scrollBehavior="outside" size="xl" isOpen={isOpen} onClose={onClose}>
@@ -75,26 +97,39 @@ export default function ToolbarButtonDisplay() {
                         <ModalBody>
                         <Tabs isFitted variant='enclosed'>
                               <TabList mb='1em'>
-                              <Tab fontSize='md'>ABOUT</Tab>
-                              <Tab fontSize='md'>CLASS INFO</Tab>
+                                    <Tab fontSize='md'>ABOUT</Tab>
+                                    <Tab fontSize='md'>CLASS INFO</Tab>
+                                    <Tab _after={{ position: "absolute",
+                                          top: "5rem",
+                                          right: "1rem",
+                                          width: "32px",
+                                          height: "24px",
+                                          borderRadius: "5px",
+                                          backgroundColor: "#FF8700",
+                                          color: "black",
+                                          fontSize: "12px",
+                                          display: "flex",
+                                          justifyContent: "center",
+                                          alignItems: "center",
+                                          content: '"New"'}} fontSize='md'>FEEDBACK</Tab>
                               </TabList>
                               <TabPanels>
-                              <TabPanel>
-                              <Text>
-                                    This application aims to serve all students who are looking to balance their time between Renzo Gracie affiliate gyms in the Greater Houston Area.
-                                    <br />
-                                    <br />
-                                    Use the <Text textColor={colorMode === 'light' ? '#0078ff' : getDarkColor('#0078ff')} as="b">'Select Schedule'</Text> button to view an academy's class program. Visit this 
-                                    website on your computer or laptop for a extensive weekly view.
-                                    <br />
-                                    <br />
-                                    This is an ongoing project with features and fixes to be added. Bookmark this page so you can access it at home, work, or on the go.
-                              </Text>
-                              </TabPanel>
-                              <TabPanel>
+                                    <TabPanel>
+                                    <Text>
+                                          This application aims to serve all students & staff who are looking to balance their time between Renzo Gracie affiliate gyms in the Greater Houston Area.
+                                          <br />
+                                          <br />
+                                          Use the <Text textColor={colorMode === 'light' ? '#0078ff' : getDarkColor('#0078ff')} as="b">'Select Schedule'</Text> button to view an academy's class program. Visit this 
+                                          website on your computer or laptop for a extensive weekly view.
+                                          <br />
+                                          <br />
+                                          This is an ongoing project with features and fixes to be added. Bookmark this page so you can access it at home, work, or on the go.
+                                    </Text>
+                                    </TabPanel>
 
+                                    <TabPanel>
                                     <Text as='b'>Brazilian Jiu Jitsu</Text>
-                                    <Box span w="200px" h="10px" borderRadius="3xl" backgroundColor={colorMode === 'light' ? '#0078ff' : getDarkColor('#0078ff')}></Box>
+                                    <Box span="true" w="200px" h="10px" borderRadius="3xl" backgroundColor={colorMode === 'light' ? '#0078ff' : getDarkColor('#0078ff')}></Box>
 
                                     <Text>
                                     BJJ classes encompass a range of levels, from fundamental techniques to live training sessions. Additionally, there are classes available specifically for No-Gi training, 
@@ -103,7 +138,7 @@ export default function ToolbarButtonDisplay() {
                                     <br />
 
                                     <Text as='b'>Auxiliary Classes</Text>
-                                    <Box span w="200px" h="10px" borderRadius="3xl" backgroundColor={colorMode === 'light' ? '#6e23fb' : getDarkColor('#6e23fb')}></Box>
+                                    <Box span="true" w="200px" h="10px" borderRadius="3xl" backgroundColor={colorMode === 'light' ? '#6e23fb' : getDarkColor('#6e23fb')}></Box>
 
                                     <Text >
                                     Auxiliary classes serve as valuable supplements to one's growth in Brazilian Jiu-Jitsu. These classes offer additional training opportunities that complement and 
@@ -112,7 +147,7 @@ export default function ToolbarButtonDisplay() {
                                     <br />
 
                                     <Text as='b'>Kids Classes</Text>
-                                    <Box span w="200px" h="10px" borderRadius="3xl" backgroundColor={colorMode === 'light' ? '#F08600' : getDarkColor('#F08600')}></Box>
+                                    <Box span="true" w="200px" h="10px" borderRadius="3xl" backgroundColor={colorMode === 'light' ? '#F08600' : getDarkColor('#F08600')}></Box>
 
                                     <Text >
                                     These classes are exclusively dedicated to kids' BJJ and may have specific divisions based on 
@@ -121,14 +156,44 @@ export default function ToolbarButtonDisplay() {
                                     <br />
                                     
                                     <Text as='b'>Special Events</Text>
-                                    <Box span w="200px" h="10px" borderRadius="3xl" backgroundColor={colorMode === 'light' ? '#E20000' : getDarkColor('#E20000')}></Box>
+                                    <Box span="true" w="200px" h="10px" borderRadius="3xl" backgroundColor={colorMode === 'light' ? '#E20000' : getDarkColor('#E20000')}></Box>
 
                                     <Text >
                                     These events are either organized by the Houston BJJ community or by Houston Team Renzo Gracie and typically coincide with <Text as="b">class cancellations</Text> at the academy. 
                                     For more details about these events, please refer to the academy's social media pages.
                                     </Text>
          
-                              </TabPanel>
+                                    </TabPanel>
+                                    <TabPanel>
+                                          <Text mb={6}>
+                                          Are you enjoying what the site provides? Have any suggestions that would improve your experience?
+                                          <br />
+                                          <br />
+                                          Leave a message and share words of encouragment or ways the calendar could enhance your visit!
+                                          </Text>
+             
+                                          <form method="POST" action="https://formsubmit.co/92cb9ddf59f1e62ddc366d8322abea72" >
+                                          <FormControl mb={6}  isInvalid={errors.message}>
+                                                <FormLabel htmlFor='message'></FormLabel>
+                                                <Textarea
+                                                id='message'
+                                                placeholder='Message'
+                                                style={{ fontSize: "1.2em", }}
+                                                {...register('message', {
+                                                required: 'This is required',
+                                                minLength: { value: 4, message: 'Minimum length should be 10' },
+                                                })}
+                                                />
+                                                <FormErrorMessage>
+                                                {errors.message && errors.message.message}
+                                                </FormErrorMessage>
+                                          </FormControl>
+                                          <Button mt={2} colorScheme='messenger'
+                                                isLoading={isSubmitting} type='submit'>
+                                                Submit
+                                          </Button>
+                                          </form>
+                                    </TabPanel>
                               </TabPanels>
                         </Tabs>
 

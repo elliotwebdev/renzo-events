@@ -74,20 +74,20 @@ export const academies = {
                   end: new Date(2023, 4, 5, 19, 30),
             },
             ],
-            // "Wrestling":[
-            // {
-            //       //Tuesday
-            //       start: new Date(2023, 4, 2, 11, 30),
-            //       end: new Date(2023, 4, 2, 12, 0),
-            //       color: '#6e23fb',
-            // },
-            // {
-            //       //Thursday
-            //       start: new Date(2023, 4, 4, 11, 30),
-            //       end: new Date(2023, 4, 4, 12, 0),
-            //       color: '#6e23fb',
-            // },
-            // ],
+            "Wrestling":[
+            {
+                  //Monday
+                  start: new Date(2023, 4, 1, 11, 30),
+                  end: new Date(2023, 4, 1, 12, 0),
+                  color: '#6e23fb',
+            },
+            {
+                  //Friday
+                  start: new Date(2023, 4, 5, 11, 30),
+                  end: new Date(2023, 4, 5, 12, 0),
+                  color: '#6e23fb',
+            },
+            ],
             "Adults Muay Thai":[
             {
                   //Monday
@@ -302,6 +302,13 @@ export const academies = {
                   //Monday
                   start: new Date(2023, 4, 1, 11, 0),
                   end: new Date(2023, 4, 1, 12, 0),
+                  
+            },
+            "Women LEO Only Class": 
+            {     
+                  //Monday
+                  start: new Date(2023, 4, 4, 11, 0),
+                  end: new Date(2023, 4, 4, 12, 0),
                   
             },
             "Defending Pins & Escapes": 
@@ -792,7 +799,7 @@ export const academies = {
             },
       },
 
-      "HCU Campus" : {
+      "HCU Campus":{
             minTime:  new Date(2023, 0, 1, 9, 0, 0),
             maxTime: new Date(2023, 0, 1, 19, 0, 0),
             "BJJ":[
@@ -864,7 +871,7 @@ export const academies = {
             ]
       },
 
-      "Katy": {
+      "Katy":{
             minTime:  new Date(2023, 0, 1, 15, 0, 0),
             maxTime: new Date(2023, 0, 1, 23, 0, 0),
             "BJJ":[
@@ -934,7 +941,7 @@ export const academies = {
             ],
       },
 
-      "Mont Belvieu": {
+      "Mont Belvieu":{
             minTime:  new Date(2023, 0, 1, 10, 0, 0),
             maxTime: new Date(2023, 0, 1, 21, 0, 0),
             "BJJ":[
@@ -1112,7 +1119,7 @@ export const academies = {
             ],
       },
       
-      "Pearland": {
+      "Pearland":{
             minTime:  new Date(2023, 0, 1, 6, 0, 0),
             maxTime: new Date(2023, 0, 1, 21, 0, 0),
             "BJJ":[
@@ -1296,7 +1303,7 @@ export const academies = {
             
       },
 
-      "The Woodlands": {
+      "The Woodlands":{
             minTime:  new Date(2023, 0, 1, 5, 0, 0),
             maxTime: new Date(2023, 0, 1, 20, 0, 0),
             "BJJ":[
@@ -1479,7 +1486,7 @@ export const academies = {
                   }, 
       },
 
-      "Huffman": {
+      "Huffman":{
             minTime:  new Date(2023, 0, 1, 11, 0, 0),
             maxTime: new Date(2023, 0, 1, 21, 0, 0),
             "BJJ":[
