@@ -12,4 +12,9 @@ Welcome to Renzo Events! This application aims to assist students and staff of R
 ## Contributions
 Contributions are welcome. If you find a bug or have an enhancement in mind, please fork or clone the repo and send in a pull request!
 
+To run development:
+* yarn install
+* yarn dev
+* follow the localhost address
+
 Enjoy Renzo Events!
