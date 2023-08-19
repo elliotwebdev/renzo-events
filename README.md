@@ -1,6 +1,6 @@
 # Renzo Events
 
-Welcome to Renzo Events! This application aims to assist students and staff of Renzo Gracia affiliate academies in the Greater Houston Area. 
+Welcome to Renzo Events! This application aims to assist students and staff of Renzo Gracie affiliate academies in the Greater Houston Area. 
 
 ![preview](https://elliotweb.dev/renzo_events.jpg)
 
