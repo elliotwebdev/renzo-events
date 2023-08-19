@@ -18,3 +18,4 @@ To run development:
 * follow the localhost address
 
 Enjoy Renzo Events!
+Visit the live site at https://renzo.events
