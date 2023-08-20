@@ -1148,6 +1148,11 @@ export const academies = {
                         end: new Date(2023, 4, 4, 7, 0),
                   },
                   {
+                        //Friday
+                        start: new Date(2023, 4, 5, 6, 0),
+                        end: new Date(2023, 4, 5, 7, 0),
+                  },
+                  {
                         //Saturday
                         start: new Date(2023, 4, 6, 11, 30),
                         end: new Date(2023, 4, 6, 12, 30),
@@ -1156,14 +1161,24 @@ export const academies = {
             "Lunchbox Crew (BJJ Class)":
             {
                   //Friday
-                  start: new Date(2023, 4, 5, 12, 0),
-                  end: new Date(2023, 4, 5, 13, 0),
+                  start: new Date(2023, 4, 5, 11, 0),
+                  end: new Date(2023, 4, 5, 12, 0),
             },
             "No-GI BJJ":[
+                  {
+                        //Monday
+                        start: new Date(2023, 4, 1, 6, 0),
+                        end: new Date(2023, 4, 1, 7, 0),
+                  },
                   {
                         //Tuesday
                         start: new Date(2023, 4, 2, 18, 30),
                         end: new Date(2023, 4, 2, 19, 30),
+                  },
+                  {
+                        //Wednesday
+                        start: new Date(2023, 4, 3, 6, 0),
+                        end: new Date(2023, 4, 3, 7, 0),
                   },
                   {
                         //Wednesday
@@ -1202,27 +1217,15 @@ export const academies = {
                   },
                   {
                         //Friday
-                        start: new Date(2023, 4, 5, 13, 0),
-                        end: new Date(2023, 4, 5, 13, 30),
+                        start: new Date(2023, 4, 5, 12, 0),
+                        end: new Date(2023, 4, 5, 12, 30),
                   },
             ],
             "Striking Class":[
                   {
-                        //Monday
-                        start: new Date(2023, 4, 1, 6, 0),
-                        end: new Date(2023, 4, 1, 7, 0),
-                        color: '#6e23fb'
-                  },
-                  {
                         //Tuesday
                         start: new Date(2023, 4, 2, 12, 0),
                         end: new Date(2023, 4, 2, 13, 0),
-                        color: '#6e23fb'
-                  },
-                  {
-                        //Wednesday
-                        start: new Date(2023, 4, 3, 6, 0),
-                        end: new Date(2023, 4, 3, 7, 0),
                         color: '#6e23fb'
                   },
                   {
@@ -1300,6 +1303,12 @@ export const academies = {
                         color: "#F08600"
                   },
             ],
+            "Advanced No-Gi Grappling":
+            {
+                  //Wednesday
+                  start: new Date(2023, 4, 3, 11, 0),
+                  end: new Date(2023, 4, 3, 12, 0),
+            },
             
       },
 

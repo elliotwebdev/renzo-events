@@ -255,19 +255,7 @@ function Page() {
                                           alignItems: "center",
                                           content: '"New"'}} 
                                           onClick={() => handleShowEvents("Pearland")}>PEARLAND</Button>
-                                    <Button  _after={{ position: "absolute",
-                                          top: "-5px",
-                                          right: "-15px",
-                                          width: "32px",
-                                          height: "24px",
-                                          borderRadius: "5px",
-                                          backgroundColor: "#FF8700",
-                                          color: "black",
-                                          fontSize: "12px",
-                                          display: "flex",
-                                          justifyContent: "center",
-                                          alignItems: "center",
-                                          content: '"New"'}} onClick={() => handleShowEvents("Riverstone")}>RIVERSTONE</Button>
+                                    <Button  onClick={() => handleShowEvents("Riverstone")}>RIVERSTONE</Button>
                                     <Button  onClick={() => handleShowEvents("Huffman")}>HUFFMAN</Button>
                                     <Button  onClick={() => handleShowEvents("The Woodlands")}>THE WOODLANDS</Button>
                                     <Button  isDisabled onClick={() => handleShowEvents("Missouri City")}>MISSOURI CITY</Button>
