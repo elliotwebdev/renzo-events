@@ -72,7 +72,7 @@ const academies = {
         end: new Date(2023, 4, 5, 19, 30)
       }
     ],
-    "Wrestling": [
+    "Wrestling Adults & Junior 12+": [
       {
         //Monday
         start: new Date(2023, 4, 1, 11, 30),
@@ -171,6 +171,11 @@ const academies = {
         //Monday
         start: new Date(2023, 4, 1, 13, 0),
         end: new Date(2023, 4, 1, 13, 30)
+      },
+      {
+        //Monday
+        start: new Date(2023, 4, 1, 19, 30),
+        end: new Date(2023, 4, 1, 20, 0)
       },
       {
         //Tuesday
@@ -297,11 +302,6 @@ const academies = {
       //Monday
       start: new Date(2023, 4, 4, 11, 0),
       end: new Date(2023, 4, 4, 12, 0)
-    },
-    "Defending Pins & Escapes": {
-      //Monday
-      start: new Date(2023, 4, 1, 19, 30),
-      end: new Date(2023, 4, 1, 20, 0)
     },
     "Veterans BJJ": {
       //Monday
@@ -2462,7 +2462,7 @@ function Page() {
       /* @__PURE__ */ jsx(Box, { pos: "absolute", mt: 2, children: /* @__PURE__ */ jsx(Icon, { as: SvgLogo, width: ["250px", "500px"], height: ["250px", "500px"], zIndex: -1 }) }),
       /* @__PURE__ */ jsxs(Box, { width: "100%", children: [
         calendarDisplay(),
-        /* @__PURE__ */ jsx(Text, { color: "blackAlpha", mt: 1, fontSize: ["12px", "16px"], children: "Last Updated 8.29.23" })
+        /* @__PURE__ */ jsx(Text, { color: "blackAlpha", mt: 1, fontSize: ["12px", "16px"], children: "Last Updated 8.30.23" })
       ] })
     ] }),
     /* @__PURE__ */ jsx(Footer, {})

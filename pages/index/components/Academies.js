@@ -74,7 +74,7 @@ export const academies = {
                   end: new Date(2023, 4, 5, 19, 30),
             },
             ],
-            "Wrestling":[
+            "Wrestling Adults & Junior 12+":[
             {
                   //Monday
                   start: new Date(2023, 4, 1, 11, 30),
@@ -173,6 +173,12 @@ export const academies = {
                   //Monday
                   start: new Date(2023, 4, 1, 13, 0),
                   end: new Date(2023, 4, 1, 13, 30),
+            },
+            {     
+                  //Monday
+                  start: new Date(2023, 4, 1, 19, 30),
+                  end: new Date(2023, 4, 1, 20, 0),
+                  
             },
             {
                   //Tuesday
@@ -309,13 +315,6 @@ export const academies = {
                   //Monday
                   start: new Date(2023, 4, 4, 11, 0),
                   end: new Date(2023, 4, 4, 12, 0),
-                  
-            },
-            "Defending Pins & Escapes": 
-            {     
-                  //Monday
-                  start: new Date(2023, 4, 1, 19, 30),
-                  end: new Date(2023, 4, 1, 20, 0),
                   
             },
             "Veterans BJJ": 
