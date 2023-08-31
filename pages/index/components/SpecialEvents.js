@@ -1,5 +1,19 @@
 export const specialEvents = {
       "Houston (HQ)":{
+            "Academy Closed | Renzo Gracie Pearland Grand Opening":
+            {
+                  //Saturday
+                  start: new Date(2023, 8, 16, 10, 0),
+                  end: new Date(2023, 8, 16, 13, 0),
+                  color: "#E20000"
+            },
+            "Academy Closed | Renzo Gracie The Grove 4th YR Anniversary":
+            {
+                  //Friday
+                  start: new Date(2023, 8, 30, 10, 0),
+                  end: new Date(2023, 8, 30, 13, 0),
+                  color: "#E20000"
+            },
             "OPEN MAT": [
                   {
                         //Saturday
@@ -34,14 +48,23 @@ export const specialEvents = {
                   ],
             
       },
+
       "The Grove":{
-            "Academy Closed | OPEN MAT @ Renzo Gracie Houston": [
-                  {
+            "4th YR Anniversary":
+            {
                   //Friday
-                  start: new Date(2023, 8, 1, 10, 0),
-                  end: new Date(2023, 8, 1, 12, 0),
+                  start: new Date(2023, 8, 30, 10, 0),
+                  end: new Date(2023, 8, 30, 13, 0),
                   color: "#E20000"
-                  },
+            },
+            "Academy Closed":
+            {
+            //Friday
+            start: new Date(2023, 8, 1, 10, 0),
+            end: new Date(2023, 8, 1, 12, 0),
+            color: "#E20000"
+            },
+            "Academy Closed | OPEN MAT @ Renzo Gracie Houston": [
                   {
                   start: new Date(2023, 8, 2, 10, 0),
                   end: new Date(2023, 8, 2, 12, 0),
@@ -80,9 +103,10 @@ export const specialEvents = {
             },
             ],
       },
+
       "HTX (Downtown)":{
- 
       },
+
       "Riverstone":{
             "Academy Closed | OPEN MAT @ Renzo Gracie Houston": [
                   {
@@ -105,18 +129,61 @@ export const specialEvents = {
                   },
             ]
       },
-      "HCU Campus":{
 
+      "HCU Campus":{
       },
+
       "Katy":{
-      
       },
+      
       "Mont Belvieu":{
- 
       },
+
       "Pearland":{
-      
+            "Academy Grand Opening":
+            {
+                  //Saturday
+                  start: new Date(2023, 8, 16, 10, 0),
+                  end: new Date(2023, 8, 16, 13, 0),
+                  color: "#E20000"
+            },
+            "Academy Closed | OPEN MAT @ Renzo Gracie Houston":
+            {
+                  //Monday
+                  start: new Date(2023, 8, 4, 10, 0),
+                  end: new Date(2023, 8, 4, 12, 0),
+                  color: "#E20000"
+            },
+            "Buddy Week":[
+            {
+                  start: new Date(2023, 8, 18, 9, 0),
+                  end: new Date(2023, 8, 18, 10, 0),
+                  color: "#E20000"
+            },
+            {
+                  start: new Date(2023, 8, 19, 9, 0),
+                  end: new Date(2023, 8, 19, 10, 0),
+                  color: "#E20000"
+            },
+            {
+                  start: new Date(2023, 8, 20, 9, 0),
+                  end: new Date(2023, 8, 20, 10, 0),
+                  color: "#E20000"
+            },
+            {
+                  start: new Date(2023, 8, 21, 9, 0),
+                  end: new Date(2023, 8, 21, 10, 0),
+                  color: "#E20000"
+            },
+            {
+                  start: new Date(2023, 8, 22, 9, 0),
+                  end: new Date(2023, 8, 22, 10, 0),
+                  color: "#E20000"
+            },
+            ]
+            
       },
+
       "The Woodlands":{
             "Labor Day OPEN MAT | Adults": {
                    //Monday
@@ -133,10 +200,8 @@ export const specialEvents = {
       },
 
       "Huffman":{
-      
       },
-      
+
       "Lake Houston":{
-      
       },
 }

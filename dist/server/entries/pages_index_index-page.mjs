@@ -1716,6 +1716,18 @@ const academies = {
 };
 const specialEvents = {
   "Houston (HQ)": {
+    "Academy Closed | Renzo Gracie Pearland Grand Opening": {
+      //Saturday
+      start: new Date(2023, 8, 16, 10, 0),
+      end: new Date(2023, 8, 16, 13, 0),
+      color: "#E20000"
+    },
+    "Academy Closed | Renzo Gracie The Grove 4th YR Anniversary": {
+      //Friday
+      start: new Date(2023, 8, 30, 10, 0),
+      end: new Date(2023, 8, 30, 13, 0),
+      color: "#E20000"
+    },
     "OPEN MAT": [
       {
         //Saturday
@@ -1750,13 +1762,19 @@ const specialEvents = {
     ]
   },
   "The Grove": {
+    "4th YR Anniversary": {
+      //Friday
+      start: new Date(2023, 8, 30, 10, 0),
+      end: new Date(2023, 8, 30, 13, 0),
+      color: "#E20000"
+    },
+    "Academy Closed": {
+      //Friday
+      start: new Date(2023, 8, 1, 10, 0),
+      end: new Date(2023, 8, 1, 12, 0),
+      color: "#E20000"
+    },
     "Academy Closed | OPEN MAT @ Renzo Gracie Houston": [
-      {
-        //Friday
-        start: new Date(2023, 8, 1, 10, 0),
-        end: new Date(2023, 8, 1, 12, 0),
-        color: "#E20000"
-      },
       {
         start: new Date(2023, 8, 2, 10, 0),
         end: new Date(2023, 8, 2, 12, 0),
@@ -1819,7 +1837,47 @@ const specialEvents = {
   "HCU Campus": {},
   "Katy": {},
   "Mont Belvieu": {},
-  "Pearland": {},
+  "Pearland": {
+    "Academy Grand Opening": {
+      //Saturday
+      start: new Date(2023, 8, 16, 10, 0),
+      end: new Date(2023, 8, 16, 13, 0),
+      color: "#E20000"
+    },
+    "Academy Closed | OPEN MAT @ Renzo Gracie Houston": {
+      //Monday
+      start: new Date(2023, 8, 4, 10, 0),
+      end: new Date(2023, 8, 4, 12, 0),
+      color: "#E20000"
+    },
+    "Buddy Week": [
+      {
+        start: new Date(2023, 8, 18, 9, 0),
+        end: new Date(2023, 8, 18, 10, 0),
+        color: "#E20000"
+      },
+      {
+        start: new Date(2023, 8, 19, 9, 0),
+        end: new Date(2023, 8, 19, 10, 0),
+        color: "#E20000"
+      },
+      {
+        start: new Date(2023, 8, 20, 9, 0),
+        end: new Date(2023, 8, 20, 10, 0),
+        color: "#E20000"
+      },
+      {
+        start: new Date(2023, 8, 21, 9, 0),
+        end: new Date(2023, 8, 21, 10, 0),
+        color: "#E20000"
+      },
+      {
+        start: new Date(2023, 8, 22, 9, 0),
+        end: new Date(2023, 8, 22, 10, 0),
+        color: "#E20000"
+      }
+    ]
+  },
   "The Woodlands": {
     "Labor Day OPEN MAT | Adults": {
       //Monday
@@ -2462,7 +2520,7 @@ function Page() {
       /* @__PURE__ */ jsx(Box, { pos: "absolute", mt: 2, children: /* @__PURE__ */ jsx(Icon, { as: SvgLogo, width: ["250px", "500px"], height: ["250px", "500px"], zIndex: -1 }) }),
       /* @__PURE__ */ jsxs(Box, { width: "100%", children: [
         calendarDisplay(),
-        /* @__PURE__ */ jsx(Text, { color: "blackAlpha", mt: 1, fontSize: ["12px", "16px"], children: "Last Updated 8.30.23" })
+        /* @__PURE__ */ jsx(Text, { color: "blackAlpha", mt: 1, fontSize: ["12px", "16px"], children: "Last Updated 8.31.23" })
       ] })
     ] }),
     /* @__PURE__ */ jsx(Footer, {})
