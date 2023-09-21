@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { dateFnsLocalizer, Calendar } from "react-big-calendar";
 import { addWeeks, format, parse, startOfWeek, getDay } from "date-fns";
 import enUS from "date-fns/locale/en-US/index.js";
-import { useColorMode, useDisclosure, useBreakpointValue, Flex, IconButton, Icon, Modal, ModalOverlay, ModalContent, ModalHeader, Heading, ModalCloseButton, ModalBody, Tabs, TabList, Tab, TabPanels, TabPanel, Text, Box, FormControl, FormLabel, Textarea, FormErrorMessage, Button, ModalFooter, Drawer, DrawerOverlay, DrawerContent, DrawerCloseButton, DrawerHeader, DrawerBody, ButtonGroup, Stack, Divider } from "@chakra-ui/react";
+import { Text, Divider, useColorMode, useDisclosure, useBreakpointValue, Flex, IconButton, Icon, Modal, ModalOverlay, ModalContent, ModalHeader, Heading, ModalCloseButton, ModalBody, Tabs, TabList, Tab, TabPanels, TabPanel, Box, FormControl, FormLabel, Textarea, FormErrorMessage, Button, ModalFooter, Drawer, DrawerOverlay, DrawerContent, DrawerCloseButton, DrawerHeader, DrawerBody, ButtonGroup, Stack } from "@chakra-ui/react";
 import { useForm } from "react-hook-form";
 import "react/jsx-runtime";
 const academies = {
@@ -1222,9 +1222,9 @@ const academies = {
         end: new Date(2023, 4, 1, 20, 0)
       },
       {
-        //Tuesday
-        start: new Date(2023, 4, 2, 19, 0),
-        end: new Date(2023, 4, 2, 20, 0)
+        //Wed
+        start: new Date(2023, 4, 3, 5, 0),
+        end: new Date(2023, 4, 3, 6, 0)
       },
       {
         //Wednesday
@@ -1239,6 +1239,11 @@ const academies = {
         //Thursday
         start: new Date(2023, 4, 4, 11, 0),
         end: new Date(2023, 4, 4, 12, 0)
+      },
+      {
+        //Tuesday
+        start: new Date(2023, 4, 4, 19, 0),
+        end: new Date(2023, 4, 4, 20, 0)
       }
     ],
     "No-Gi BJJ": [
@@ -1253,14 +1258,9 @@ const academies = {
         end: new Date(2023, 4, 2, 12, 0)
       },
       {
-        //Wed
-        start: new Date(2023, 4, 3, 5, 0),
-        end: new Date(2023, 4, 3, 6, 0)
-      },
-      {
-        //Thursday
-        start: new Date(2023, 4, 4, 19, 0),
-        end: new Date(2023, 4, 4, 20, 0)
+        //Tuesday
+        start: new Date(2023, 4, 2, 19, 0),
+        end: new Date(2023, 4, 2, 20, 0)
       }
     ],
     "OPEN MAT": {
@@ -1268,7 +1268,7 @@ const academies = {
       start: new Date(2023, 4, 6, 8, 0),
       end: new Date(2023, 4, 6, 9, 30)
     },
-    "No-Gi OPEN MAT": [
+    "BJJ (Open Rolls)": [
       {
         //Friday
         start: new Date(2023, 4, 5, 5, 0),
@@ -1331,21 +1331,35 @@ const academies = {
         color: "#6e23fb"
       }
     ],
-    "Youth Kickboxing": [
+    "Little BJJ (4-7 y.o.)": [
+      {
+        //Mon
+        start: new Date(2023, 4, 1, 16, 0),
+        end: new Date(2023, 4, 1, 17, 0),
+        color: "#6e23fb"
+      },
+      {
+        //Wed
+        start: new Date(2023, 4, 3, 16, 0),
+        end: new Date(2023, 4, 3, 17, 0),
+        color: "#6e23fb"
+      }
+    ],
+    "Little BJJ / Kids Striking": [
       {
         //Tuesday
         start: new Date(2023, 4, 2, 16, 0),
-        end: new Date(2023, 4, 2, 16, 45),
+        end: new Date(2023, 4, 2, 17, 0),
         color: "#6e23fb"
       },
       {
         //Thursday
         start: new Date(2023, 4, 4, 16, 0),
-        end: new Date(2023, 4, 4, 16, 45),
+        end: new Date(2023, 4, 4, 17, 0),
         color: "#6e23fb"
       }
     ],
-    "Kids BJJ": [
+    "Kids BJJ (8+)": [
       {
         //Monday
         start: new Date(2023, 4, 1, 17, 0),
@@ -1365,19 +1379,19 @@ const academies = {
         color: "#F08600"
       }
     ],
-    "Kids BJJ (No-Gi)": {
+    "Kids BJJ (No-Gi)(8+)": {
       //Wednesday
       start: new Date(2023, 4, 3, 17, 0),
       end: new Date(2023, 4, 3, 18, 0),
       color: "#F08600"
     },
-    "Kids Wrestling (No-Gi)": {
+    "All Kids BJJ (No-Gi)": {
       //Friday
       start: new Date(2023, 4, 5, 17, 0),
       end: new Date(2023, 4, 5, 18, 0),
       color: "#F08600"
     },
-    "Kids BJJ OPEN MAT (No-Gi)": {
+    "Kids BJJ OPEN MAT": {
       //Saturday
       start: new Date(2023, 4, 6, 10, 0),
       end: new Date(2023, 4, 6, 11, 0),
@@ -1716,12 +1730,6 @@ const academies = {
 };
 const specialEvents = {
   "Houston (HQ)": {
-    "Academy Closed | Renzo Gracie Pearland Grand Opening": {
-      //Saturday
-      start: new Date(2023, 8, 16, 10, 0),
-      end: new Date(2023, 8, 16, 13, 0),
-      color: "#E20000"
-    },
     "Academy Closed | Renzo Gracie The Grove 4th YR Anniversary": {
       //Friday
       start: new Date(2023, 8, 30, 10, 0),
@@ -1729,24 +1737,6 @@ const specialEvents = {
       color: "#E20000"
     },
     "OPEN MAT": [
-      {
-        //Saturday
-        start: new Date(2023, 8, 2, 10, 0),
-        end: new Date(2023, 8, 2, 12, 0),
-        color: "#E20000"
-      },
-      {
-        //Monday
-        start: new Date(2023, 8, 4, 10, 0),
-        end: new Date(2023, 8, 4, 12, 0),
-        color: "#E20000"
-      },
-      {
-        //Saturday
-        start: new Date(2023, 9, 7, 10, 0),
-        end: new Date(2023, 9, 7, 12, 0),
-        color: "#E20000"
-      },
       {
         //Saturday
         start: new Date(2023, 10, 4, 10, 0),
@@ -1759,6 +1749,30 @@ const specialEvents = {
         end: new Date(2023, 11, 2, 12, 0),
         color: "#E20000"
       }
+    ],
+    "Abraham The Mountain | Workshop Series": [
+      {
+        start: new Date(2023, 9, 7, 10, 0),
+        end: new Date(2023, 9, 7, 12, 0),
+        color: "#E20000"
+      },
+      {
+        start: new Date(2023, 11, 4, 10, 0),
+        end: new Date(2023, 11, 4, 12, 0),
+        color: "#E20000"
+      }
+    ],
+    "OPEN MAT": [
+      {
+        start: new Date(2023, 9, 7, 12, 0),
+        end: new Date(2023, 9, 7, 13, 0),
+        color: "#E20000"
+      },
+      {
+        start: new Date(2023, 11, 4, 12, 0),
+        end: new Date(2023, 11, 4, 13, 0),
+        color: "#E20000"
+      }
     ]
   },
   "The Grove": {
@@ -1768,30 +1782,6 @@ const specialEvents = {
       end: new Date(2023, 8, 30, 13, 0),
       color: "#E20000"
     },
-    "Academy Closed": {
-      //Friday
-      start: new Date(2023, 8, 1, 10, 0),
-      end: new Date(2023, 8, 1, 12, 0),
-      color: "#E20000"
-    },
-    "Academy Closed | OPEN MAT @ Renzo Gracie Houston": [
-      {
-        start: new Date(2023, 8, 2, 10, 0),
-        end: new Date(2023, 8, 2, 12, 0),
-        color: "#E20000"
-      },
-      {
-        start: new Date(2023, 8, 3, 10, 0),
-        end: new Date(2023, 8, 3, 12, 0),
-        color: "#E20000"
-      },
-      {
-        //Monday
-        start: new Date(2023, 8, 4, 10, 0),
-        end: new Date(2023, 8, 4, 12, 0),
-        color: "#E20000"
-      }
-    ],
     "Kids Team Renzo Prep & Scrimmage": [
       {
         //Saturday
@@ -1814,42 +1804,11 @@ const specialEvents = {
     ]
   },
   "HTX (Downtown)": {},
-  "Riverstone": {
-    "Academy Closed | OPEN MAT @ Renzo Gracie Houston": [
-      {
-        start: new Date(2023, 8, 2, 10, 0),
-        end: new Date(2023, 8, 2, 12, 0),
-        color: "#E20000"
-      },
-      {
-        start: new Date(2023, 8, 3, 10, 0),
-        end: new Date(2023, 8, 3, 12, 0),
-        color: "#E20000"
-      },
-      {
-        //Monday
-        start: new Date(2023, 8, 4, 10, 0),
-        end: new Date(2023, 8, 4, 12, 0),
-        color: "#E20000"
-      }
-    ]
-  },
+  "Riverstone": {},
   "HCU Campus": {},
   "Katy": {},
   "Mont Belvieu": {},
   "Pearland": {
-    "Academy Grand Opening": {
-      //Saturday
-      start: new Date(2023, 8, 16, 10, 0),
-      end: new Date(2023, 8, 16, 13, 0),
-      color: "#E20000"
-    },
-    "Academy Closed | OPEN MAT @ Renzo Gracie Houston": {
-      //Monday
-      start: new Date(2023, 8, 4, 10, 0),
-      end: new Date(2023, 8, 4, 12, 0),
-      color: "#E20000"
-    },
     "Buddy Week": [
       {
         start: new Date(2023, 8, 18, 9, 0),
@@ -1878,20 +1837,7 @@ const specialEvents = {
       }
     ]
   },
-  "The Woodlands": {
-    "Labor Day OPEN MAT | Adults": {
-      //Monday
-      start: new Date(2023, 8, 4, 8, 0),
-      end: new Date(2023, 8, 4, 10, 0),
-      color: "#E20000"
-    },
-    "Labor Day OPEN MAT | Kids": {
-      //Monday
-      start: new Date(2023, 8, 4, 10, 0),
-      end: new Date(2023, 8, 4, 12, 0),
-      color: "#E20000"
-    }
-  },
+  "The Woodlands": {},
   "Huffman": {},
   "Lake Houston": {}
 };
@@ -1976,6 +1922,22 @@ function getDarkColor(eventColor) {
       return void 0;
   }
 }
+function UpdateLog() {
+  return /* @__PURE__ */ jsxs(Text, { children: [
+    /* @__PURE__ */ jsx("br", {}),
+    /* @__PURE__ */ jsx(Divider, {}),
+    /* @__PURE__ */ jsx("br", {}),
+    /* @__PURE__ */ jsx(Text, { as: "b", children: "Update 9.20.23" }),
+    /* @__PURE__ */ jsx("br", {}),
+    "+ New Schedule for The Woodlands",
+    /* @__PURE__ */ jsx("br", {}),
+    "+ Abraham the Mountain Seminars @ Houston (HQ)",
+    /* @__PURE__ */ jsx("br", {}),
+    "+ 4 YR Anniversary @ The Grove",
+    /* @__PURE__ */ jsx("br", {}),
+    "+ Upcoming: future schedule change for Huffman"
+  ] });
+}
 function ToolbarButtonDisplay() {
   const { colorMode, toggleColorMode } = useColorMode();
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -2010,21 +1972,6 @@ function ToolbarButtonDisplay() {
       /* @__PURE__ */ jsx(
         IconButton,
         {
-          _after: {
-            position: "absolute",
-            bottom: "-2px",
-            right: "-2px",
-            width: "20px",
-            height: "16px",
-            borderRadius: "5px",
-            backgroundColor: "#FF8700",
-            color: "black",
-            fontSize: "12px",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            content: '"!"'
-          },
           "aria-label": "Info Button",
           size: ["md", "lg"],
           onClick: onOpen,
@@ -2046,23 +1993,16 @@ function ToolbarButtonDisplay() {
         /* @__PURE__ */ jsx(ModalCloseButton, {}),
         /* @__PURE__ */ jsx(ModalBody, { children: /* @__PURE__ */ jsxs(Tabs, { isFitted: true, variant: "enclosed", children: [
           /* @__PURE__ */ jsxs(TabList, { mb: "1em", children: [
-            /* @__PURE__ */ jsx(Tab, { fontSize: "md", children: "ABOUT" }),
-            /* @__PURE__ */ jsx(Tab, { fontSize: "md", children: "CLASS INFO" }),
-            /* @__PURE__ */ jsx(Tab, { _after: {
-              position: "absolute",
-              top: "5rem",
-              right: "1rem",
-              width: "32px",
-              height: "24px",
-              borderRadius: "5px",
-              backgroundColor: "#FF8700",
-              color: "black",
-              fontSize: "12px",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              content: '"New"'
-            }, fontSize: "md", children: "FEEDBACK" })
+            /* @__PURE__ */ jsx(
+              Tab,
+              {
+                "aria-label": "About Panel",
+                fontSize: "md",
+                children: "ABOUT"
+              }
+            ),
+            /* @__PURE__ */ jsx(Tab, { "aria-label": "Class Info Panel", fontSize: "md", children: "CLASS INFO" }),
+            /* @__PURE__ */ jsx(Tab, { "aria-label": "Feedback Panel", fontSize: "md", children: "FEEDBACK" })
           ] }),
           /* @__PURE__ */ jsxs(TabPanels, { children: [
             /* @__PURE__ */ jsx(TabPanel, { children: /* @__PURE__ */ jsxs(Text, { children: [
@@ -2074,7 +2014,8 @@ function ToolbarButtonDisplay() {
               " button to view an academy's class program. Visit this website on your computer or laptop for a extensive weekly view.",
               /* @__PURE__ */ jsx("br", {}),
               /* @__PURE__ */ jsx("br", {}),
-              "This is an ongoing project with features and fixes to be added. Bookmark this page so you can access it at home, work, or on the go."
+              "This is an ongoing project with features and fixes to be added. Bookmark this page so you can access it at home, work, or on the go.",
+              /* @__PURE__ */ jsx(UpdateLog, {})
             ] }) }),
             /* @__PURE__ */ jsxs(TabPanel, { children: [
               /* @__PURE__ */ jsx(Text, { as: "b", children: "Brazilian Jiu Jitsu" }),
@@ -2091,18 +2032,19 @@ function ToolbarButtonDisplay() {
               /* @__PURE__ */ jsx("br", {}),
               /* @__PURE__ */ jsx(Text, { as: "b", children: "Special Events" }),
               /* @__PURE__ */ jsx(Box, { span: "true", w: "200px", h: "10px", borderRadius: "3xl", backgroundColor: colorMode === "light" ? "#E20000" : getDarkColor("#E20000") }),
-              /* @__PURE__ */ jsxs(Text, { children: [
-                "These events are either organized by the Houston BJJ community or by Houston Team Renzo Gracie and typically coincide with ",
-                /* @__PURE__ */ jsx(Text, { as: "b", children: "class cancellations" }),
-                " at the academy. For more details about these events, please refer to the academy's social media pages."
-              ] })
+              /* @__PURE__ */ jsx(Text, { children: "These events are either organized by the Houston BJJ community or by Houston Team Renzo Gracie and typically coincide with class cancellations at the academy. For more details about these events, please refer to the academy's social media pages." })
             ] }),
             /* @__PURE__ */ jsxs(TabPanel, { children: [
               /* @__PURE__ */ jsxs(Text, { mb: 6, children: [
                 "Are you enjoying what the site provides? Have any suggestions that would improve your experience?",
                 /* @__PURE__ */ jsx("br", {}),
                 /* @__PURE__ */ jsx("br", {}),
-                "Leave a message and share words of encouragment or ways the calendar could enhance your visit!"
+                "Leave a message and share words of encouragment or ways the calendar could enhance your visit!",
+                /* @__PURE__ */ jsx("br", {}),
+                /* @__PURE__ */ jsx("br", {}),
+                /* @__PURE__ */ jsx(Text, { textColor: colorMode === "light" ? "#0078ff" : getDarkColor("#0078ff"), as: "b", children: "For Academy Owners / Directors" }),
+                /* @__PURE__ */ jsx("br", {}),
+                "If you would like to update your academy's schedule or share information about an upcoming event, please provide the location and details below."
               ] }),
               /* @__PURE__ */ jsxs("form", { method: "POST", action: "https://formsubmit.co/92cb9ddf59f1e62ddc366d8322abea72", children: [
                 /* @__PURE__ */ jsxs(FormControl, { mb: 6, isInvalid: errors.message, children: [
@@ -2489,13 +2431,7 @@ function Page() {
               ] }) }),
               /* @__PURE__ */ jsx(Divider, { orientation: "vertical" }),
               /* @__PURE__ */ jsx(ButtonGroup, { size: ["md", "lg"], colorScheme: "messenger", children: /* @__PURE__ */ jsxs(Stack, { gap: [2, 3], children: [
-                /* @__PURE__ */ jsx(
-                  Button,
-                  {
-                    onClick: () => handleShowEvents("Houston (HQ)"),
-                    children: "HOUSTON (HQ)"
-                  }
-                ),
+                /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("Houston (HQ)"), children: "HOUSTON (HQ)" }),
                 /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("The Grove"), children: "THE GROVE" }),
                 /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("HCU Campus"), children: "HCU CAMPUS" }),
                 /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("HTX (Downtown)"), children: "HTX (DOWNTOWN)" }),
@@ -2505,7 +2441,30 @@ function Page() {
                 /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("Mont Belvieu"), children: "MONT BELVIEU" }),
                 /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("Pearland"), children: "PEARLAND" }),
                 /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("Riverstone"), children: "RIVERSTONE" }),
-                /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("The Woodlands"), children: "THE WOODLANDS" }),
+                /* @__PURE__ */ jsx(
+                  Button,
+                  {
+                    onClick: () => handleShowEvents("The Woodlands"),
+                    _after: {
+                      position: "absolute",
+                      top: "-4px",
+                      right: "-4px",
+                      width: "26px",
+                      height: "18px",
+                      borderRadius: "5px",
+                      backgroundColor: "#FF8700",
+                      color: "black",
+                      fontSize: "16px",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      content: '"!"'
+                    },
+                    "aria-label": "Info Button",
+                    size: ["md", "lg"],
+                    children: "THE WOODLANDS"
+                  }
+                ),
                 /* @__PURE__ */ jsx(Button, { isDisabled: true, onClick: () => handleShowEvents("Missouri City"), children: "MISSOURI CITY" })
               ] }) })
             ] }) })
@@ -2520,7 +2479,7 @@ function Page() {
       /* @__PURE__ */ jsx(Box, { pos: "absolute", mt: 2, children: /* @__PURE__ */ jsx(Icon, { as: SvgLogo, width: ["250px", "500px"], height: ["250px", "500px"], zIndex: -1 }) }),
       /* @__PURE__ */ jsxs(Box, { width: "100%", children: [
         calendarDisplay(),
-        /* @__PURE__ */ jsx(Text, { color: "blackAlpha", mt: 1, fontSize: ["12px", "16px"], children: "Last Updated 8.31.23" })
+        /* @__PURE__ */ jsx(Text, { color: "blackAlpha", mt: 1, fontSize: ["12px", "16px"], children: "Last Updated 9.20.23" })
       ] })
     ] }),
     /* @__PURE__ */ jsx(Footer, {})

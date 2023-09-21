@@ -24,13 +24,15 @@ import {
       FormErrorMessage, 
       FormLabel, 
       FormControl, 
-      Textarea 
+      Textarea,
+      Divider
       } from '@chakra-ui/react'
 import SvgInfo from "./InfoIcon"
 import SvgMoon from "./MoonIcon"
 import SvgSun from "./SunIcon"
 import getDarkColor from './getDarkColor';
 import { useForm } from 'react-hook-form'
+import UpdateLog from '../components/UpdateLog';
 
 export default function ToolbarButtonDisplay() {
       const { colorMode, toggleColorMode } = useColorMode()
@@ -69,20 +71,22 @@ export default function ToolbarButtonDisplay() {
             <>
             <Flex zIndex="2" flexDirection={directionVariant} sx={styleVariant}>
                   <IconButton aria-label='Color Mode Switch' size={["md", "lg"]} onClick={toggleColorMode} icon={<Icon as={colorMode === 'light' ? SvgMoon : SvgSun} />} />
-                  <IconButton _after={{ position: "absolute",
-                                          bottom: "-2px",
-                                          right: "-2px",
-                                          width: "20px",
-                                          height: "16px",
-                                          borderRadius: "5px",
-                                          backgroundColor: "#FF8700",
-                                          color: "black",
-                                          fontSize: "12px",
-                                          display: "flex",
-                                          justifyContent: "center",
-                                          alignItems: "center",
-                                          content: '"!"'}}
-                                          aria-label='Info Button' size={["md", "lg"]} onClick={onOpen} icon={<Icon as={SvgInfo} />} />             
+                  <IconButton 
+                  // _after={{ position: "absolute",
+                  //       bottom: "-2px",
+                  //       right: "-2px",
+                  //       width: "20px",
+                  //       height: "16px",
+                  //       borderRadius: "5px",
+                  //       backgroundColor: "#FF8700",
+                  //       color: "black",
+                  //       fontSize: "12px",
+                  //       display: "flex",
+                  //       justifyContent: "center",
+                  //       alignItems: "center",
+                  //       content: '"!"'}}
+                        aria-label='Info Button' 
+                        size={["md", "lg"]} onClick={onOpen} icon={<Icon as={SvgInfo} />} />             
             </Flex>
 
             <Modal motionPreset='slideInRight' scrollBehavior="outside" size="xl" isOpen={isOpen} onClose={onClose}>
@@ -97,21 +101,24 @@ export default function ToolbarButtonDisplay() {
                         <ModalBody>
                         <Tabs isFitted variant='enclosed'>
                               <TabList mb='1em'>
-                                    <Tab fontSize='md'>ABOUT</Tab>
-                                    <Tab fontSize='md'>CLASS INFO</Tab>
-                                    <Tab _after={{ position: "absolute",
-                                          top: "5rem",
-                                          right: "1rem",
-                                          width: "32px",
-                                          height: "24px",
-                                          borderRadius: "5px",
-                                          backgroundColor: "#FF8700",
-                                          color: "black",
-                                          fontSize: "12px",
-                                          display: "flex",
-                                          justifyContent: "center",
-                                          alignItems: "center",
-                                          content: '"New"'}} fontSize='md'>FEEDBACK</Tab>
+                                    <Tab 
+                                    // _before={{ position: "absolute",
+                                    //       top: "5rem",
+                                    //       left: "1rem",
+                                    //       width: "32px",
+                                    //       height: "24px",
+                                    //       borderRadius: "5px",
+                                    //       backgroundColor: "#FF8700",
+                                    //       color: "black",
+                                    //       fontSize: "12px",
+                                    //       display: "flex",
+                                    //       justifyContent: "center",
+                                    //       alignItems: "center",
+                                    //       content: '"!"'}} 
+                                    aria-label='About Panel' 
+                                    fontSize='md'>ABOUT</Tab>
+                                    <Tab aria-label='Class Info Panel' fontSize='md'>CLASS INFO</Tab>
+                                    <Tab aria-label='Feedback Panel' fontSize='md'>FEEDBACK</Tab>
                               </TabList>
                               <TabPanels>
                                     <TabPanel>
@@ -124,6 +131,7 @@ export default function ToolbarButtonDisplay() {
                                           <br />
                                           <br />
                                           This is an ongoing project with features and fixes to be added. Bookmark this page so you can access it at home, work, or on the go.
+                                          <UpdateLog />
                                     </Text>
                                     </TabPanel>
 
@@ -159,7 +167,7 @@ export default function ToolbarButtonDisplay() {
                                     <Box span="true" w="200px" h="10px" borderRadius="3xl" backgroundColor={colorMode === 'light' ? '#E20000' : getDarkColor('#E20000')}></Box>
 
                                     <Text >
-                                    These events are either organized by the Houston BJJ community or by Houston Team Renzo Gracie and typically coincide with <Text as="b">class cancellations</Text> at the academy. 
+                                    These events are either organized by the Houston BJJ community or by Houston Team Renzo Gracie and typically coincide with class cancellations at the academy. 
                                     For more details about these events, please refer to the academy's social media pages.
                                     </Text>
          
@@ -170,6 +178,11 @@ export default function ToolbarButtonDisplay() {
                                           <br />
                                           <br />
                                           Leave a message and share words of encouragment or ways the calendar could enhance your visit!
+                                          <br />
+                                          <br />
+                                          <Text textColor={colorMode === 'light' ? '#0078ff' : getDarkColor('#0078ff')} as="b">For Academy Owners / Directors</Text>
+                                          <br/>
+                                          If you would like to update your academy's schedule or share information about an upcoming event, please provide the location and details below.
                                           </Text>
              
                                           <form method="POST" action="https://formsubmit.co/92cb9ddf59f1e62ddc366d8322abea72" >

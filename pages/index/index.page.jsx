@@ -214,7 +214,7 @@ function Page() {
                                     href={linkAcademy("renzogracieriverstone")} icon={<SvgSocial/>}/>
 
                                     <IconButton as="a" color="white" bgGradient={bgGradients[2]} _hover={{ bg: "blackAlpha.600" }}
-                                    href={linkAcademy("renzo_gracie_the_woodlands")} icon={<SvgSocial/>}/>
+                                    href={linkAcademy("renzo_gracie_the_woodlands")}  icon={<SvgSocial/>}/>
 
                                     <IconButton isDisabled bgGradient={bgGradients[3]} _hover={{ bg: "blackAlpha.400" }} icon={<SvgSocial/>}/>
                                     
@@ -225,21 +225,7 @@ function Page() {
                               <ButtonGroup size={["md", "lg"]} colorScheme='messenger'>
                               <Stack gap={[2, 3]} >
                                     
-                                    <Button  
-                                          // _after={{ position: "absolute",
-                                          // top: "-5px",
-                                          // right: "-15px",
-                                          // width: "32px",
-                                          // height: "24px",
-                                          // borderRadius: "5px",
-                                          // backgroundColor: "#FF8700",
-                                          // color: "black",
-                                          // fontSize: "12px",
-                                          // display: "flex",
-                                          // justifyContent: "center",
-                                          // alignItems: "center",
-                                          // content: '"New"'}} 
-                                          onClick={() => handleShowEvents("Houston (HQ)")}>HOUSTON (HQ)</Button>
+                                    <Button  onClick={() => handleShowEvents("Houston (HQ)")}>HOUSTON (HQ)</Button>
                                     <Button  onClick={() => handleShowEvents("The Grove")}>THE GROVE</Button>
                                     <Button  onClick={() => handleShowEvents("HCU Campus")}>HCU CAMPUS</Button>
                                     <Button  onClick={() => handleShowEvents("HTX (Downtown)")}>HTX (DOWNTOWN)</Button>
@@ -249,7 +235,20 @@ function Page() {
                                     <Button  onClick={() => handleShowEvents("Mont Belvieu")}>MONT BELVIEU</Button>
                                     <Button  onClick={() => handleShowEvents("Pearland")}>PEARLAND</Button>
                                     <Button  onClick={() => handleShowEvents("Riverstone")}>RIVERSTONE</Button>
-                                    <Button  onClick={() => handleShowEvents("The Woodlands")}>THE WOODLANDS</Button>
+                                    <Button  onClick={() => handleShowEvents("The Woodlands")} _after={{ position: "absolute",
+                                          top: "-4px",
+                                          right: "-4px",
+                                          width: "26px",
+                                          height: "18px",
+                                          borderRadius: "5px",
+                                          backgroundColor: "#FF8700",
+                                          color: "black",
+                                          fontSize: "16px",
+                                          display: "flex",
+                                          justifyContent: "center",
+                                          alignItems: "center",
+                                          content: '"!"'}}
+                                          aria-label='Info Button' size={["md", "lg"]}>THE WOODLANDS</Button>
                                     <Button  isDisabled onClick={() => handleShowEvents("Missouri City")}>MISSOURI CITY</Button>
                               </Stack>           
                               </ButtonGroup>
@@ -275,7 +274,7 @@ function Page() {
 
             <Box  width="100%">      
                   {calendarDisplay()}
-                  <Text color="blackAlpha" mt={1} fontSize={["12px","16px"]}>Last Updated 8.31.23</Text>
+                  <Text color="blackAlpha" mt={1} fontSize={["12px","16px"]}>Last Updated 9.20.23</Text>
             </Box>
 
       </Flex>
