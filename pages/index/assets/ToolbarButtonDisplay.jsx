@@ -122,17 +122,19 @@ export default function ToolbarButtonDisplay() {
                               </TabList>
                               <TabPanels>
                                     <TabPanel>
-                                    <Text>
-                                          This application aims to serve all students & staff who are looking to balance their time between Renzo Gracie affiliate gyms in the Greater Houston Area.
-                                          <br />
-                                          <br />
-                                          Use the <Text textColor={colorMode === 'light' ? '#0078ff' : getDarkColor('#0078ff')} as="b">'Select Schedule'</Text> button to view an academy's class program. Visit this 
-                                          website on your computer or laptop for a extensive weekly view.
-                                          <br />
-                                          <br />
-                                          This is an ongoing project with features and fixes to be added. Bookmark this page so you can access it at home, work, or on the go.
+                                          <Text>
+                                                This application aims to serve all students & staff who are looking to balance their time between Renzo Gracie affiliate gyms in the Greater Houston Area.
+                                                <br />
+                                                <br />
+                                                Use the <Text textColor={colorMode === 'light' ? '#0078ff' : getDarkColor('#0078ff')} as="b">'Select Schedule'</Text> button to view an academy's class program. Visit this 
+                                                website on your computer or laptop for a extensive weekly view.
+                                                <br />
+                                                <br />
+                                                This is an ongoing project with features and fixes to be added. Bookmark this page so you can access it at home, work, or on the go.
+                                                <br/>
+                                                <br/>
+                                          </Text>
                                           <UpdateLog />
-                                    </Text>
                                     </TabPanel>
 
                                     <TabPanel>

@@ -1303,12 +1303,18 @@ export const academies = {
                         color: "#F08600"
                   },
             ],
-            "Advanced No-Gi Grappling":
-            {
-                  //Wednesday
-                  start: new Date(2023, 4, 3, 11, 0),
-                  end: new Date(2023, 4, 3, 12, 0),
-            },
+            "Advanced No-Gi Grappling":[
+                  {
+                        //Tuesday
+                        start: new Date(2023, 4, 2, 11, 30),
+                        end: new Date(2023, 4, 2, 12, 0),
+                  },
+                  {
+                        //Thursday
+                        start: new Date(2023, 4, 4, 11, 30),
+                        end: new Date(2023, 4, 4, 12, 0),
+                  },
+            ]
             
       },
 

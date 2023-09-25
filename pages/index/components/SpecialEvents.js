@@ -7,6 +7,13 @@ export const specialEvents = {
                   end: new Date(2023, 8, 30, 13, 0),
                   color: "#E20000"
             },
+            "Women's Self Defense Seminar w/ Tulsa Tara":
+            {
+                  //Friday
+                  start: new Date(2023, 9, 14, 13, 0),
+                  end: new Date(2023, 9, 14, 15, 0),
+                  color: "#E20000"
+            },
             "OPEN MAT": [
                   {
                         //Saturday
@@ -79,6 +86,11 @@ export const specialEvents = {
       },
 
       "HTX (Downtown)":{
+            "OPEN MAT":{
+                  start: new Date(2023, 8, 27, 12, 0),
+                  end: new Date(2023, 8, 27, 13, 0),
+                  color: "#E20000"
+            }
       },
 
       "Riverstone":{
