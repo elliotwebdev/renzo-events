@@ -1563,16 +1563,11 @@ export const academies = {
             "OPEN MAT" : [
                   {
                   //Friday
-                  start: new Date(2023, 4, 5, 11, 0),
-                  end: new Date(2023, 4, 5, 12, 0),
-                  },
-                  {
-                  //Friday
                   start: new Date(2023, 4, 5, 19, 0),
-                  end: new Date(2023, 4, 5, 20, 0),
+                  end: new Date(2023, 4, 5, 21, 0),
                   },
             ],
-            "Adult MMA":[
+            "Adult MMA / Striking":[
                   {
                         //Monday
                         start: new Date(2023, 4, 1, 20, 0),
@@ -1590,16 +1585,30 @@ export const academies = {
                   {
                         //Tuesday
                         start: new Date(2023, 4, 2, 18, 0),
-                        end: new Date(2023, 4, 2, 19, 0),
+                        end: new Date(2023, 4, 2, 18, 45),
                         color: "#F08600"
                   },
                   {
                         //Thursday
                         start: new Date(2023, 4, 4, 18, 0),
-                        end: new Date(2023, 4, 4, 19, 0),
+                        end: new Date(2023, 4, 4, 18, 45),
                         color: "#F08600"
                   },
             ],
+            "No-Gi Kids BJJ":[
+                  {
+                        //Monday
+                        start: new Date(2023, 4, 1, 18, 0),
+                        end: new Date(2023, 4, 1, 18, 45),
+                        color: "#F08600"
+                  },
+                  {
+                        //Wednesday
+                        start: new Date(2023, 4, 3, 18, 0),
+                        end: new Date(2023, 4, 3, 18, 45),
+                        color: "#F08600"
+                  },
+            ]
       },
 
       "Lake Houston":{

@@ -8,7 +8,20 @@ export default function UpdateLog(){
       <br/>
       <Text as='b'>Upcoming:</Text>
       <br/>
-      - Schedule changes for Huffman
+      + NAGA Texas Grappling & BJJ Championship | Oct. 21
+      <br/>
+      + JiuJitsu World League Houston VII | Oct. 28
+      <br/>
+      + Grappling Industries Houston BJJ & NoGi Round Robin | Nov. 12
+      <br/>
+      + Grappling Games Houston Winter Games | Dec. 9 & 10
+      <br/>
+      <br/>
+      <Text as='b'>Update 10.3.23</Text>
+      <br/>
+      + New Schedule for Huffman
+      <br/>
+      + Halloween Costume Parties @ Riverstone & Houston(HQ) | Oct.31 [During normal class hours]
       <br/>
       <br/>
       <Text as='b'>Update 9.25.23</Text>
