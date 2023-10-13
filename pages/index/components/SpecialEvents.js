@@ -24,11 +24,6 @@ export const specialEvents = {
             ],
             "Abraham The Mountain | Workshop Series": [
                   {
-                        start: new Date(2023, 9, 7, 10, 0),
-                        end: new Date(2023, 9, 7, 12, 0),
-                        color: "#E20000"
-                  },
-                  {
                         start: new Date(2023, 11, 4, 10, 0),
                         end: new Date(2023, 11, 4, 12, 0),
                         color: "#E20000"
@@ -46,6 +41,18 @@ export const specialEvents = {
                         color: "#E20000"
                   },
             ],
+            "Kemail Verhoeven Seminar":
+            {
+                  start: new Date(2023, 9, 16, 18, 30),
+                  end: new Date(2023, 9, 16, 21, 0),
+                  color: "#E20000"
+            },
+            "Buddy Day":
+            {
+                  start: new Date(2023, 9, 18, 6, 0),
+                  end: new Date(2023, 9, 18, 21, 0),
+                  color: "#E20000"
+            },
             "Halloween Costume Party":
             {
                   start: new Date(2023, 9, 31, 17, 0),

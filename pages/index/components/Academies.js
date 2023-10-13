@@ -174,12 +174,6 @@ export const academies = {
                   start: new Date(2023, 4, 1, 13, 0),
                   end: new Date(2023, 4, 1, 13, 30),
             },
-            {     
-                  //Monday
-                  start: new Date(2023, 4, 1, 19, 30),
-                  end: new Date(2023, 4, 1, 20, 0),
-                  
-            },
             {
                   //Tuesday
                   start: new Date(2023, 4, 2, 13, 0),
@@ -220,6 +214,32 @@ export const academies = {
                   //Tuesday
                   start: new Date(2023, 4, 2, 17, 30),
                   end: new Date(2023, 4, 2, 18, 30),
+                  color: "#F08600"
+            },
+            {
+                  //Thursday
+                  start: new Date(2023, 4, 4, 17, 30),
+                  end: new Date(2023, 4, 4, 18, 30),
+                  color: "#F08600"
+            },
+            ],
+            "Kids Fundamental BJJ (7-11 y.o) [MAT 2]":[
+            {
+                  //Monday
+                  start: new Date(2023, 4, 1, 17, 30),
+                  end: new Date(2023, 4, 1, 18, 30),
+                  color: "#F08600"
+            },
+            {
+                  //Tuesday
+                  start: new Date(2023, 4, 2, 17, 30),
+                  end: new Date(2023, 4, 2, 18, 30),
+                  color: "#F08600"
+            },
+            {
+                  //Wednesday
+                  start: new Date(2023, 4, 3, 17, 30),
+                  end: new Date(2023, 4, 3, 18, 30),
                   color: "#F08600"
             },
             {
@@ -317,11 +337,11 @@ export const academies = {
                   end: new Date(2023, 4, 4, 12, 0),
                   
             },
-            "Veterans BJJ": 
+            "Defending Pins & Escapes": 
             {     
                   //Monday
                   start: new Date(2023, 4, 1, 19, 30),
-                  end: new Date(2023, 4, 1, 20, 30),
+                  end: new Date(2023, 4, 1, 20, 0),
                   
             },
             "OPEN MAT": 

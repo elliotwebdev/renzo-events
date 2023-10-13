@@ -17,6 +17,15 @@ export default function UpdateLog(){
       + Grappling Games Houston Winter Games | Dec. 9 & 10
       <br/>
       <br/>
+      <Text as='b'>Update 10.13.23</Text>
+      <br/>
+      + Fixes to Houston(HQ) Schedule
+      <br/>
+      + Kemail Verhoeven from Renzo Gracie Holland Seminar @ Houston(HQ) | Oct.16
+      <br/>
+      + Buddy Day [Bring a friend to class] @ Houston(HQ) | Oct.18
+      <br/>
+      <br/>
       <Text as='b'>Update 10.3.23</Text>
       <br/>
       + New Schedule for Huffman

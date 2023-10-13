@@ -173,11 +173,6 @@ const academies = {
         end: new Date(2023, 4, 1, 13, 30)
       },
       {
-        //Monday
-        start: new Date(2023, 4, 1, 19, 30),
-        end: new Date(2023, 4, 1, 20, 0)
-      },
-      {
         //Tuesday
         start: new Date(2023, 4, 2, 13, 0),
         end: new Date(2023, 4, 2, 13, 30)
@@ -217,6 +212,32 @@ const academies = {
         //Tuesday
         start: new Date(2023, 4, 2, 17, 30),
         end: new Date(2023, 4, 2, 18, 30),
+        color: "#F08600"
+      },
+      {
+        //Thursday
+        start: new Date(2023, 4, 4, 17, 30),
+        end: new Date(2023, 4, 4, 18, 30),
+        color: "#F08600"
+      }
+    ],
+    "Kids Fundamental BJJ (7-11 y.o) [MAT 2]": [
+      {
+        //Monday
+        start: new Date(2023, 4, 1, 17, 30),
+        end: new Date(2023, 4, 1, 18, 30),
+        color: "#F08600"
+      },
+      {
+        //Tuesday
+        start: new Date(2023, 4, 2, 17, 30),
+        end: new Date(2023, 4, 2, 18, 30),
+        color: "#F08600"
+      },
+      {
+        //Wednesday
+        start: new Date(2023, 4, 3, 17, 30),
+        end: new Date(2023, 4, 3, 18, 30),
         color: "#F08600"
       },
       {
@@ -303,10 +324,10 @@ const academies = {
       start: new Date(2023, 4, 4, 11, 0),
       end: new Date(2023, 4, 4, 12, 0)
     },
-    "Veterans BJJ": {
+    "Defending Pins & Escapes": {
       //Monday
       start: new Date(2023, 4, 1, 19, 30),
-      end: new Date(2023, 4, 1, 20, 30)
+      end: new Date(2023, 4, 1, 20, 0)
     },
     "OPEN MAT": {
       //Sunday
@@ -1768,11 +1789,6 @@ const specialEvents = {
     ],
     "Abraham The Mountain | Workshop Series": [
       {
-        start: new Date(2023, 9, 7, 10, 0),
-        end: new Date(2023, 9, 7, 12, 0),
-        color: "#E20000"
-      },
-      {
         start: new Date(2023, 11, 4, 10, 0),
         end: new Date(2023, 11, 4, 12, 0),
         color: "#E20000"
@@ -1790,6 +1806,16 @@ const specialEvents = {
         color: "#E20000"
       }
     ],
+    "Kemail Verhoeven Seminar": {
+      start: new Date(2023, 9, 16, 18, 30),
+      end: new Date(2023, 9, 16, 21, 0),
+      color: "#E20000"
+    },
+    "Buddy Day": {
+      start: new Date(2023, 9, 18, 6, 0),
+      end: new Date(2023, 9, 18, 21, 0),
+      color: "#E20000"
+    },
     "Halloween Costume Party": {
       start: new Date(2023, 9, 31, 17, 0),
       end: new Date(2023, 9, 31, 19, 0),
@@ -2247,6 +2273,15 @@ function UpdateLog() {
     "+ Grappling Industries Houston BJJ & NoGi Round Robin | Nov. 12",
     /* @__PURE__ */ jsx("br", {}),
     "+ Grappling Games Houston Winter Games | Dec. 9 & 10",
+    /* @__PURE__ */ jsx("br", {}),
+    /* @__PURE__ */ jsx("br", {}),
+    /* @__PURE__ */ jsx(Text, { as: "b", children: "Update 10.13.23" }),
+    /* @__PURE__ */ jsx("br", {}),
+    "+ Fixes to Houston(HQ) Schedule",
+    /* @__PURE__ */ jsx("br", {}),
+    "+ Kemail Verhoeven from Renzo Gracie Holland Seminar @ Houston(HQ) | Oct.16",
+    /* @__PURE__ */ jsx("br", {}),
+    "+ Buddy Day [Bring a friend to class] @ Houston(HQ) | Oct.18",
     /* @__PURE__ */ jsx("br", {}),
     /* @__PURE__ */ jsx("br", {}),
     /* @__PURE__ */ jsx(Text, { as: "b", children: "Update 10.3.23" }),
@@ -2859,7 +2894,7 @@ function Page() {
       /* @__PURE__ */ jsx(Box, { pos: "absolute", mt: 2, children: /* @__PURE__ */ jsx(Icon, { as: SvgLogo, width: ["250px", "500px"], height: ["250px", "500px"], zIndex: -1 }) }),
       /* @__PURE__ */ jsxs(Box, { width: "100%", children: [
         calendarDisplay(),
-        /* @__PURE__ */ jsx(Text, { color: "blackAlpha", mt: 1, fontSize: ["12px", "16px"], children: "Last Updated 10.3.23" })
+        /* @__PURE__ */ jsx(Text, { color: "blackAlpha", mt: 1, fontSize: ["12px", "16px"], children: "Last Updated 10.13.23" })
       ] })
     ] }),
     /* @__PURE__ */ jsx(Footer, {})
