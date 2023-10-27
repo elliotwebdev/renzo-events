@@ -8,13 +8,18 @@ export default function UpdateLog(){
       <br/>
       <Text as='b'>Upcoming:</Text>
       <br/>
-      + NAGA Texas Grappling & BJJ Championship | Oct. 21
-      <br/>
       + JiuJitsu World League Houston VII | Oct. 28
       <br/>
       + Grappling Industries Houston BJJ & NoGi Round Robin | Nov. 12
       <br/>
       + Grappling Games Houston Winter Games | Dec. 9 & 10
+      <br/>
+      <br/>
+      <Text as='b'>Update 10.27.23</Text>
+      <br/>
+      + New Schedule for HTX (Downtown)
+      <br/>
+      + Fixed date for Abraham the Mountain Seminars @ Houston (HQ) to Dec.2
       <br/>
       <br/>
       <Text as='b'>Update 10.13.23</Text>

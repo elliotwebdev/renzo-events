@@ -228,7 +228,20 @@ function Page() {
                                     <Button  onClick={() => handleShowEvents("Houston (HQ)")}>HOUSTON (HQ)</Button>
                                     <Button  onClick={() => handleShowEvents("The Grove")}>THE GROVE</Button>
                                     <Button  onClick={() => handleShowEvents("HCU Campus")}>HCU CAMPUS</Button>
-                                    <Button  onClick={() => handleShowEvents("HTX (Downtown)")}>HTX (DOWNTOWN)</Button>
+                                    <Button  onClick={() => handleShowEvents("HTX (Downtown)")}
+                                          _after={{ position: "absolute",
+                                          top: "-4px",
+                                          right: "-4px",
+                                          width: "26px",
+                                          height: "18px",
+                                          borderRadius: "5px",
+                                          backgroundColor: "#FF8700",
+                                          color: "black",
+                                          fontSize: "16px",
+                                          display: "flex",
+                                          justifyContent: "center",
+                                          alignItems: "center",
+                                          content: '"!"'}}>HTX (DOWNTOWN)</Button>
                                     <Button  onClick={() => handleShowEvents("Huffman")}
                                           _after={{ position: "absolute",
                                           top: "-4px",
@@ -242,42 +255,13 @@ function Page() {
                                           display: "flex",
                                           justifyContent: "center",
                                           alignItems: "center",
-                                          content: '"!"'}}
-                                          >HUFFMAN</Button>
+                                          content: '"!"'}}>HUFFMAN</Button>
                                     <Button  onClick={() => handleShowEvents("Katy")}>KATY</Button>
                                     <Button  onClick={() => handleShowEvents("Lake Houston")}>LAKE HOUSTON</Button>
                                     <Button  onClick={() => handleShowEvents("Mont Belvieu")}>MONT BELVIEU</Button>
-                                    <Button  onClick={() => handleShowEvents("Pearland")}
-                                          _after={{ position: "absolute",
-                                          top: "-4px",
-                                          right: "-4px",
-                                          width: "26px",
-                                          height: "18px",
-                                          borderRadius: "5px",
-                                          backgroundColor: "#FF8700",
-                                          color: "black",
-                                          fontSize: "16px",
-                                          display: "flex",
-                                          justifyContent: "center",
-                                          alignItems: "center",
-                                          content: '"!"'}}
-                                          >PEARLAND</Button>
+                                    <Button  onClick={() => handleShowEvents("Pearland")}>PEARLAND</Button>
                                     <Button  onClick={() => handleShowEvents("Riverstone")}>RIVERSTONE</Button>
-                                    <Button  onClick={() => handleShowEvents("The Woodlands")} 
-                                          _after={{ position: "absolute",
-                                          top: "-4px",
-                                          right: "-4px",
-                                          width: "26px",
-                                          height: "18px",
-                                          borderRadius: "5px",
-                                          backgroundColor: "#FF8700",
-                                          color: "black",
-                                          fontSize: "16px",
-                                          display: "flex",
-                                          justifyContent: "center",
-                                          alignItems: "center",
-                                          content: '"!"'}}
-                                          >THE WOODLANDS</Button>
+                                    <Button  onClick={() => handleShowEvents("The Woodlands")}>THE WOODLANDS</Button>
                                     <Button  isDisabled onClick={() => handleShowEvents("Missouri City")}>MISSOURI CITY</Button>
                               </Stack>           
                               </ButtonGroup>
@@ -303,7 +287,7 @@ function Page() {
 
             <Box  width="100%">      
                   {calendarDisplay()}
-                  <Text color="blackAlpha" mt={1} fontSize={["12px","16px"]}>Last Updated 10.13.23</Text>
+                  <Text color="blackAlpha" mt={1} fontSize={["12px","16px"]}>Last Updated 10.27.23</Text>
             </Box>
 
       </Flex>

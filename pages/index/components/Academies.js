@@ -552,19 +552,8 @@ export const academies = {
            
                   },
                   {    
-                        start: new Date(2023, 4, 3, 12, 0),
-                        end: new Date(2023, 4, 3, 13, 0),
-           
-                  },
-                  {    
                         start: new Date(2023, 4, 3, 17, 15),
                         end: new Date(2023, 4, 3, 18, 30),
-           
-                  },
-                  {    
-                        //Thursday
-                        start: new Date(2023, 4, 4, 17, 15),
-                        end: new Date(2023, 4, 4, 18, 0),
            
                   },
                   {    
@@ -576,12 +565,6 @@ export const academies = {
                   
             ],
             "No-Gi BJJ": [
-                  {    
-                        // Monday
-                        start: new Date(2023, 4, 1, 12, 0),
-                        end: new Date(2023, 4, 1, 13, 0),
-           
-                  },
                   {    
                         // Tuesday
                         start: new Date(2023, 4, 2, 9, 0),
@@ -627,15 +610,22 @@ export const academies = {
                   },
                   {    
                         //Thursday
-                        start: new Date(2023, 4, 4, 18, 0),
+                        start: new Date(2023, 4, 4, 18, 30),
                         end: new Date(2023, 4, 4, 19, 0),
            
                   },
             ],
             "OPEN MAT": {    
                   //Friday
-                  start: new Date(2023, 4, 5, 11, 30),
-                  end: new Date(2023, 4, 5, 13, 0),
+                  start: new Date(2023, 4, 5, 17, 30),
+                  end: new Date(2023, 4, 5, 19, 0),
+     
+            },
+            "BJJ (Gi & No-Gi)":
+            {    
+                  //Thursday
+                  start: new Date(2023, 4, 4, 17, 15),
+                  end: new Date(2023, 4, 4, 18, 30),
      
             },
       },
