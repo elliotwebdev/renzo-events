@@ -669,12 +669,6 @@ export const academies = {
                         end: new Date(2023, 4, 4, 7, 0),
            
                   },
-                  {    
-                        // Thursday
-                        start: new Date(2023, 4, 4, 19, 0),
-                        end: new Date(2023, 4, 4, 20, 0),
-           
-                  },
                   
             ],
             "Brunch Samurais (BJJ Class)":
@@ -696,6 +690,12 @@ export const academies = {
                         //Saturday
                         start: new Date(2023, 4, 6, 9, 0),
                         end: new Date(2023, 4, 6, 10, 0),
+           
+                  },
+                  {    
+                        // Thursday
+                        start: new Date(2023, 4, 4, 19, 0),
+                        end: new Date(2023, 4, 4, 20, 0),
            
                   },
             ],

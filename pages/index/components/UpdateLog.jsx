@@ -19,6 +19,8 @@ export default function UpdateLog(){
       <br/>
       + New Schedule for HTX (Downtown)
       <br/>
+      + Fixed schedule for Riverstone
+      <br/>
       + Fixed date for Abraham the Mountain Seminars @ Houston (HQ) to Dec.2
       <br/>
       <br/>

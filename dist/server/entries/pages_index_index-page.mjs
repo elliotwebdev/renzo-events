@@ -602,11 +602,6 @@ const academies = {
         //Thursday
         start: new Date(2023, 4, 4, 6, 0),
         end: new Date(2023, 4, 4, 7, 0)
-      },
-      {
-        // Thursday
-        start: new Date(2023, 4, 4, 19, 0),
-        end: new Date(2023, 4, 4, 20, 0)
       }
     ],
     "Brunch Samurais (BJJ Class)": {
@@ -624,6 +619,11 @@ const academies = {
         //Saturday
         start: new Date(2023, 4, 6, 9, 0),
         end: new Date(2023, 4, 6, 10, 0)
+      },
+      {
+        // Thursday
+        start: new Date(2023, 4, 4, 19, 0),
+        end: new Date(2023, 4, 4, 20, 0)
       }
     ],
     "Kids BJJ (4-6 y.o)": [
@@ -2185,6 +2185,8 @@ function UpdateLog() {
     /* @__PURE__ */ jsx(Text, { as: "b", children: "Update 10.27.23" }),
     /* @__PURE__ */ jsx("br", {}),
     "+ New Schedule for HTX (Downtown)",
+    /* @__PURE__ */ jsx("br", {}),
+    "+ Fixed schedule for Riverstone",
     /* @__PURE__ */ jsx("br", {}),
     "+ Fixed date for Abraham the Mountain Seminars @ Houston (HQ) to Dec.2",
     /* @__PURE__ */ jsx("br", {}),
