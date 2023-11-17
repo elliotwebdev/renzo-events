@@ -242,20 +242,7 @@ function Page() {
                                           justifyContent: "center",
                                           alignItems: "center",
                                           content: '"!"'}}>HTX (DOWNTOWN)</Button>
-                                    <Button  onClick={() => handleShowEvents("Huffman")}
-                                          _after={{ position: "absolute",
-                                          top: "-4px",
-                                          right: "-4px",
-                                          width: "26px",
-                                          height: "18px",
-                                          borderRadius: "5px",
-                                          backgroundColor: "#FF8700",
-                                          color: "black",
-                                          fontSize: "16px",
-                                          display: "flex",
-                                          justifyContent: "center",
-                                          alignItems: "center",
-                                          content: '"!"'}}>HUFFMAN</Button>
+                                    <Button  onClick={() => handleShowEvents("Huffman")}>HUFFMAN</Button>
                                     <Button  onClick={() => handleShowEvents("Katy")}>KATY</Button>
                                     <Button  onClick={() => handleShowEvents("Lake Houston")}>LAKE HOUSTON</Button>
                                     <Button  onClick={() => handleShowEvents("Mont Belvieu")}>MONT BELVIEU</Button>
@@ -287,7 +274,7 @@ function Page() {
 
             <Box  width="100%">      
                   {calendarDisplay()}
-                  <Text color="blackAlpha" mt={1} fontSize={["12px","16px"]}>Last Updated 10.27.23</Text>
+                  <Text color="blackAlpha" mt={1} fontSize={["12px","16px"]}>Last Updated 11.17.23</Text>
             </Box>
 
       </Flex>

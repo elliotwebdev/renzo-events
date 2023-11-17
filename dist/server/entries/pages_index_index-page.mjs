@@ -492,15 +492,11 @@ const academies = {
   "HTX (Downtown)": {
     minTime: new Date(2023, 0, 1, 7, 0, 0),
     maxTime: new Date(2023, 0, 1, 20, 0, 0),
-    "BJJ": [
+    "No-Gi BJJ": [
       {
         // Monday
         start: new Date(2023, 4, 1, 7, 0),
         end: new Date(2023, 4, 1, 8, 0)
-      },
-      {
-        start: new Date(2023, 4, 1, 17, 15),
-        end: new Date(2023, 4, 1, 18, 30)
       },
       {
         // Wednesday
@@ -508,23 +504,17 @@ const academies = {
         end: new Date(2023, 4, 3, 8, 0)
       },
       {
-        start: new Date(2023, 4, 3, 17, 15),
-        end: new Date(2023, 4, 3, 18, 30)
-      },
-      {
         //Friday
         start: new Date(2023, 4, 5, 7, 0),
         end: new Date(2023, 4, 5, 8, 0)
-      }
-    ],
-    "No-Gi BJJ": [
+      },
       {
         // Tuesday
         start: new Date(2023, 4, 2, 9, 0),
         end: new Date(2023, 4, 2, 10, 0)
       },
       {
-        start: new Date(2023, 4, 2, 17, 15),
+        start: new Date(2023, 4, 2, 17, 30),
         end: new Date(2023, 4, 2, 18, 30)
       },
       {
@@ -536,6 +526,16 @@ const academies = {
         //Saturday
         start: new Date(2023, 4, 6, 11, 0),
         end: new Date(2023, 4, 6, 12, 0)
+      }
+    ],
+    "BJJ": [
+      {
+        start: new Date(2023, 4, 1, 17, 30),
+        end: new Date(2023, 4, 1, 18, 30)
+      },
+      {
+        start: new Date(2023, 4, 3, 17, 30),
+        end: new Date(2023, 4, 3, 18, 30)
       }
     ],
     "Live Training": [
@@ -567,7 +567,7 @@ const academies = {
     },
     "BJJ (Gi & No-Gi)": {
       //Thursday
-      start: new Date(2023, 4, 4, 17, 15),
+      start: new Date(2023, 4, 4, 17, 30),
       end: new Date(2023, 4, 4, 18, 30)
     }
   },
@@ -1758,20 +1758,6 @@ const academies = {
 };
 const specialEvents = {
   "Houston (HQ)": {
-    "OPEN MAT | Scrimmage @ The Grove": [
-      {
-        //Saturday
-        start: new Date(2023, 10, 4, 10, 0),
-        end: new Date(2023, 10, 4, 12, 0),
-        color: "#E20000"
-      },
-      {
-        //Saturday
-        start: new Date(2023, 11, 2, 10, 0),
-        end: new Date(2023, 11, 2, 12, 0),
-        color: "#E20000"
-      }
-    ],
     "Abraham The Mountain | Workshop Series": [
       {
         start: new Date(2023, 11, 2, 10, 0),
@@ -1779,28 +1765,6 @@ const specialEvents = {
         color: "#E20000"
       }
     ],
-    "OPEN MAT": [
-      {
-        start: new Date(2023, 11, 4, 12, 0),
-        end: new Date(2023, 11, 4, 13, 0),
-        color: "#E20000"
-      }
-    ],
-    "Halloween Costume Party": {
-      start: new Date(2023, 9, 31, 17, 0),
-      end: new Date(2023, 9, 31, 19, 0),
-      color: "#E20000"
-    },
-    "JiuJitsu World League Houston VII": {
-      start: new Date(2023, 9, 28, 8, 0),
-      end: new Date(2023, 9, 28, 19, 0),
-      color: "#E20000"
-    },
-    "Grappling Industries Houston BJJ & NoGi Round Robin": {
-      start: new Date(2023, 10, 12, 8, 0),
-      end: new Date(2023, 10, 12, 19, 0),
-      color: "#E20000"
-    },
     "Grappling Games Houston Winter Games": [
       {
         start: new Date(2023, 11, 9, 8, 0),
@@ -1810,6 +1774,23 @@ const specialEvents = {
       {
         start: new Date(2023, 11, 10, 8, 0),
         end: new Date(2023, 11, 10, 19, 0),
+        color: "#E20000"
+      }
+    ],
+    "OPEN MAT | All classes cancelled": [
+      {
+        start: new Date(2023, 10, 23, 10, 0),
+        end: new Date(2023, 10, 23, 12, 0),
+        color: "#E20000"
+      },
+      {
+        start: new Date(2023, 10, 24, 10, 0),
+        end: new Date(2023, 10, 24, 12, 0),
+        color: "#E20000"
+      },
+      {
+        start: new Date(2023, 10, 25, 10, 0),
+        end: new Date(2023, 10, 25, 12, 0),
         color: "#E20000"
       }
     ]
@@ -1818,27 +1799,11 @@ const specialEvents = {
     "Kids Team Renzo Prep & Scrimmage": [
       {
         //Saturday
-        start: new Date(2023, 10, 4, 10, 30),
-        end: new Date(2023, 10, 4, 12, 0),
-        color: "#E20000"
-      },
-      {
-        //Saturday
         start: new Date(2023, 11, 2, 10, 30),
         end: new Date(2023, 11, 2, 12, 0),
         color: "#E20000"
       }
     ],
-    "JiuJitsu World League Houston VII": {
-      start: new Date(2023, 9, 28, 8, 0),
-      end: new Date(2023, 9, 28, 19, 0),
-      color: "#E20000"
-    },
-    "Grappling Industries Houston BJJ & NoGi Round Robin": {
-      start: new Date(2023, 10, 12, 8, 0),
-      end: new Date(2023, 10, 12, 19, 0),
-      color: "#E20000"
-    },
     "Grappling Games Houston Winter Games": [
       {
         start: new Date(2023, 11, 9, 8, 0),
@@ -1850,19 +1815,31 @@ const specialEvents = {
         end: new Date(2023, 11, 10, 19, 0),
         color: "#E20000"
       }
+    ],
+    "Academy Closed Today | OPEN MAT @ Renzo Gracie Houston": [
+      {
+        start: new Date(2023, 10, 23, 10, 0),
+        end: new Date(2023, 10, 23, 12, 0),
+        color: "#E20000"
+      },
+      {
+        start: new Date(2023, 10, 24, 10, 0),
+        end: new Date(2023, 10, 24, 12, 0),
+        color: "#E20000"
+      },
+      {
+        start: new Date(2023, 10, 25, 10, 0),
+        end: new Date(2023, 10, 25, 12, 0),
+        color: "#E20000"
+      },
+      {
+        start: new Date(2023, 10, 26, 10, 0),
+        end: new Date(2023, 10, 26, 12, 0),
+        color: "#E20000"
+      }
     ]
   },
   "HTX (Downtown)": {
-    "JiuJitsu World League Houston VII": {
-      start: new Date(2023, 9, 28, 8, 0),
-      end: new Date(2023, 9, 28, 19, 0),
-      color: "#E20000"
-    },
-    "Grappling Industries Houston BJJ & NoGi Round Robin": {
-      start: new Date(2023, 10, 12, 8, 0),
-      end: new Date(2023, 10, 12, 19, 0),
-      color: "#E20000"
-    },
     "Grappling Games Houston Winter Games": [
       {
         start: new Date(2023, 11, 9, 8, 0),
@@ -1880,32 +1857,11 @@ const specialEvents = {
     "Academy Closed | Scrimmage @ The Grove": [
       {
         //Saturday
-        start: new Date(2023, 10, 4, 10, 0),
-        end: new Date(2023, 10, 4, 12, 0),
-        color: "#E20000"
-      },
-      {
-        //Saturday
         start: new Date(2023, 11, 2, 10, 0),
         end: new Date(2023, 11, 2, 12, 0),
         color: "#E20000"
       }
     ],
-    "Halloween Costume Party": {
-      start: new Date(2023, 9, 31, 17, 0),
-      end: new Date(2023, 9, 31, 19, 0),
-      color: "#E20000"
-    },
-    "JiuJitsu World League Houston VII": {
-      start: new Date(2023, 9, 28, 8, 0),
-      end: new Date(2023, 9, 28, 19, 0),
-      color: "#E20000"
-    },
-    "Grappling Industries Houston BJJ & NoGi Round Robin": {
-      start: new Date(2023, 10, 12, 8, 0),
-      end: new Date(2023, 10, 12, 19, 0),
-      color: "#E20000"
-    },
     "Grappling Games Houston Winter Games": [
       {
         start: new Date(2023, 11, 9, 8, 0),
@@ -1917,19 +1873,31 @@ const specialEvents = {
         end: new Date(2023, 11, 10, 19, 0),
         color: "#E20000"
       }
+    ],
+    "Academy Closed Today | OPEN MAT @ Renzo Gracie Houston": [
+      {
+        start: new Date(2023, 10, 23, 10, 0),
+        end: new Date(2023, 10, 23, 12, 0),
+        color: "#E20000"
+      },
+      {
+        start: new Date(2023, 10, 24, 10, 0),
+        end: new Date(2023, 10, 24, 12, 0),
+        color: "#E20000"
+      },
+      {
+        start: new Date(2023, 10, 25, 10, 0),
+        end: new Date(2023, 10, 25, 12, 0),
+        color: "#E20000"
+      },
+      {
+        start: new Date(2023, 10, 26, 10, 0),
+        end: new Date(2023, 10, 26, 12, 0),
+        color: "#E20000"
+      }
     ]
   },
   "HCU Campus": {
-    "JiuJitsu World League Houston VII": {
-      start: new Date(2023, 9, 28, 8, 0),
-      end: new Date(2023, 9, 28, 19, 0),
-      color: "#E20000"
-    },
-    "Grappling Industries Houston BJJ & NoGi Round Robin": {
-      start: new Date(2023, 10, 12, 8, 0),
-      end: new Date(2023, 10, 12, 19, 0),
-      color: "#E20000"
-    },
     "Grappling Games Houston Winter Games": [
       {
         start: new Date(2023, 11, 9, 8, 0),
@@ -1944,16 +1912,6 @@ const specialEvents = {
     ]
   },
   "Katy": {
-    "JiuJitsu World League Houston VII": {
-      start: new Date(2023, 9, 28, 8, 0),
-      end: new Date(2023, 9, 28, 19, 0),
-      color: "#E20000"
-    },
-    "Grappling Industries Houston BJJ & NoGi Round Robin": {
-      start: new Date(2023, 10, 12, 8, 0),
-      end: new Date(2023, 10, 12, 19, 0),
-      color: "#E20000"
-    },
     "Grappling Games Houston Winter Games": [
       {
         start: new Date(2023, 11, 9, 8, 0),
@@ -1968,16 +1926,6 @@ const specialEvents = {
     ]
   },
   "Mont Belvieu": {
-    "JiuJitsu World League Houston VII": {
-      start: new Date(2023, 9, 28, 8, 0),
-      end: new Date(2023, 9, 28, 19, 0),
-      color: "#E20000"
-    },
-    "Grappling Industries Houston BJJ & NoGi Round Robin": {
-      start: new Date(2023, 10, 12, 8, 0),
-      end: new Date(2023, 10, 12, 19, 0),
-      color: "#E20000"
-    },
     "Grappling Games Houston Winter Games": [
       {
         start: new Date(2023, 11, 9, 8, 0),
@@ -1989,19 +1937,28 @@ const specialEvents = {
         end: new Date(2023, 11, 10, 19, 0),
         color: "#E20000"
       }
+    ],
+    "Academy Closed Today | OPEN MAT @ Renzo Gracie Houston": [
+      {
+        start: new Date(2023, 10, 23, 10, 0),
+        end: new Date(2023, 10, 23, 12, 0),
+        color: "#E20000"
+      },
+      {
+        start: new Date(2023, 10, 24, 10, 0),
+        end: new Date(2023, 10, 24, 12, 0),
+        color: "#E20000"
+      }
+    ],
+    "OPEN MAT | All classes cancelled": [
+      {
+        start: new Date(2023, 10, 22, 10, 0),
+        end: new Date(2023, 10, 22, 12, 0),
+        color: "#E20000"
+      }
     ]
   },
   "Pearland": {
-    "JiuJitsu World League Houston VII": {
-      start: new Date(2023, 9, 28, 8, 0),
-      end: new Date(2023, 9, 28, 19, 0),
-      color: "#E20000"
-    },
-    "Grappling Industries Houston BJJ & NoGi Round Robin": {
-      start: new Date(2023, 10, 12, 8, 0),
-      end: new Date(2023, 10, 12, 19, 0),
-      color: "#E20000"
-    },
     "Grappling Games Houston Winter Games": [
       {
         start: new Date(2023, 11, 9, 8, 0),
@@ -2016,16 +1973,6 @@ const specialEvents = {
     ]
   },
   "The Woodlands": {
-    "JiuJitsu World League Houston VII": {
-      start: new Date(2023, 9, 28, 8, 0),
-      end: new Date(2023, 9, 28, 19, 0),
-      color: "#E20000"
-    },
-    "Grappling Industries Houston BJJ & NoGi Round Robin": {
-      start: new Date(2023, 10, 12, 8, 0),
-      end: new Date(2023, 10, 12, 19, 0),
-      color: "#E20000"
-    },
     "Grappling Games Houston Winter Games": [
       {
         start: new Date(2023, 11, 9, 8, 0),
@@ -2040,16 +1987,6 @@ const specialEvents = {
     ]
   },
   "Huffman": {
-    "JiuJitsu World League Houston VII": {
-      start: new Date(2023, 9, 28, 8, 0),
-      end: new Date(2023, 9, 28, 19, 0),
-      color: "#E20000"
-    },
-    "Grappling Industries Houston BJJ & NoGi Round Robin": {
-      start: new Date(2023, 10, 12, 8, 0),
-      end: new Date(2023, 10, 12, 19, 0),
-      color: "#E20000"
-    },
     "Grappling Games Houston Winter Games": [
       {
         start: new Date(2023, 11, 9, 8, 0),
@@ -2064,16 +2001,6 @@ const specialEvents = {
     ]
   },
   "Lake Houston": {
-    "JiuJitsu World League Houston VII": {
-      start: new Date(2023, 9, 28, 8, 0),
-      end: new Date(2023, 9, 28, 19, 0),
-      color: "#E20000"
-    },
-    "Grappling Industries Houston BJJ & NoGi Round Robin": {
-      start: new Date(2023, 10, 12, 8, 0),
-      end: new Date(2023, 10, 12, 19, 0),
-      color: "#E20000"
-    },
     "Grappling Games Houston Winter Games": [
       {
         start: new Date(2023, 11, 9, 8, 0),
@@ -2175,11 +2102,14 @@ function UpdateLog() {
     /* @__PURE__ */ jsx("br", {}),
     /* @__PURE__ */ jsx(Text, { as: "b", children: "Upcoming:" }),
     /* @__PURE__ */ jsx("br", {}),
-    "+ JiuJitsu World League Houston VII | Oct. 28",
-    /* @__PURE__ */ jsx("br", {}),
-    "+ Grappling Industries Houston BJJ & NoGi Round Robin | Nov. 12",
-    /* @__PURE__ */ jsx("br", {}),
     "+ Grappling Games Houston Winter Games | Dec. 9 & 10",
+    /* @__PURE__ */ jsx("br", {}),
+    /* @__PURE__ */ jsx("br", {}),
+    /* @__PURE__ */ jsx(Text, { as: "b", children: "Update 11.17.23" }),
+    /* @__PURE__ */ jsx("br", {}),
+    "+ New Schedule for HTX (Downtown)",
+    /* @__PURE__ */ jsx("br", {}),
+    "+ Thanksgiving week schedule updated for Houston (HQ), Riverstone, The Grove, & Mont Belvieu",
     /* @__PURE__ */ jsx("br", {}),
     /* @__PURE__ */ jsx("br", {}),
     /* @__PURE__ */ jsx(Text, { as: "b", children: "Update 10.27.23" }),
@@ -2747,28 +2677,7 @@ function Page() {
                     children: "HTX (DOWNTOWN)"
                   }
                 ),
-                /* @__PURE__ */ jsx(
-                  Button,
-                  {
-                    onClick: () => handleShowEvents("Huffman"),
-                    _after: {
-                      position: "absolute",
-                      top: "-4px",
-                      right: "-4px",
-                      width: "26px",
-                      height: "18px",
-                      borderRadius: "5px",
-                      backgroundColor: "#FF8700",
-                      color: "black",
-                      fontSize: "16px",
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      content: '"!"'
-                    },
-                    children: "HUFFMAN"
-                  }
-                ),
+                /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("Huffman"), children: "HUFFMAN" }),
                 /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("Katy"), children: "KATY" }),
                 /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("Lake Houston"), children: "LAKE HOUSTON" }),
                 /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("Mont Belvieu"), children: "MONT BELVIEU" }),
@@ -2789,7 +2698,7 @@ function Page() {
       /* @__PURE__ */ jsx(Box, { pos: "absolute", mt: 2, children: /* @__PURE__ */ jsx(Icon, { as: SvgLogo, width: ["250px", "500px"], height: ["250px", "500px"], zIndex: -1 }) }),
       /* @__PURE__ */ jsxs(Box, { width: "100%", children: [
         calendarDisplay(),
-        /* @__PURE__ */ jsx(Text, { color: "blackAlpha", mt: 1, fontSize: ["12px", "16px"], children: "Last Updated 10.27.23" })
+        /* @__PURE__ */ jsx(Text, { color: "blackAlpha", mt: 1, fontSize: ["12px", "16px"], children: "Last Updated 11.17.23" })
       ] })
     ] }),
     /* @__PURE__ */ jsx(Footer, {})

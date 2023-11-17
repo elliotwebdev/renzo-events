@@ -8,11 +8,14 @@ export default function UpdateLog(){
       <br/>
       <Text as='b'>Upcoming:</Text>
       <br/>
-      + JiuJitsu World League Houston VII | Oct. 28
-      <br/>
-      + Grappling Industries Houston BJJ & NoGi Round Robin | Nov. 12
-      <br/>
       + Grappling Games Houston Winter Games | Dec. 9 & 10
+      <br/>
+      <br/>
+      <Text as='b'>Update 11.17.23</Text>
+      <br/>
+      + New Schedule for HTX (Downtown)
+      <br/>
+      + Thanksgiving week schedule updated for Houston (HQ), Riverstone, The Grove, & Mont Belvieu
       <br/>
       <br/>
       <Text as='b'>Update 10.27.23</Text>

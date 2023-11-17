@@ -533,16 +533,11 @@ export const academies = {
       "HTX (Downtown)":{
             minTime: new Date(2023, 0, 1, 7, 0, 0),
             maxTime: new Date(2023, 0, 1, 20, 0, 0),
-            "BJJ": [
+            "No-Gi BJJ": [
                   {    
                         // Monday
                         start: new Date(2023, 4, 1, 7, 0),
                         end: new Date(2023, 4, 1, 8, 0),
-           
-                  },
-                  {    
-                        start: new Date(2023, 4, 1, 17, 15),
-                        end: new Date(2023, 4, 1, 18, 30),
            
                   },
                   {    
@@ -552,27 +547,19 @@ export const academies = {
            
                   },
                   {    
-                        start: new Date(2023, 4, 3, 17, 15),
-                        end: new Date(2023, 4, 3, 18, 30),
-           
-                  },
-                  {    
                         //Friday
                         start: new Date(2023, 4, 5, 7, 0),
                         end: new Date(2023, 4, 5, 8, 0),
            
                   },
-                  
-            ],
-            "No-Gi BJJ": [
-                  {    
+                   {    
                         // Tuesday
                         start: new Date(2023, 4, 2, 9, 0),
                         end: new Date(2023, 4, 2, 10, 0),
            
                   },
                   {    
-                        start: new Date(2023, 4, 2, 17, 15),
+                        start: new Date(2023, 4, 2, 17, 30),
                         end: new Date(2023, 4, 2, 18, 30),
            
                   },
@@ -586,6 +573,19 @@ export const academies = {
                         //Saturday
                         start: new Date(2023, 4, 6, 11, 0),
                         end: new Date(2023, 4, 6, 12, 0),
+           
+                  },
+                  
+            ],
+            "BJJ": [
+                  {    
+                        start: new Date(2023, 4, 1, 17, 30),
+                        end: new Date(2023, 4, 1, 18, 30),
+           
+                  },
+                  {    
+                        start: new Date(2023, 4, 3, 17, 30),
+                        end: new Date(2023, 4, 3, 18, 30),
            
                   },
             ],
@@ -624,7 +624,7 @@ export const academies = {
             "BJJ (Gi & No-Gi)":
             {    
                   //Thursday
-                  start: new Date(2023, 4, 4, 17, 15),
+                  start: new Date(2023, 4, 4, 17, 30),
                   end: new Date(2023, 4, 4, 18, 30),
      
             },
