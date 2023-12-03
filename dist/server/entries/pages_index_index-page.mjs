@@ -75,13 +75,13 @@ const academies = {
     "Wrestling Adults & Junior 12+": [
       {
         //Monday
-        start: new Date(2023, 4, 1, 11, 30),
+        start: new Date(2023, 4, 1, 11, 0),
         end: new Date(2023, 4, 1, 12, 0),
         color: "#6e23fb"
       },
       {
         //Friday
-        start: new Date(2023, 4, 5, 11, 30),
+        start: new Date(2023, 4, 5, 11, 0),
         end: new Date(2023, 4, 5, 12, 0),
         color: "#6e23fb"
       }
@@ -313,16 +313,6 @@ const academies = {
       //Sunday
       start: new Date(2023, 4, 0, 9, 0),
       end: new Date(2023, 4, 0, 10, 0)
-    },
-    "LEO Only Class": {
-      //Monday
-      start: new Date(2023, 4, 1, 11, 0),
-      end: new Date(2023, 4, 1, 12, 0)
-    },
-    "Women LEO Only Class": {
-      //Monday
-      start: new Date(2023, 4, 4, 11, 0),
-      end: new Date(2023, 4, 4, 12, 0)
     },
     "Defending Pins & Escapes": {
       //Monday
@@ -1760,8 +1750,8 @@ const specialEvents = {
   "Houston (HQ)": {
     "Abraham The Mountain | Workshop Series": [
       {
-        start: new Date(2023, 11, 2, 10, 0),
-        end: new Date(2023, 11, 2, 12, 0),
+        start: new Date(2024, 1, 3, 11, 0),
+        end: new Date(2024, 1, 3, 13, 0),
         color: "#E20000"
       }
     ],
@@ -1777,30 +1767,18 @@ const specialEvents = {
         color: "#E20000"
       }
     ],
-    "OPEN MAT | All classes cancelled": [
-      {
-        start: new Date(2023, 10, 23, 10, 0),
-        end: new Date(2023, 10, 23, 12, 0),
-        color: "#E20000"
-      },
-      {
-        start: new Date(2023, 10, 24, 10, 0),
-        end: new Date(2023, 10, 24, 12, 0),
-        color: "#E20000"
-      },
-      {
-        start: new Date(2023, 10, 25, 10, 0),
-        end: new Date(2023, 10, 25, 12, 0),
-        color: "#E20000"
-      }
-    ]
+    "Holiday Seminar & Party": {
+      start: new Date(2023, 11, 16, 10, 0),
+      end: new Date(2023, 11, 16, 14, 0),
+      color: "#E20000"
+    }
   },
   "The Grove": {
     "Kids Team Renzo Prep & Scrimmage": [
       {
         //Saturday
-        start: new Date(2023, 11, 2, 10, 30),
-        end: new Date(2023, 11, 2, 12, 0),
+        start: new Date(2024, 0, 6, 10, 0),
+        end: new Date(2024, 0, 6, 12, 0),
         color: "#E20000"
       }
     ],
@@ -1813,28 +1791,6 @@ const specialEvents = {
       {
         start: new Date(2023, 11, 10, 8, 0),
         end: new Date(2023, 11, 10, 19, 0),
-        color: "#E20000"
-      }
-    ],
-    "Academy Closed Today | OPEN MAT @ Renzo Gracie Houston": [
-      {
-        start: new Date(2023, 10, 23, 10, 0),
-        end: new Date(2023, 10, 23, 12, 0),
-        color: "#E20000"
-      },
-      {
-        start: new Date(2023, 10, 24, 10, 0),
-        end: new Date(2023, 10, 24, 12, 0),
-        color: "#E20000"
-      },
-      {
-        start: new Date(2023, 10, 25, 10, 0),
-        end: new Date(2023, 10, 25, 12, 0),
-        color: "#E20000"
-      },
-      {
-        start: new Date(2023, 10, 26, 10, 0),
-        end: new Date(2023, 10, 26, 12, 0),
         color: "#E20000"
       }
     ]
@@ -1857,8 +1813,8 @@ const specialEvents = {
     "Academy Closed | Scrimmage @ The Grove": [
       {
         //Saturday
-        start: new Date(2023, 11, 2, 10, 0),
-        end: new Date(2023, 11, 2, 12, 0),
+        start: new Date(2024, 0, 6, 10, 0),
+        end: new Date(2024, 0, 6, 12, 0),
         color: "#E20000"
       }
     ],
@@ -1871,28 +1827,6 @@ const specialEvents = {
       {
         start: new Date(2023, 11, 10, 8, 0),
         end: new Date(2023, 11, 10, 19, 0),
-        color: "#E20000"
-      }
-    ],
-    "Academy Closed Today | OPEN MAT @ Renzo Gracie Houston": [
-      {
-        start: new Date(2023, 10, 23, 10, 0),
-        end: new Date(2023, 10, 23, 12, 0),
-        color: "#E20000"
-      },
-      {
-        start: new Date(2023, 10, 24, 10, 0),
-        end: new Date(2023, 10, 24, 12, 0),
-        color: "#E20000"
-      },
-      {
-        start: new Date(2023, 10, 25, 10, 0),
-        end: new Date(2023, 10, 25, 12, 0),
-        color: "#E20000"
-      },
-      {
-        start: new Date(2023, 10, 26, 10, 0),
-        end: new Date(2023, 10, 26, 12, 0),
         color: "#E20000"
       }
     ]
@@ -1935,25 +1869,6 @@ const specialEvents = {
       {
         start: new Date(2023, 11, 10, 8, 0),
         end: new Date(2023, 11, 10, 19, 0),
-        color: "#E20000"
-      }
-    ],
-    "Academy Closed Today | OPEN MAT @ Renzo Gracie Houston": [
-      {
-        start: new Date(2023, 10, 23, 10, 0),
-        end: new Date(2023, 10, 23, 12, 0),
-        color: "#E20000"
-      },
-      {
-        start: new Date(2023, 10, 24, 10, 0),
-        end: new Date(2023, 10, 24, 12, 0),
-        color: "#E20000"
-      }
-    ],
-    "OPEN MAT | All classes cancelled": [
-      {
-        start: new Date(2023, 10, 22, 10, 0),
-        end: new Date(2023, 10, 22, 12, 0),
         color: "#E20000"
       }
     ]
@@ -2103,6 +2018,11 @@ function UpdateLog() {
     /* @__PURE__ */ jsx(Text, { as: "b", children: "Upcoming:" }),
     /* @__PURE__ */ jsx("br", {}),
     "+ Grappling Games Houston Winter Games | Dec. 9 & 10",
+    /* @__PURE__ */ jsx("br", {}),
+    /* @__PURE__ */ jsx("br", {}),
+    /* @__PURE__ */ jsx(Text, { as: "b", children: "Update 12.03.23" }),
+    /* @__PURE__ */ jsx("br", {}),
+    "+ Schedule updated for Houston (HQ)",
     /* @__PURE__ */ jsx("br", {}),
     /* @__PURE__ */ jsx("br", {}),
     /* @__PURE__ */ jsx(Text, { as: "b", children: "Update 11.17.23" }),
@@ -2652,7 +2572,28 @@ function Page() {
               ] }) }),
               /* @__PURE__ */ jsx(Divider, { orientation: "vertical" }),
               /* @__PURE__ */ jsx(ButtonGroup, { size: ["md", "lg"], colorScheme: "messenger", children: /* @__PURE__ */ jsxs(Stack, { gap: [2, 3], children: [
-                /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("Houston (HQ)"), children: "HOUSTON (HQ)" }),
+                /* @__PURE__ */ jsx(
+                  Button,
+                  {
+                    onClick: () => handleShowEvents("Houston (HQ)"),
+                    _after: {
+                      position: "absolute",
+                      top: "-4px",
+                      right: "-4px",
+                      width: "26px",
+                      height: "18px",
+                      borderRadius: "5px",
+                      backgroundColor: "#FF8700",
+                      color: "black",
+                      fontSize: "16px",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      content: '"!"'
+                    },
+                    children: "HOUSTON (HQ)"
+                  }
+                ),
                 /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("The Grove"), children: "THE GROVE" }),
                 /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("HCU Campus"), children: "HCU CAMPUS" }),
                 /* @__PURE__ */ jsx(
@@ -2698,7 +2639,7 @@ function Page() {
       /* @__PURE__ */ jsx(Box, { pos: "absolute", mt: 2, children: /* @__PURE__ */ jsx(Icon, { as: SvgLogo, width: ["250px", "500px"], height: ["250px", "500px"], zIndex: -1 }) }),
       /* @__PURE__ */ jsxs(Box, { width: "100%", children: [
         calendarDisplay(),
-        /* @__PURE__ */ jsx(Text, { color: "blackAlpha", mt: 1, fontSize: ["12px", "16px"], children: "Last Updated 11.17.23" })
+        /* @__PURE__ */ jsx(Text, { color: "blackAlpha", mt: 1, fontSize: ["12px", "16px"], children: "Last Updated 12.03.23" })
       ] })
     ] }),
     /* @__PURE__ */ jsx(Footer, {})

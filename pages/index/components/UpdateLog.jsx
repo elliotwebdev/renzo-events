@@ -11,6 +11,11 @@ export default function UpdateLog(){
       + Grappling Games Houston Winter Games | Dec. 9 & 10
       <br/>
       <br/>
+      <Text as='b'>Update 12.03.23</Text>
+      <br/>
+      + Schedule updated for Houston (HQ)
+      <br/>
+      <br/>
       <Text as='b'>Update 11.17.23</Text>
       <br/>
       + New Schedule for HTX (Downtown)

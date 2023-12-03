@@ -225,7 +225,21 @@ function Page() {
                               <ButtonGroup size={["md", "lg"]} colorScheme='messenger'>
                               <Stack gap={[2, 3]} >
                                     
-                                    <Button  onClick={() => handleShowEvents("Houston (HQ)")}>HOUSTON (HQ)</Button>
+                                    <Button  onClick={() => handleShowEvents("Houston (HQ)")}
+                                          _after={{ position: "absolute",
+                                          top: "-4px",
+                                          right: "-4px",
+                                          width: "26px",
+                                          height: "18px",
+                                          borderRadius: "5px",
+                                          backgroundColor: "#FF8700",
+                                          color: "black",
+                                          fontSize: "16px",
+                                          display: "flex",
+                                          justifyContent: "center",
+                                          alignItems: "center",
+                                          content: '"!"'}}
+                                          >HOUSTON (HQ)</Button>
                                     <Button  onClick={() => handleShowEvents("The Grove")}>THE GROVE</Button>
                                     <Button  onClick={() => handleShowEvents("HCU Campus")}>HCU CAMPUS</Button>
                                     <Button  onClick={() => handleShowEvents("HTX (Downtown)")}
@@ -241,7 +255,8 @@ function Page() {
                                           display: "flex",
                                           justifyContent: "center",
                                           alignItems: "center",
-                                          content: '"!"'}}>HTX (DOWNTOWN)</Button>
+                                          content: '"!"'}}
+                                          >HTX (DOWNTOWN)</Button>
                                     <Button  onClick={() => handleShowEvents("Huffman")}>HUFFMAN</Button>
                                     <Button  onClick={() => handleShowEvents("Katy")}>KATY</Button>
                                     <Button  onClick={() => handleShowEvents("Lake Houston")}>LAKE HOUSTON</Button>
@@ -274,7 +289,7 @@ function Page() {
 
             <Box  width="100%">      
                   {calendarDisplay()}
-                  <Text color="blackAlpha" mt={1} fontSize={["12px","16px"]}>Last Updated 11.17.23</Text>
+                  <Text color="blackAlpha" mt={1} fontSize={["12px","16px"]}>Last Updated 12.03.23</Text>
             </Box>
 
       </Flex>

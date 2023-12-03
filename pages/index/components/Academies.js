@@ -77,13 +77,13 @@ export const academies = {
             "Wrestling Adults & Junior 12+":[
             {
                   //Monday
-                  start: new Date(2023, 4, 1, 11, 30),
+                  start: new Date(2023, 4, 1, 11, 0),
                   end: new Date(2023, 4, 1, 12, 0),
                   color: '#6e23fb',
             },
             {
                   //Friday
-                  start: new Date(2023, 4, 5, 11, 30),
+                  start: new Date(2023, 4, 5, 11, 0),
                   end: new Date(2023, 4, 5, 12, 0),
                   color: '#6e23fb',
             },
@@ -321,20 +321,6 @@ export const academies = {
                   //Sunday
                   start: new Date(2023, 4, 0, 9, 0),
                   end: new Date(2023, 4, 0, 10, 0),
-                  
-            },
-            "LEO Only Class": 
-            {     
-                  //Monday
-                  start: new Date(2023, 4, 1, 11, 0),
-                  end: new Date(2023, 4, 1, 12, 0),
-                  
-            },
-            "Women LEO Only Class": 
-            {     
-                  //Monday
-                  start: new Date(2023, 4, 4, 11, 0),
-                  end: new Date(2023, 4, 4, 12, 0),
                   
             },
             "Defending Pins & Escapes": 
