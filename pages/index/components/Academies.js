@@ -1139,11 +1139,6 @@ export const academies = {
                         end: new Date(2023, 4, 3, 19, 30),
                   },
                   {
-                        //Thursday
-                        start: new Date(2023, 4, 4, 6, 0),
-                        end: new Date(2023, 4, 4, 7, 0),
-                  },
-                  {
                         //Friday
                         start: new Date(2023, 4, 5, 6, 0),
                         end: new Date(2023, 4, 5, 7, 0),
@@ -1154,10 +1149,16 @@ export const academies = {
                         end: new Date(2023, 4, 6, 12, 30),
                   },
             ],
-            "Lunchbox Crew (BJJ Class)":
+            "BJJ Live Training Only":
+            {
+                  //Thursday
+                  start: new Date(2023, 4, 4, 6, 30),
+                  end: new Date(2023, 4, 4, 7, 30),
+            },
+            "OPEN MAT":
             {
                   //Friday
-                  start: new Date(2023, 4, 5, 11, 0),
+                  start: new Date(2023, 4, 5, 10, 0),
                   end: new Date(2023, 4, 5, 12, 0),
             },
             "No-Gi BJJ":[
@@ -1180,6 +1181,11 @@ export const academies = {
                         //Wednesday
                         start: new Date(2023, 4, 3, 12, 0),
                         end: new Date(2023, 4, 3, 13, 0),
+                  },
+                  {
+                        //Thursday
+                        start: new Date(2023, 4, 4, 18, 30),
+                        end: new Date(2023, 4, 4, 19, 30),
                   },
             ],
             "Live Training":[
@@ -1208,21 +1214,29 @@ export const academies = {
                   },
                   {
                         //Thursday
-                        start: new Date(2023, 4, 4, 18, 30),
+                        start: new Date(2023, 4, 4, 19, 30),
                         end: new Date(2023, 4, 4, 20, 0),
                   },
-                  {
-                        //Friday
-                        start: new Date(2023, 4, 5, 12, 0),
-                        end: new Date(2023, 4, 5, 12, 30),
-                  },
+                  
             ],
             "Striking Class":[
+                  {
+                        //Monday
+                        start: new Date(2023, 4, 1, 17, 30),
+                        end: new Date(2023, 4, 1, 18, 30),
+                        color: "#6e23fb"
+                  },
                   {
                         //Tuesday
                         start: new Date(2023, 4, 2, 12, 0),
                         end: new Date(2023, 4, 2, 13, 0),
                         color: '#6e23fb'
+                  },
+                  {
+                        //Wednesday
+                        start: new Date(2023, 4, 3, 17, 30),
+                        end: new Date(2023, 4, 3, 18, 30),
+                        color: "#6e23fb"
                   },
                   {
                         //Thursday

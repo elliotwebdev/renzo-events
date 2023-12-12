@@ -1045,11 +1045,6 @@ const academies = {
         end: new Date(2023, 4, 3, 19, 30)
       },
       {
-        //Thursday
-        start: new Date(2023, 4, 4, 6, 0),
-        end: new Date(2023, 4, 4, 7, 0)
-      },
-      {
         //Friday
         start: new Date(2023, 4, 5, 6, 0),
         end: new Date(2023, 4, 5, 7, 0)
@@ -1060,9 +1055,14 @@ const academies = {
         end: new Date(2023, 4, 6, 12, 30)
       }
     ],
-    "Lunchbox Crew (BJJ Class)": {
+    "BJJ Live Training Only": {
+      //Thursday
+      start: new Date(2023, 4, 4, 6, 30),
+      end: new Date(2023, 4, 4, 7, 30)
+    },
+    "OPEN MAT": {
       //Friday
-      start: new Date(2023, 4, 5, 11, 0),
+      start: new Date(2023, 4, 5, 10, 0),
       end: new Date(2023, 4, 5, 12, 0)
     },
     "No-Gi BJJ": [
@@ -1085,6 +1085,11 @@ const academies = {
         //Wednesday
         start: new Date(2023, 4, 3, 12, 0),
         end: new Date(2023, 4, 3, 13, 0)
+      },
+      {
+        //Thursday
+        start: new Date(2023, 4, 4, 18, 30),
+        end: new Date(2023, 4, 4, 19, 30)
       }
     ],
     "Live Training": [
@@ -1113,20 +1118,27 @@ const academies = {
       },
       {
         //Thursday
-        start: new Date(2023, 4, 4, 18, 30),
+        start: new Date(2023, 4, 4, 19, 30),
         end: new Date(2023, 4, 4, 20, 0)
-      },
-      {
-        //Friday
-        start: new Date(2023, 4, 5, 12, 0),
-        end: new Date(2023, 4, 5, 12, 30)
       }
     ],
     "Striking Class": [
       {
+        //Monday
+        start: new Date(2023, 4, 1, 17, 30),
+        end: new Date(2023, 4, 1, 18, 30),
+        color: "#6e23fb"
+      },
+      {
         //Tuesday
         start: new Date(2023, 4, 2, 12, 0),
         end: new Date(2023, 4, 2, 13, 0),
+        color: "#6e23fb"
+      },
+      {
+        //Wednesday
+        start: new Date(2023, 4, 3, 17, 30),
+        end: new Date(2023, 4, 3, 18, 30),
         color: "#6e23fb"
       },
       {
@@ -1755,18 +1767,6 @@ const specialEvents = {
         color: "#E20000"
       }
     ],
-    "Grappling Games Houston Winter Games": [
-      {
-        start: new Date(2023, 11, 9, 8, 0),
-        end: new Date(2023, 11, 9, 19, 0),
-        color: "#E20000"
-      },
-      {
-        start: new Date(2023, 11, 10, 8, 0),
-        end: new Date(2023, 11, 10, 19, 0),
-        color: "#E20000"
-      }
-    ],
     "Holiday Seminar & Party": {
       start: new Date(2023, 11, 16, 10, 0),
       end: new Date(2023, 11, 16, 14, 0),
@@ -1781,34 +1781,9 @@ const specialEvents = {
         end: new Date(2024, 0, 6, 12, 0),
         color: "#E20000"
       }
-    ],
-    "Grappling Games Houston Winter Games": [
-      {
-        start: new Date(2023, 11, 9, 8, 0),
-        end: new Date(2023, 11, 9, 19, 0),
-        color: "#E20000"
-      },
-      {
-        start: new Date(2023, 11, 10, 8, 0),
-        end: new Date(2023, 11, 10, 19, 0),
-        color: "#E20000"
-      }
     ]
   },
-  "HTX (Downtown)": {
-    "Grappling Games Houston Winter Games": [
-      {
-        start: new Date(2023, 11, 9, 8, 0),
-        end: new Date(2023, 11, 9, 19, 0),
-        color: "#E20000"
-      },
-      {
-        start: new Date(2023, 11, 10, 8, 0),
-        end: new Date(2023, 11, 10, 19, 0),
-        color: "#E20000"
-      }
-    ]
-  },
+  "HTX (Downtown)": {},
   "Riverstone": {
     "Academy Closed | Scrimmage @ The Grove": [
       {
@@ -1817,118 +1792,15 @@ const specialEvents = {
         end: new Date(2024, 0, 6, 12, 0),
         color: "#E20000"
       }
-    ],
-    "Grappling Games Houston Winter Games": [
-      {
-        start: new Date(2023, 11, 9, 8, 0),
-        end: new Date(2023, 11, 9, 19, 0),
-        color: "#E20000"
-      },
-      {
-        start: new Date(2023, 11, 10, 8, 0),
-        end: new Date(2023, 11, 10, 19, 0),
-        color: "#E20000"
-      }
     ]
   },
-  "HCU Campus": {
-    "Grappling Games Houston Winter Games": [
-      {
-        start: new Date(2023, 11, 9, 8, 0),
-        end: new Date(2023, 11, 9, 19, 0),
-        color: "#E20000"
-      },
-      {
-        start: new Date(2023, 11, 10, 8, 0),
-        end: new Date(2023, 11, 10, 19, 0),
-        color: "#E20000"
-      }
-    ]
-  },
-  "Katy": {
-    "Grappling Games Houston Winter Games": [
-      {
-        start: new Date(2023, 11, 9, 8, 0),
-        end: new Date(2023, 11, 9, 19, 0),
-        color: "#E20000"
-      },
-      {
-        start: new Date(2023, 11, 10, 8, 0),
-        end: new Date(2023, 11, 10, 19, 0),
-        color: "#E20000"
-      }
-    ]
-  },
-  "Mont Belvieu": {
-    "Grappling Games Houston Winter Games": [
-      {
-        start: new Date(2023, 11, 9, 8, 0),
-        end: new Date(2023, 11, 9, 19, 0),
-        color: "#E20000"
-      },
-      {
-        start: new Date(2023, 11, 10, 8, 0),
-        end: new Date(2023, 11, 10, 19, 0),
-        color: "#E20000"
-      }
-    ]
-  },
-  "Pearland": {
-    "Grappling Games Houston Winter Games": [
-      {
-        start: new Date(2023, 11, 9, 8, 0),
-        end: new Date(2023, 11, 9, 19, 0),
-        color: "#E20000"
-      },
-      {
-        start: new Date(2023, 11, 10, 8, 0),
-        end: new Date(2023, 11, 10, 19, 0),
-        color: "#E20000"
-      }
-    ]
-  },
-  "The Woodlands": {
-    "Grappling Games Houston Winter Games": [
-      {
-        start: new Date(2023, 11, 9, 8, 0),
-        end: new Date(2023, 11, 9, 19, 0),
-        color: "#E20000"
-      },
-      {
-        start: new Date(2023, 11, 10, 8, 0),
-        end: new Date(2023, 11, 10, 19, 0),
-        color: "#E20000"
-      }
-    ]
-  },
-  "Huffman": {
-    "Grappling Games Houston Winter Games": [
-      {
-        start: new Date(2023, 11, 9, 8, 0),
-        end: new Date(2023, 11, 9, 19, 0),
-        color: "#E20000"
-      },
-      {
-        start: new Date(2023, 11, 10, 8, 0),
-        end: new Date(2023, 11, 10, 19, 0),
-        color: "#E20000"
-      }
-    ]
-  },
-  "Lake Houston": {
-    "Grappling Games Houston Winter Games": [
-      {
-        start: new Date(2023, 11, 9, 8, 0),
-        end: new Date(2023, 11, 9, 19, 0),
-        color: "#E20000"
-      },
-      {
-        start: new Date(2023, 11, 10, 8, 0),
-        end: new Date(2023, 11, 10, 19, 0),
-        color: "#E20000"
-      }
-    ]
-  }
+  "HCU Campus": {},
+  "Katy": {},
+  "Mont Belvieu": {},
+  "Pearland": {},
+  "The Woodlands": {},
+  "Huffman": {},
+  "Lake Houston": {}
 };
 const generateRecurringEvents = (events, numWeeks) => {
   const generatedEvents = [];
@@ -2015,9 +1887,9 @@ function UpdateLog() {
   return /* @__PURE__ */ jsxs(Fragment, { children: [
     /* @__PURE__ */ jsx(Divider, {}),
     /* @__PURE__ */ jsx("br", {}),
-    /* @__PURE__ */ jsx(Text, { as: "b", children: "Upcoming:" }),
+    /* @__PURE__ */ jsx(Text, { as: "b", children: "Update 12.12.23" }),
     /* @__PURE__ */ jsx("br", {}),
-    "+ Grappling Games Houston Winter Games | Dec. 9 & 10",
+    "+ Schedule updated for Pearland",
     /* @__PURE__ */ jsx("br", {}),
     /* @__PURE__ */ jsx("br", {}),
     /* @__PURE__ */ jsx(Text, { as: "b", children: "Update 12.03.23" }),
@@ -2622,7 +2494,28 @@ function Page() {
                 /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("Katy"), children: "KATY" }),
                 /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("Lake Houston"), children: "LAKE HOUSTON" }),
                 /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("Mont Belvieu"), children: "MONT BELVIEU" }),
-                /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("Pearland"), children: "PEARLAND" }),
+                /* @__PURE__ */ jsx(
+                  Button,
+                  {
+                    onClick: () => handleShowEvents("Pearland"),
+                    _after: {
+                      position: "absolute",
+                      top: "-4px",
+                      right: "-4px",
+                      width: "26px",
+                      height: "18px",
+                      borderRadius: "5px",
+                      backgroundColor: "#FF8700",
+                      color: "black",
+                      fontSize: "16px",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      content: '"!"'
+                    },
+                    children: "PEARLAND"
+                  }
+                ),
                 /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("Riverstone"), children: "RIVERSTONE" }),
                 /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("The Woodlands"), children: "THE WOODLANDS" }),
                 /* @__PURE__ */ jsx(Button, { isDisabled: true, onClick: () => handleShowEvents("Missouri City"), children: "MISSOURI CITY" })
@@ -2639,7 +2532,7 @@ function Page() {
       /* @__PURE__ */ jsx(Box, { pos: "absolute", mt: 2, children: /* @__PURE__ */ jsx(Icon, { as: SvgLogo, width: ["250px", "500px"], height: ["250px", "500px"], zIndex: -1 }) }),
       /* @__PURE__ */ jsxs(Box, { width: "100%", children: [
         calendarDisplay(),
-        /* @__PURE__ */ jsx(Text, { color: "blackAlpha", mt: 1, fontSize: ["12px", "16px"], children: "Last Updated 12.03.23" })
+        /* @__PURE__ */ jsx(Text, { color: "blackAlpha", mt: 1, fontSize: ["12px", "16px"], children: "Last Updated 12.12.23" })
       ] })
     ] }),
     /* @__PURE__ */ jsx(Footer, {})

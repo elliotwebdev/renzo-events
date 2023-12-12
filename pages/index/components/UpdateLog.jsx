@@ -6,9 +6,14 @@ export default function UpdateLog(){
     <>
       <Divider />
       <br/>
-      <Text as='b'>Upcoming:</Text>
+      {/* <Text as='b'>Upcoming:</Text>
       <br/>
       + Grappling Games Houston Winter Games | Dec. 9 & 10
+      <br/>
+      <br/> */}
+      <Text as='b'>Update 12.12.23</Text>
+      <br/>
+      + Schedule updated for Pearland
       <br/>
       <br/>
       <Text as='b'>Update 12.03.23</Text>
