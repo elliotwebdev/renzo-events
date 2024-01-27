@@ -11,6 +11,17 @@ export default function UpdateLog(){
       + Grappling Games Houston Winter Games | Dec. 9 & 10
       <br/>
       <br/> */}
+      <Text as='b'>Update 1.27.24</Text>
+      <br/>
+      + Schedule updated for Houston (HQ)
+      <br/>
+      + Schedule updated for HTX (Downtown)
+      <br/>
+      + Schedule updated for Pearland
+      <br/>
+      + Abraham Montagne Seminar changed to Feb.17 at HQ
+      <br/>
+      <br/>
       <Text as='b'>Update 12.12.23</Text>
       <br/>
       + Schedule updated for Pearland
