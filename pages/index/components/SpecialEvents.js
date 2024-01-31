@@ -1,12 +1,19 @@
 export const specialEvents = {
       "Houston (HQ)":{
-            "Abraham The Mountain | Workshop Series": [
+            "Abraham The Mountain | Workshop Series": 
                   {
                         start: new Date(2024, 1, 17, 11, 0),
                         end: new Date(2024, 1, 17, 13, 0),
                         color: "#E20000"
                   },
-            ],
+            
+            "Rayron Gracie Seminar": 
+                  {
+                        start: new Date(2024, 1, 5, 18, 30),
+                        end: new Date(2024, 1, 5, 20, 0),
+                        color: "#E20000"
+                  },
+            
       },
 
       "The Grove":{

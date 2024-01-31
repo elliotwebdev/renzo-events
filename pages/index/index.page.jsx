@@ -276,7 +276,21 @@ function Page() {
                                           alignItems: "center",
                                           content: '"!"'}}
                                           >PEARLAND</Button>
-                                    <Button  onClick={() => handleShowEvents("Riverstone")}>RIVERSTONE</Button>
+                                    <Button  onClick={() => handleShowEvents("Riverstone")}
+                                           _after={{ position: "absolute",
+                                           top: "-4px",
+                                           right: "-4px",
+                                           width: "26px",
+                                           height: "18px",
+                                           borderRadius: "5px",
+                                           backgroundColor: "#FF8700",
+                                           color: "black",
+                                           fontSize: "16px",
+                                           display: "flex",
+                                           justifyContent: "center",
+                                           alignItems: "center",
+                                           content: '"!"'}}
+                                           >RIVERSTONE</Button>
                                     <Button  onClick={() => handleShowEvents("The Woodlands")}>THE WOODLANDS</Button>
                                     <Button  isDisabled onClick={() => handleShowEvents("Missouri City")}>MISSOURI CITY</Button>
                               </Stack>           
@@ -303,7 +317,7 @@ function Page() {
 
             <Box  width="100%">      
                   {calendarDisplay()}
-                  <Text color="blackAlpha" mt={1} fontSize={["12px","16px"]}>Last Updated 1.27.24</Text>
+                  <Text color="blackAlpha" mt={1} fontSize={["12px","16px"]}>Last Updated 1.31.24</Text>
             </Box>
 
       </Flex>

@@ -577,7 +577,7 @@ const academies = {
     }
   },
   "Riverstone": {
-    minTime: new Date(2024, 0, 1, 6, 0, 0),
+    minTime: new Date(2024, 0, 1, 9, 0, 0),
     maxTime: new Date(2024, 0, 1, 21, 0, 0),
     "BJJ": [
       {
@@ -590,11 +590,7 @@ const academies = {
         end: new Date(2024, 0, 1, 20, 0)
       },
       {
-        // Tuesday
-        start: new Date(2024, 0, 2, 6, 0),
-        end: new Date(2024, 0, 2, 7, 0)
-      },
-      {
+        //Tuesday
         start: new Date(2024, 0, 2, 19, 0),
         end: new Date(2024, 0, 2, 20, 0)
       },
@@ -604,16 +600,11 @@ const academies = {
         end: new Date(2024, 0, 3, 20, 0)
       },
       {
-        //Thursday
-        start: new Date(2024, 0, 4, 6, 0),
-        end: new Date(2024, 0, 4, 7, 0)
+        //Friday
+        start: new Date(2024, 0, 5, 11, 0),
+        end: new Date(2024, 0, 5, 12, 0)
       }
     ],
-    "Brunch Samurais (BJJ Class)": {
-      //Friday
-      start: new Date(2024, 0, 5, 11, 0),
-      end: new Date(2024, 0, 5, 12, 0)
-    },
     "No-Gi BJJ": [
       {
         // Wednesday
@@ -720,6 +711,11 @@ const academies = {
       start: new Date(2024, 0, 4, 18, 0),
       end: new Date(2024, 0, 4, 19, 0),
       color: "#F08600"
+    },
+    "Women's Only Class": {
+      //Saturday
+      start: new Date(2024, 0, 6, 11, 30),
+      end: new Date(2024, 0, 6, 12, 30)
     }
   },
   "HCU Campus": {
@@ -1789,13 +1785,16 @@ const academies = {
 };
 const specialEvents = {
   "Houston (HQ)": {
-    "Abraham The Mountain | Workshop Series": [
-      {
-        start: new Date(2024, 1, 17, 11, 0),
-        end: new Date(2024, 1, 17, 13, 0),
-        color: "#E20000"
-      }
-    ]
+    "Abraham The Mountain | Workshop Series": {
+      start: new Date(2024, 1, 17, 11, 0),
+      end: new Date(2024, 1, 17, 13, 0),
+      color: "#E20000"
+    },
+    "Rayron Gracie Seminar": {
+      start: new Date(2024, 1, 5, 18, 30),
+      end: new Date(2024, 1, 5, 20, 0),
+      color: "#E20000"
+    }
   },
   "The Grove": {
     "Kids Team Renzo Prep & Scrimmage": [
@@ -1925,6 +1924,13 @@ function getDarkColor(eventColor) {
 function UpdateLog() {
   return /* @__PURE__ */ jsxs(Fragment, { children: [
     /* @__PURE__ */ jsx(Divider, {}),
+    /* @__PURE__ */ jsx("br", {}),
+    /* @__PURE__ */ jsx(Text, { as: "b", children: "Update 1.31.24" }),
+    /* @__PURE__ */ jsx("br", {}),
+    "+ Schedule updated for Riverstone",
+    /* @__PURE__ */ jsx("br", {}),
+    "+ Rayron Gracie Seminar at Houston (HQ) Feb.5",
+    /* @__PURE__ */ jsx("br", {}),
     /* @__PURE__ */ jsx("br", {}),
     /* @__PURE__ */ jsx(Text, { as: "b", children: "Update 1.27.24" }),
     /* @__PURE__ */ jsx("br", {}),
@@ -2566,7 +2572,28 @@ function Page() {
                     children: "PEARLAND"
                   }
                 ),
-                /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("Riverstone"), children: "RIVERSTONE" }),
+                /* @__PURE__ */ jsx(
+                  Button,
+                  {
+                    onClick: () => handleShowEvents("Riverstone"),
+                    _after: {
+                      position: "absolute",
+                      top: "-4px",
+                      right: "-4px",
+                      width: "26px",
+                      height: "18px",
+                      borderRadius: "5px",
+                      backgroundColor: "#FF8700",
+                      color: "black",
+                      fontSize: "16px",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      content: '"!"'
+                    },
+                    children: "RIVERSTONE"
+                  }
+                ),
                 /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("The Woodlands"), children: "THE WOODLANDS" }),
                 /* @__PURE__ */ jsx(Button, { isDisabled: true, onClick: () => handleShowEvents("Missouri City"), children: "MISSOURI CITY" })
               ] }) })
@@ -2582,7 +2609,7 @@ function Page() {
       /* @__PURE__ */ jsx(Box, { pos: "absolute", mt: 2, children: /* @__PURE__ */ jsx(Icon, { as: SvgLogo, width: ["250px", "500px"], height: ["250px", "500px"], zIndex: -1 }) }),
       /* @__PURE__ */ jsxs(Box, { width: "100%", children: [
         calendarDisplay(),
-        /* @__PURE__ */ jsx(Text, { color: "blackAlpha", mt: 1, fontSize: ["12px", "16px"], children: "Last Updated 1.27.24" })
+        /* @__PURE__ */ jsx(Text, { color: "blackAlpha", mt: 1, fontSize: ["12px", "16px"], children: "Last Updated 1.31.24" })
       ] })
     ] }),
     /* @__PURE__ */ jsx(Footer, {})

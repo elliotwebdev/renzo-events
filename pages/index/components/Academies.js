@@ -632,7 +632,7 @@ export const academies = {
       },
 
       "Riverstone":{
-            minTime: new Date(2024, 0, 1, 6, 0, 0),
+            minTime: new Date(2024, 0, 1, 9, 0, 0),
             maxTime: new Date(2024, 0, 1, 21, 0, 0),
             "BJJ": [
                   {    
@@ -647,13 +647,7 @@ export const academies = {
            
                   },
                   {    
-                        // Tuesday
-                        start: new Date(2024, 0, 2, 6, 0),
-                        end: new Date(2024, 0, 2, 7, 0),
-           
-                  },
-                  
-                  {    
+                        //Tuesday
                         start: new Date(2024, 0, 2, 19, 0),
                         end: new Date(2024, 0, 2, 20, 0),
            
@@ -665,20 +659,13 @@ export const academies = {
            
                   },
                   {    
-                        //Thursday
-                        start: new Date(2024, 0, 4, 6, 0),
-                        end: new Date(2024, 0, 4, 7, 0),
+                        //Friday
+                        start: new Date(2024, 0, 5, 11, 0),
+                        end: new Date(2024, 0, 5, 12, 0),
            
                   },
                   
             ],
-            "Brunch Samurais (BJJ Class)":
-            {    
-                  //Friday
-                  start: new Date(2024, 0, 5, 11, 0),
-                  end: new Date(2024, 0, 5, 12, 0),
-     
-            },
             "No-Gi BJJ": [
                   {    
                         // Wednesday
@@ -807,6 +794,13 @@ export const academies = {
                   end: new Date(2024, 0, 4, 19, 0),
                   color: "#F08600"
      
+            },
+            "Women's Only Class": 
+            {     
+                  //Saturday
+                  start: new Date(2024, 0, 6, 11, 30),
+                  end: new Date(2024, 0, 6, 12, 30),
+                  
             },
       },
 

@@ -11,6 +11,13 @@ export default function UpdateLog(){
       + Grappling Games Houston Winter Games | Dec. 9 & 10
       <br/>
       <br/> */}
+      <Text as='b'>Update 1.31.24</Text>
+      <br/>
+      + Schedule updated for Riverstone
+      <br/>
+      + Rayron Gracie Seminar at Houston (HQ) Feb.5
+      <br/>
+      <br/>
       <Text as='b'>Update 1.27.24</Text>
       <br/>
       + Schedule updated for Houston (HQ)
