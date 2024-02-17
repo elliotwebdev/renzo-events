@@ -6,11 +6,20 @@ export default function UpdateLog(){
     <>
       <Divider />
       <br/>
-      {/* <Text as='b'>Upcoming:</Text>
+      <Text as='b'>Upcoming:</Text>
       <br/>
-      + Grappling Games Houston Winter Games | Dec. 9 & 10
+      + NEWBREED Jiu Jitsu Federation Spring Championship | MARCH 16TH
       <br/>
-      <br/> */}
+      + Battleground Grappling Spring Championship | APRIL 20TH
+      <br/>
+      <br/>
+      <Text as='b'>Update 2.16.24</Text>
+      <br/>
+      + Schedule updated for Pearland
+      <br/>
+      + Schedule updated for The Grove
+      <br/>
+      <br/>
       <Text as='b'>Update 1.31.24</Text>
       <br/>
       + Schedule updated for Riverstone

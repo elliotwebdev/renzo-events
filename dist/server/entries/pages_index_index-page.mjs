@@ -369,8 +369,8 @@ const academies = {
     ],
     "All Kids Competition BJJ": {
       //Saturday
-      start: new Date(2024, 0, 6, 10, 0),
-      end: new Date(2024, 0, 6, 11, 0),
+      start: new Date(2024, 0, 6, 11, 0),
+      end: new Date(2024, 0, 6, 12, 0),
       color: "#F08600"
     },
     "All Ages BJJ": {
@@ -385,8 +385,8 @@ const academies = {
     },
     "Adults Competition BJJ": {
       //Saturday
-      start: new Date(2024, 0, 6, 11, 0),
-      end: new Date(2024, 0, 6, 12, 0)
+      start: new Date(2024, 0, 6, 13, 0),
+      end: new Date(2024, 0, 6, 14, 0)
     },
     "No-Gi BJJ": [
       {
@@ -1038,6 +1038,10 @@ const academies = {
     "BJJ": [
       {
         //Monday
+        start: new Date(2024, 0, 1, 6, 0),
+        end: new Date(2024, 0, 1, 7, 0)
+      },
+      {
         start: new Date(2024, 0, 1, 12, 0),
         end: new Date(2024, 0, 1, 13, 0)
       },
@@ -1046,12 +1050,11 @@ const academies = {
         end: new Date(2024, 0, 1, 19, 30)
       },
       {
-        //Tuesday
-        start: new Date(2024, 0, 2, 6, 0),
-        end: new Date(2024, 0, 2, 7, 0)
+        //Wednesday
+        start: new Date(2024, 0, 3, 6, 0),
+        end: new Date(2024, 0, 3, 7, 0)
       },
       {
-        //Wednesday
         start: new Date(2024, 0, 3, 18, 30),
         end: new Date(2024, 0, 3, 19, 30)
       },
@@ -1066,11 +1069,6 @@ const academies = {
         end: new Date(2024, 0, 6, 12, 30)
       }
     ],
-    "BJJ Live Training Only": {
-      //Thursday
-      start: new Date(2024, 0, 4, 6, 0),
-      end: new Date(2024, 0, 4, 7, 0)
-    },
     "OPEN MAT": {
       //Friday
       start: new Date(2024, 0, 5, 10, 0),
@@ -1078,19 +1076,13 @@ const academies = {
     },
     "No-Gi BJJ": [
       {
-        //Monday
-        start: new Date(2024, 0, 1, 6, 0),
-        end: new Date(2024, 0, 1, 7, 0)
+        //Tuesday
+        start: new Date(2024, 0, 2, 6, 0),
+        end: new Date(2024, 0, 2, 7, 0)
       },
       {
-        //Tuesday
         start: new Date(2024, 0, 2, 18, 30),
         end: new Date(2024, 0, 2, 19, 30)
-      },
-      {
-        //Wednesday
-        start: new Date(2024, 0, 3, 6, 0),
-        end: new Date(2024, 0, 3, 7, 0)
       },
       {
         //Wednesday
@@ -1099,6 +1091,10 @@ const academies = {
       },
       {
         //Thursday
+        start: new Date(2024, 0, 4, 6, 0),
+        end: new Date(2024, 0, 4, 7, 0)
+      },
+      {
         start: new Date(2024, 0, 4, 18, 30),
         end: new Date(2024, 0, 4, 19, 30)
       }
@@ -1790,26 +1786,19 @@ const specialEvents = {
       end: new Date(2024, 1, 17, 13, 0),
       color: "#E20000"
     },
-    "Rayron Gracie Seminar": {
-      start: new Date(2024, 1, 5, 18, 30),
-      end: new Date(2024, 1, 5, 20, 0),
+    "NEWBREED Jiu Jitsu Federation Spring Championship": {
+      start: new Date(2024, 2, 16, 8, 0),
+      end: new Date(2024, 2, 16, 14, 0),
+      color: "#E20000"
+    },
+    "Battleground Grappling Spring Championship": {
+      start: new Date(2024, 3, 20, 8, 0),
+      end: new Date(2024, 3, 20, 14, 0),
       color: "#E20000"
     }
   },
   "The Grove": {
     "Kids Team Renzo Prep & Scrimmage": [
-      {
-        //jan 
-        start: new Date(2024, 0, 6, 10, 0),
-        end: new Date(2024, 0, 6, 12, 0),
-        color: "#E20000"
-      },
-      {
-        //feb
-        start: new Date(2024, 1, 3, 10, 0),
-        end: new Date(2024, 1, 3, 12, 0),
-        color: "#E20000"
-      },
       {
         //march
         start: new Date(2024, 2, 2, 10, 0),
@@ -1828,17 +1817,126 @@ const specialEvents = {
         end: new Date(2024, 4, 4, 12, 0),
         color: "#E20000"
       }
-    ]
+    ],
+    "NEWBREED Jiu Jitsu Federation Spring Championship": {
+      start: new Date(2024, 2, 16, 8, 0),
+      end: new Date(2024, 2, 16, 14, 0),
+      color: "#E20000"
+    },
+    "Battleground Grappling Spring Championship": {
+      start: new Date(2024, 3, 20, 8, 0),
+      end: new Date(2024, 3, 20, 14, 0),
+      color: "#E20000"
+    }
   },
-  "HTX (Downtown)": {},
-  "Riverstone": {},
-  "HCU Campus": {},
-  "Katy": {},
-  "Mont Belvieu": {},
-  "Pearland": {},
-  "The Woodlands": {},
-  "Huffman": {},
-  "Lake Houston": {}
+  "HTX (Downtown)": {
+    "NEWBREED Jiu Jitsu Federation Spring Championship": {
+      start: new Date(2024, 2, 16, 8, 0),
+      end: new Date(2024, 2, 16, 14, 0),
+      color: "#E20000"
+    },
+    "Battleground Grappling Spring Championship": {
+      start: new Date(2024, 3, 20, 8, 0),
+      end: new Date(2024, 3, 20, 14, 0),
+      color: "#E20000"
+    }
+  },
+  "Riverstone": {
+    "NEWBREED Jiu Jitsu Federation Spring Championship": {
+      start: new Date(2024, 2, 16, 8, 0),
+      end: new Date(2024, 2, 16, 14, 0),
+      color: "#E20000"
+    },
+    "Battleground Grappling Spring Championship": {
+      start: new Date(2024, 3, 20, 8, 0),
+      end: new Date(2024, 3, 20, 14, 0),
+      color: "#E20000"
+    }
+  },
+  "HCU Campus": {
+    "NEWBREED Jiu Jitsu Federation Spring Championship": {
+      start: new Date(2024, 2, 16, 8, 0),
+      end: new Date(2024, 2, 16, 14, 0),
+      color: "#E20000"
+    },
+    "Battleground Grappling Spring Championship": {
+      start: new Date(2024, 3, 20, 8, 0),
+      end: new Date(2024, 3, 20, 14, 0),
+      color: "#E20000"
+    }
+  },
+  "Katy": {
+    "NEWBREED Jiu Jitsu Federation Spring Championship": {
+      start: new Date(2024, 2, 16, 8, 0),
+      end: new Date(2024, 2, 16, 14, 0),
+      color: "#E20000"
+    },
+    "Battleground Grappling Spring Championship": {
+      start: new Date(2024, 3, 20, 8, 0),
+      end: new Date(2024, 3, 20, 14, 0),
+      color: "#E20000"
+    }
+  },
+  "Mont Belvieu": {
+    "NEWBREED Jiu Jitsu Federation Spring Championship": {
+      start: new Date(2024, 2, 16, 8, 0),
+      end: new Date(2024, 2, 16, 14, 0),
+      color: "#E20000"
+    },
+    "Battleground Grappling Spring Championship": {
+      start: new Date(2024, 3, 20, 8, 0),
+      end: new Date(2024, 3, 20, 14, 0),
+      color: "#E20000"
+    }
+  },
+  "Pearland": {
+    "NEWBREED Jiu Jitsu Federation Spring Championship": {
+      start: new Date(2024, 2, 16, 8, 0),
+      end: new Date(2024, 2, 16, 14, 0),
+      color: "#E20000"
+    },
+    "Battleground Grappling Spring Championship": {
+      start: new Date(2024, 3, 20, 8, 0),
+      end: new Date(2024, 3, 20, 14, 0),
+      color: "#E20000"
+    }
+  },
+  "The Woodlands": {
+    "NEWBREED Jiu Jitsu Federation Spring Championship": {
+      start: new Date(2024, 2, 16, 8, 0),
+      end: new Date(2024, 2, 16, 14, 0),
+      color: "#E20000"
+    },
+    "Battleground Grappling Spring Championship": {
+      start: new Date(2024, 3, 20, 8, 0),
+      end: new Date(2024, 3, 20, 14, 0),
+      color: "#E20000"
+    }
+  },
+  "Huffman": {
+    "NEWBREED Jiu Jitsu Federation Spring Championship": {
+      start: new Date(2024, 2, 16, 8, 0),
+      end: new Date(2024, 2, 16, 14, 0),
+      color: "#E20000"
+    },
+    "Battleground Grappling Spring Championship": {
+      start: new Date(2024, 3, 20, 8, 0),
+      end: new Date(2024, 3, 20, 14, 0),
+      color: "#E20000"
+    }
+  },
+  "Lake Houston": {
+    "NEWBREED Jiu Jitsu Federation Spring Championship": {
+      start: new Date(2024, 2, 16, 8, 0),
+      end: new Date(2024, 2, 16, 14, 0),
+      color: "#E20000"
+    },
+    "Battleground Grappling Spring Championship": {
+      start: new Date(2024, 3, 20, 8, 0),
+      end: new Date(2024, 3, 20, 14, 0),
+      color: "#E20000"
+    }
+  }
 };
 const generateRecurringEvents = (events, numWeeks) => {
   const generatedEvents = [];
@@ -1924,6 +2022,20 @@ function getDarkColor(eventColor) {
 function UpdateLog() {
   return /* @__PURE__ */ jsxs(Fragment, { children: [
     /* @__PURE__ */ jsx(Divider, {}),
+    /* @__PURE__ */ jsx("br", {}),
+    /* @__PURE__ */ jsx(Text, { as: "b", children: "Upcoming:" }),
+    /* @__PURE__ */ jsx("br", {}),
+    "+ NEWBREED Jiu Jitsu Federation Spring Championship | MARCH 16TH",
+    /* @__PURE__ */ jsx("br", {}),
+    "+ Battleground Grappling Spring Championship | APRIL 20TH",
+    /* @__PURE__ */ jsx("br", {}),
+    /* @__PURE__ */ jsx("br", {}),
+    /* @__PURE__ */ jsx(Text, { as: "b", children: "Update 2.16.24" }),
+    /* @__PURE__ */ jsx("br", {}),
+    "+ Schedule updated for Pearland",
+    /* @__PURE__ */ jsx("br", {}),
+    "+ Schedule updated for The Grove",
+    /* @__PURE__ */ jsx("br", {}),
     /* @__PURE__ */ jsx("br", {}),
     /* @__PURE__ */ jsx(Text, { as: "b", children: "Update 1.31.24" }),
     /* @__PURE__ */ jsx("br", {}),
@@ -2500,102 +2612,40 @@ function Page() {
               ] }) }),
               /* @__PURE__ */ jsx(Divider, { orientation: "vertical" }),
               /* @__PURE__ */ jsx(ButtonGroup, { size: ["md", "lg"], colorScheme: "messenger", children: /* @__PURE__ */ jsxs(Stack, { gap: [2, 3], children: [
-                /* @__PURE__ */ jsx(
-                  Button,
-                  {
-                    onClick: () => handleShowEvents("Houston (HQ)"),
-                    _after: {
-                      position: "absolute",
-                      top: "-4px",
-                      right: "-4px",
-                      width: "26px",
-                      height: "18px",
-                      borderRadius: "5px",
-                      backgroundColor: "#FF8700",
-                      color: "black",
-                      fontSize: "16px",
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      content: '"!"'
-                    },
-                    children: "HOUSTON (HQ)"
-                  }
-                ),
+                /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("Houston (HQ)"), children: "HOUSTON (HQ)" }),
                 /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("The Grove"), children: "THE GROVE" }),
                 /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("HCU Campus"), children: "HCU CAMPUS" }),
-                /* @__PURE__ */ jsx(
-                  Button,
-                  {
-                    onClick: () => handleShowEvents("HTX (Downtown)"),
-                    _after: {
-                      position: "absolute",
-                      top: "-4px",
-                      right: "-4px",
-                      width: "26px",
-                      height: "18px",
-                      borderRadius: "5px",
-                      backgroundColor: "#FF8700",
-                      color: "black",
-                      fontSize: "16px",
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      content: '"!"'
-                    },
-                    children: "HTX (DOWNTOWN)"
-                  }
-                ),
+                /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("HTX (Downtown)"), children: "HTX (DOWNTOWN)" }),
                 /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("Huffman"), children: "HUFFMAN" }),
                 /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("Katy"), children: "KATY" }),
                 /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("Lake Houston"), children: "LAKE HOUSTON" }),
                 /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("Mont Belvieu"), children: "MONT BELVIEU" }),
-                /* @__PURE__ */ jsx(
-                  Button,
-                  {
-                    onClick: () => handleShowEvents("Pearland"),
-                    _after: {
-                      position: "absolute",
-                      top: "-4px",
-                      right: "-4px",
-                      width: "26px",
-                      height: "18px",
-                      borderRadius: "5px",
-                      backgroundColor: "#FF8700",
-                      color: "black",
-                      fontSize: "16px",
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      content: '"!"'
-                    },
-                    children: "PEARLAND"
-                  }
-                ),
-                /* @__PURE__ */ jsx(
-                  Button,
-                  {
-                    onClick: () => handleShowEvents("Riverstone"),
-                    _after: {
-                      position: "absolute",
-                      top: "-4px",
-                      right: "-4px",
-                      width: "26px",
-                      height: "18px",
-                      borderRadius: "5px",
-                      backgroundColor: "#FF8700",
-                      color: "black",
-                      fontSize: "16px",
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      content: '"!"'
-                    },
-                    children: "RIVERSTONE"
-                  }
-                ),
+                /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("Pearland"), children: "PEARLAND" }),
+                /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("Riverstone"), children: "RIVERSTONE" }),
                 /* @__PURE__ */ jsx(Button, { onClick: () => handleShowEvents("The Woodlands"), children: "THE WOODLANDS" }),
-                /* @__PURE__ */ jsx(Button, { isDisabled: true, onClick: () => handleShowEvents("Missouri City"), children: "MISSOURI CITY" })
+                /* @__PURE__ */ jsx(
+                  Button,
+                  {
+                    isDisabled: true,
+                    onClick: () => handleShowEvents("Missouri City"),
+                    _after: {
+                      position: "absolute",
+                      top: "-8px",
+                      right: "-4px",
+                      width: "auto",
+                      height: "18px",
+                      borderRadius: "5px",
+                      backgroundColor: "#FF8700",
+                      color: "black",
+                      fontSize: "12px",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      content: '"COMING SOON"'
+                    },
+                    children: "MISSOURI CITY"
+                  }
+                )
               ] }) })
             ] }) })
           ] })
@@ -2609,7 +2659,7 @@ function Page() {
       /* @__PURE__ */ jsx(Box, { pos: "absolute", mt: 2, children: /* @__PURE__ */ jsx(Icon, { as: SvgLogo, width: ["250px", "500px"], height: ["250px", "500px"], zIndex: -1 }) }),
       /* @__PURE__ */ jsxs(Box, { width: "100%", children: [
         calendarDisplay(),
-        /* @__PURE__ */ jsx(Text, { color: "blackAlpha", mt: 1, fontSize: ["12px", "16px"], children: "Last Updated 1.31.24" })
+        /* @__PURE__ */ jsx(Text, { color: "blackAlpha", mt: 1, fontSize: ["12px", "16px"], children: "Last Updated 2.16.24" })
       ] })
     ] }),
     /* @__PURE__ */ jsx(Footer, {})

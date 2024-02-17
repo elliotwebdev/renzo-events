@@ -2,6 +2,7 @@ export const academies = {
       //default props
       minTime: new Date(2024, 0, 1, 8, 0, 0),
       maxTime: new Date(2024, 0, 1, 18, 0, 0),
+
       "Houston (HQ)":{
             minTime: new Date(2024, 0, 1, 6, 0, 0),
             maxTime: new Date(2024, 0, 1, 21, 0, 0),
@@ -390,8 +391,8 @@ export const academies = {
                   "All Kids Competition BJJ":
                   {     
                         //Saturday
-                        start: new Date(2024, 0, 6, 10, 0),
-                        end: new Date(2024, 0, 6, 11, 0),
+                        start: new Date(2024, 0, 6, 11, 0),
+                        end: new Date(2024, 0, 6, 12, 0),
                         color: "#F08600",
                         
                   },
@@ -411,8 +412,8 @@ export const academies = {
                   "Adults Competition BJJ":
                   {     
                         //Saturday
-                        start: new Date(2024, 0, 6, 11, 0),
-                        end: new Date(2024, 0, 6, 12, 0),
+                        start: new Date(2024, 0, 6, 13, 0),
+                        end: new Date(2024, 0, 6, 14, 0),
                         
                   },
                   "No-Gi BJJ":[
@@ -1130,6 +1131,10 @@ export const academies = {
             "BJJ":[
                   {
                         //Monday
+                        start: new Date(2024, 0, 1, 6, 0),
+                        end: new Date(2024, 0, 1, 7, 0),
+                  },
+                  {
                         start: new Date(2024, 0, 1, 12, 0),
                         end: new Date(2024, 0, 1, 13, 0),
                   },
@@ -1138,12 +1143,11 @@ export const academies = {
                         end: new Date(2024, 0, 1, 19, 30)
                   },
                   {
-                        //Tuesday
-                        start: new Date(2024, 0, 2, 6, 0),
-                        end: new Date(2024, 0, 2, 7, 0),
+                        //Wednesday
+                        start: new Date(2024, 0, 3, 6, 0),
+                        end: new Date(2024, 0, 3, 7, 0),
                   },
                   {
-                        //Wednesday
                         start: new Date(2024, 0, 3, 18, 30),
                         end: new Date(2024, 0, 3, 19, 30),
                   },
@@ -1158,12 +1162,6 @@ export const academies = {
                         end: new Date(2024, 0, 6, 12, 30),
                   },
             ],
-            "BJJ Live Training Only":
-            {
-                  //Thursday
-                  start: new Date(2024, 0, 4, 6, 0),
-                  end: new Date(2024, 0, 4, 7, 0),
-            },
             "OPEN MAT":
             {
                   //Friday
@@ -1172,19 +1170,13 @@ export const academies = {
             },
             "No-Gi BJJ":[
                   {
-                        //Monday
-                        start: new Date(2024, 0, 1, 6, 0),
-                        end: new Date(2024, 0, 1, 7, 0),
+                        //Tuesday
+                        start: new Date(2024, 0, 2, 6, 0),
+                        end: new Date(2024, 0, 2, 7, 0),
                   },
                   {
-                        //Tuesday
                         start: new Date(2024, 0, 2, 18, 30),
                         end: new Date(2024, 0, 2, 19, 30),
-                  },
-                  {
-                        //Wednesday
-                        start: new Date(2024, 0, 3, 6, 0),
-                        end: new Date(2024, 0, 3, 7, 0),
                   },
                   {
                         //Wednesday
@@ -1193,6 +1185,10 @@ export const academies = {
                   },
                   {
                         //Thursday
+                        start: new Date(2024, 0, 4, 6, 0),
+                        end: new Date(2024, 0, 4, 7, 0),
+                  },
+                  {
                         start: new Date(2024, 0, 4, 18, 30),
                         end: new Date(2024, 0, 4, 19, 30),
                   },
