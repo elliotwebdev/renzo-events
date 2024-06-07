@@ -22,6 +22,7 @@ import {
       DrawerCloseButton,
       ButtonGroup,
       IconButton,
+      keyframes
     } from '@chakra-ui/react'
 import {academies} from './components/Academies'
 import {specialEvents} from './components/SpecialEvents'
@@ -43,6 +44,18 @@ const localizer = dateFnsLocalizer({
       getDay,
       locales: enUS
 });
+
+const pulse = keyframes`
+      0% {
+      box-shadow: 0 0 10px #7851A9, 0 0 20px #7851A9, 0 0 30px #7851A9;
+      }
+      50% {
+      box-shadow: 0 0 20px #7851A9, 0 0 30px #7851A9, 0 0 40px #7851A9;
+      }
+      100% {
+      box-shadow: 0 0 10px #7851A9, 0 0 20px #7851A9, 0 0 30px #7851A9;
+      }`
+  ;
 
 function Page() {
 
@@ -115,7 +128,7 @@ function Page() {
             
             return (
                   
-                  <Button  variant="solid" ref={btnRef} sx={variant} colorScheme='messenger' onClick={onOpen}>
+                  <Button  variant="solid" ref={btnRef} sx={variant} colorScheme='messenger' onClick={onOpen} animation={`${pulse} 2s infinite`}>
                         <Heading size={isLg ? "2xl" : "lg"} className={isLg ? "rotateText" : ""}>SELECT SCHEDULE</Heading>
                   </Button>
       
@@ -275,7 +288,7 @@ function Page() {
 
             <Box  width="100%">      
                   {calendarDisplay()}
-                  <Text color="blackAlpha" mt={1} fontSize={["12px","16px"]}>Last Updated 2.16.24</Text>
+                  <Text color="blackAlpha" mt={1} fontSize={["12px","16px"]}>Last Updated 6.7.24</Text>
             </Box>
 
       </Flex>

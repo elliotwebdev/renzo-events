@@ -8,9 +8,26 @@ export default function UpdateLog(){
       <br/>
       <Text as='b'>Upcoming:</Text>
       <br/>
-      + NEWBREED Jiu Jitsu Federation Spring Championship | MARCH 16TH
+      + Renzo Gracie Houston 10th Anniversary Party | JULY 13th
       <br/>
-      + Battleground Grappling Spring Championship | APRIL 20TH
+      + BattleGroundBJJ Houston Summer | JULY 20TH
+      <br/>
+      + 2024 Houston Summer Grappling Games | AUG 3RD
+      <br/>
+      + NewBreed Jiu Jitsu Federation Houston Summer Championship | AUG 17TH
+      <br/>
+      <br/>
+      <Text as='b'>Update 6.7.24</Text>
+      <br/>
+      + Schedule updated for Houston (HQ)
+      <br/>
+      + Schedule updated for The Grove
+      <br/>
+      + Schedule updated for Huffman
+      <br/>
+      + Schedule updated for Pearland
+      <br/>
+      + Schedule updated for The Woodlands
       <br/>
       <br/>
       <Text as='b'>Update 2.16.24</Text>
