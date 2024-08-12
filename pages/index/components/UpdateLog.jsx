@@ -8,13 +8,12 @@ export default function UpdateLog(){
       <br/>
       <Text as='b'>Upcoming:</Text>
       <br/>
-      + Renzo Gracie Houston 10th Anniversary Party | JULY 13th
-      <br/>
-      + BattleGroundBJJ Houston Summer | JULY 20TH
-      <br/>
-      + 2024 Houston Summer Grappling Games | AUG 3RD
-      <br/>
       + NewBreed Jiu Jitsu Federation Houston Summer Championship | AUG 17TH
+      <br/>
+      <br/>
+      <Text as='b'>Update 8.12.24</Text>
+      <br/>
+      + Schedule updated for Houston (HQ)
       <br/>
       <br/>
       <Text as='b'>Update 6.7.24</Text>

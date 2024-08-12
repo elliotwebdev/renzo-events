@@ -102,43 +102,15 @@ const academies = {
         color: "#6e23fb"
       },
       {
-        start: new Date(2024, 0, 1, 18, 30),
-        end: new Date(2024, 0, 1, 19, 30),
-        color: "#6e23fb"
-      },
-      {
-        //Tuesday
-        start: new Date(2024, 0, 2, 18, 30),
-        end: new Date(2024, 0, 2, 19, 30),
-        color: "#6e23fb"
-      },
-      {
         //Wednesday
         start: new Date(2024, 0, 3, 7, 30),
         end: new Date(2024, 0, 3, 8, 30),
         color: "#6e23fb"
       },
       {
-        start: new Date(2024, 0, 3, 18, 30),
-        end: new Date(2024, 0, 3, 19, 30),
-        color: "#6e23fb"
-      },
-      {
-        //Thursday
-        start: new Date(2024, 0, 4, 18, 30),
-        end: new Date(2024, 0, 4, 19, 30),
-        color: "#6e23fb"
-      },
-      {
         //Friday
         start: new Date(2024, 0, 5, 7, 30),
         end: new Date(2024, 0, 5, 8, 30),
-        color: "#6e23fb"
-      },
-      {
-        //Saturday
-        start: new Date(2024, 0, 6, 6, 30),
-        end: new Date(2024, 0, 6, 8, 0),
         color: "#6e23fb"
       }
     ],
@@ -165,12 +137,6 @@ const academies = {
         //Thursday
         start: new Date(2024, 0, 4, 16, 45),
         end: new Date(2024, 0, 4, 17, 30),
-        color: "#6e23fb"
-      },
-      {
-        //Saturday
-        start: new Date(2024, 0, 6, 8, 0),
-        end: new Date(2024, 0, 6, 8, 45),
         color: "#6e23fb"
       }
     ],
@@ -243,9 +209,9 @@ const academies = {
         color: "#F08600"
       },
       {
-        //Tuesday
-        start: new Date(2024, 0, 2, 17, 30),
-        end: new Date(2024, 0, 2, 18, 30),
+        //thurs
+        start: new Date(2024, 0, 4, 17, 30),
+        end: new Date(2024, 0, 4, 18, 30),
         color: "#F08600"
       },
       {
@@ -295,36 +261,35 @@ const academies = {
         color: "#F08600"
       }
     ],
-    "Kids BJJ All Levels": [
+    "MMA Class": [
       {
-        //Monday
-        start: new Date(2024, 0, 1, 10, 0),
-        end: new Date(2024, 0, 1, 11, 0),
-        color: "#F08600"
+        start: new Date(2024, 0, 1, 18, 30),
+        end: new Date(2024, 0, 1, 19, 30),
+        color: "#6e23fb"
       },
       {
         //Tuesday
-        start: new Date(2024, 0, 2, 10, 0),
-        end: new Date(2024, 0, 2, 11, 0),
-        color: "#F08600"
+        start: new Date(2024, 0, 2, 18, 30),
+        end: new Date(2024, 0, 2, 19, 30),
+        color: "#6e23fb",
+        color: "#6e23fb"
       },
       {
-        //Wed
-        start: new Date(2024, 0, 3, 10, 0),
-        end: new Date(2024, 0, 3, 11, 0),
-        color: "#F08600"
+        start: new Date(2024, 0, 3, 18, 30),
+        end: new Date(2024, 0, 3, 19, 30),
+        color: "#6e23fb"
       },
       {
         //Thursday
-        start: new Date(2024, 0, 4, 10, 0),
-        end: new Date(2024, 0, 4, 11, 0),
-        color: "#F08600"
+        start: new Date(2024, 0, 4, 18, 30),
+        end: new Date(2024, 0, 4, 19, 30),
+        color: "#6e23fb"
       },
       {
-        //Friday
-        start: new Date(2024, 0, 5, 10, 0),
-        end: new Date(2024, 0, 5, 11, 0),
-        color: "#F08600"
+        //Saturday
+        start: new Date(2024, 0, 6, 6, 30),
+        end: new Date(2024, 0, 6, 8, 0),
+        color: "#6e23fb"
       }
     ],
     "No-Gi Kids BJJ (4-6 y.o)": {
@@ -349,9 +314,9 @@ const academies = {
       end: new Date(2024, 0, 1, 20, 0)
     },
     "Judo Class": {
-      //Thurs
-      start: new Date(2024, 0, 4, 17, 30),
-      end: new Date(2024, 0, 4, 18, 30),
+      //Tues
+      start: new Date(2024, 0, 2, 17, 30),
+      end: new Date(2024, 0, 2, 18, 30),
       color: "#6e23fb"
     },
     "OPEN MAT": [
@@ -1752,14 +1717,7 @@ const academies = {
   }
 };
 const specialEvents = {
-  "Houston (HQ)": {
-    "10th Anniversary Party": {
-      // Sat
-      start: new Date(2024, 6, 13, 10, 0),
-      end: new Date(2024, 6, 13, 14, 0),
-      color: "#E20000"
-    }
-  },
+  "Houston (HQ)": {},
   "The Grove": {},
   "HTX (Downtown)": {},
   "Riverstone": {},
@@ -1858,13 +1816,12 @@ function UpdateLog() {
     /* @__PURE__ */ jsx("br", {}),
     /* @__PURE__ */ jsx(Text, { as: "b", children: "Upcoming:" }),
     /* @__PURE__ */ jsx("br", {}),
-    "+ Renzo Gracie Houston 10th Anniversary Party | JULY 13th",
-    /* @__PURE__ */ jsx("br", {}),
-    "+ BattleGroundBJJ Houston Summer | JULY 20TH",
-    /* @__PURE__ */ jsx("br", {}),
-    "+ 2024 Houston Summer Grappling Games | AUG 3RD",
-    /* @__PURE__ */ jsx("br", {}),
     "+ NewBreed Jiu Jitsu Federation Houston Summer Championship | AUG 17TH",
+    /* @__PURE__ */ jsx("br", {}),
+    /* @__PURE__ */ jsx("br", {}),
+    /* @__PURE__ */ jsx(Text, { as: "b", children: "Update 8.12.24" }),
+    /* @__PURE__ */ jsx("br", {}),
+    "+ Schedule updated for Houston (HQ)",
     /* @__PURE__ */ jsx("br", {}),
     /* @__PURE__ */ jsx("br", {}),
     /* @__PURE__ */ jsx(Text, { as: "b", children: "Update 6.7.24" }),
@@ -2519,7 +2476,7 @@ function Page() {
       /* @__PURE__ */ jsx(Box, { pos: "absolute", mt: 2, children: /* @__PURE__ */ jsx(Icon, { as: SvgLogo, width: ["250px", "500px"], height: ["250px", "500px"], zIndex: -1 }) }),
       /* @__PURE__ */ jsxs(Box, { width: "100%", children: [
         calendarDisplay(),
-        /* @__PURE__ */ jsx(Text, { color: "blackAlpha", mt: 1, fontSize: ["12px", "16px"], children: "Last Updated 6.7.24" })
+        /* @__PURE__ */ jsx(Text, { color: "blackAlpha", mt: 1, fontSize: ["12px", "16px"], children: "Last Updated 8.12.24" })
       ] })
     ] }),
     /* @__PURE__ */ jsx(Footer, {})
