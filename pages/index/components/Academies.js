@@ -180,6 +180,32 @@ export const academies = {
                   end: new Date(2024, 0, 5, 13, 30),
             },
             ],
+            "All Levels Kids BJJ":[
+            {
+                  //Monday
+                  start: new Date(2024, 0, 1, 10, 0),
+                  end: new Date(2024, 0, 1, 11, 0),
+                  color: "#F08600"
+            },
+            {
+                  //Tuesday
+                  start: new Date(2024, 0, 2, 10, 0),
+                  end: new Date(2024, 0, 2, 11, 0),
+                  color: "#F08600"
+            },
+            {
+                  //Wed
+                  start: new Date(2024, 0, 3, 10, 0),
+                  end: new Date(2024, 0, 3, 11, 0),
+                  color: "#F08600"
+            },
+            {     
+                  //Thu
+                  start: new Date(2024, 0, 4, 10, 0),
+                  end: new Date(2024, 0, 4, 11, 0),
+                  color: "#F08600"
+            },
+            ],
             "Kids BJJ (7-11 y.o)":[
             {
                   //Monday

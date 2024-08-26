@@ -5,10 +5,13 @@ export default function UpdateLog(){
   return (
     <>
       <Divider />
-      <br/>
+      {/* <br/>
       <Text as='b'>Upcoming:</Text>
+      <br/> */}
       <br/>
-      + NewBreed Jiu Jitsu Federation Houston Summer Championship | AUG 17TH
+      <Text as='b'>Update 8.26.24</Text>
+      <br/>
+      + Schedule updated for Houston (HQ)
       <br/>
       <br/>
       <Text as='b'>Update 8.12.24</Text>

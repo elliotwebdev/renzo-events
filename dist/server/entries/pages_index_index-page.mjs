@@ -175,6 +175,32 @@ const academies = {
         end: new Date(2024, 0, 5, 13, 30)
       }
     ],
+    "All Levels Kids BJJ": [
+      {
+        //Monday
+        start: new Date(2024, 0, 1, 10, 0),
+        end: new Date(2024, 0, 1, 11, 0),
+        color: "#F08600"
+      },
+      {
+        //Tuesday
+        start: new Date(2024, 0, 2, 10, 0),
+        end: new Date(2024, 0, 2, 11, 0),
+        color: "#F08600"
+      },
+      {
+        //Wed
+        start: new Date(2024, 0, 3, 10, 0),
+        end: new Date(2024, 0, 3, 11, 0),
+        color: "#F08600"
+      },
+      {
+        //Thu
+        start: new Date(2024, 0, 4, 10, 0),
+        end: new Date(2024, 0, 4, 11, 0),
+        color: "#F08600"
+      }
+    ],
     "Kids BJJ (7-11 y.o)": [
       {
         //Monday
@@ -1814,9 +1840,9 @@ function UpdateLog() {
   return /* @__PURE__ */ jsxs(Fragment, { children: [
     /* @__PURE__ */ jsx(Divider, {}),
     /* @__PURE__ */ jsx("br", {}),
-    /* @__PURE__ */ jsx(Text, { as: "b", children: "Upcoming:" }),
+    /* @__PURE__ */ jsx(Text, { as: "b", children: "Update 8.26.24" }),
     /* @__PURE__ */ jsx("br", {}),
-    "+ NewBreed Jiu Jitsu Federation Houston Summer Championship | AUG 17TH",
+    "+ Schedule updated for Houston (HQ)",
     /* @__PURE__ */ jsx("br", {}),
     /* @__PURE__ */ jsx("br", {}),
     /* @__PURE__ */ jsx(Text, { as: "b", children: "Update 8.12.24" }),
@@ -2476,7 +2502,7 @@ function Page() {
       /* @__PURE__ */ jsx(Box, { pos: "absolute", mt: 2, children: /* @__PURE__ */ jsx(Icon, { as: SvgLogo, width: ["250px", "500px"], height: ["250px", "500px"], zIndex: -1 }) }),
       /* @__PURE__ */ jsxs(Box, { width: "100%", children: [
         calendarDisplay(),
-        /* @__PURE__ */ jsx(Text, { color: "blackAlpha", mt: 1, fontSize: ["12px", "16px"], children: "Last Updated 8.12.24" })
+        /* @__PURE__ */ jsx(Text, { color: "blackAlpha", mt: 1, fontSize: ["12px", "16px"], children: "Last Updated 8.26.24" })
       ] })
     ] }),
     /* @__PURE__ */ jsx(Footer, {})
