@@ -188,21 +188,17 @@ export const academies = {
                   color: "#F08600"
             },
             {
-                  //Tuesday
-                  start: new Date(2024, 0, 2, 10, 0),
-                  end: new Date(2024, 0, 2, 11, 0),
-                  color: "#F08600"
-            },
-            {
                   //Wed
                   start: new Date(2024, 0, 3, 10, 0),
                   end: new Date(2024, 0, 3, 11, 0),
                   color: "#F08600"
             },
-            {     
-                  //Thu
-                  start: new Date(2024, 0, 4, 10, 0),
-                  end: new Date(2024, 0, 4, 11, 0),
+            ],
+            "All Levels No-Gi Kids BJJ":[
+            {
+                  //Fri
+                  start: new Date(2024, 0, 5, 10, 0),
+                  end: new Date(2024, 0, 5, 11, 0),
                   color: "#F08600"
             },
             ],

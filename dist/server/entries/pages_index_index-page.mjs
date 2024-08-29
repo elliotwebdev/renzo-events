@@ -183,21 +183,17 @@ const academies = {
         color: "#F08600"
       },
       {
-        //Tuesday
-        start: new Date(2024, 0, 2, 10, 0),
-        end: new Date(2024, 0, 2, 11, 0),
-        color: "#F08600"
-      },
-      {
         //Wed
         start: new Date(2024, 0, 3, 10, 0),
         end: new Date(2024, 0, 3, 11, 0),
         color: "#F08600"
-      },
+      }
+    ],
+    "All Levels No-Gi Kids BJJ": [
       {
-        //Thu
-        start: new Date(2024, 0, 4, 10, 0),
-        end: new Date(2024, 0, 4, 11, 0),
+        //Fri
+        start: new Date(2024, 0, 5, 10, 0),
+        end: new Date(2024, 0, 5, 11, 0),
         color: "#F08600"
       }
     ],
@@ -1840,6 +1836,11 @@ function UpdateLog() {
   return /* @__PURE__ */ jsxs(Fragment, { children: [
     /* @__PURE__ */ jsx(Divider, {}),
     /* @__PURE__ */ jsx("br", {}),
+    /* @__PURE__ */ jsx(Text, { as: "b", children: "Update 8.29.24" }),
+    /* @__PURE__ */ jsx("br", {}),
+    "+ Schedule updated for Houston (HQ)",
+    /* @__PURE__ */ jsx("br", {}),
+    /* @__PURE__ */ jsx("br", {}),
     /* @__PURE__ */ jsx(Text, { as: "b", children: "Update 8.26.24" }),
     /* @__PURE__ */ jsx("br", {}),
     "+ Schedule updated for Houston (HQ)",
@@ -2502,7 +2503,7 @@ function Page() {
       /* @__PURE__ */ jsx(Box, { pos: "absolute", mt: 2, children: /* @__PURE__ */ jsx(Icon, { as: SvgLogo, width: ["250px", "500px"], height: ["250px", "500px"], zIndex: -1 }) }),
       /* @__PURE__ */ jsxs(Box, { width: "100%", children: [
         calendarDisplay(),
-        /* @__PURE__ */ jsx(Text, { color: "blackAlpha", mt: 1, fontSize: ["12px", "16px"], children: "Last Updated 8.26.24" })
+        /* @__PURE__ */ jsx(Text, { color: "blackAlpha", mt: 1, fontSize: ["12px", "16px"], children: "Last Updated 8.29.24" })
       ] })
     ] }),
     /* @__PURE__ */ jsx(Footer, {})
