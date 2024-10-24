@@ -82,14 +82,14 @@ const academies = {
     ],
     "Wrestling Adults & Junior 12+": [
       {
-        //Monday
-        start: new Date(2024, 0, 1, 11, 0),
-        end: new Date(2024, 0, 1, 12, 0),
+        //we
+        start: new Date(2024, 0, 3, 11, 30),
+        end: new Date(2024, 0, 3, 12, 0),
         color: "#6e23fb"
       },
       {
         //Friday
-        start: new Date(2024, 0, 5, 11, 0),
+        start: new Date(2024, 0, 5, 11, 30),
         end: new Date(2024, 0, 5, 12, 0),
         color: "#6e23fb"
       }
@@ -228,6 +228,12 @@ const academies = {
         //Monday
         start: new Date(2024, 0, 1, 17, 30),
         end: new Date(2024, 0, 1, 18, 30),
+        color: "#F08600"
+      },
+      {
+        //Monday
+        start: new Date(2024, 0, 2, 17, 30),
+        end: new Date(2024, 0, 2, 18, 30),
         color: "#F08600"
       },
       {
@@ -1739,7 +1745,14 @@ const academies = {
   }
 };
 const specialEvents = {
-  "Houston (HQ)": {},
+  "Houston (HQ)": {
+    "The Mountain | Workshop Series": {
+      //Monday
+      start: new Date(2024, 9, 26, 11, 0),
+      end: new Date(2024, 9, 26, 13, 0),
+      color: "#E20000"
+    }
+  },
   "The Grove": {},
   "HTX (Downtown)": {},
   "Riverstone": {},
@@ -1835,6 +1848,11 @@ function getDarkColor(eventColor) {
 function UpdateLog() {
   return /* @__PURE__ */ jsxs(Fragment, { children: [
     /* @__PURE__ */ jsx(Divider, {}),
+    /* @__PURE__ */ jsx("br", {}),
+    /* @__PURE__ */ jsx(Text, { as: "b", children: "Update 10.24.24" }),
+    /* @__PURE__ */ jsx("br", {}),
+    "+ Schedule updated for Houston (HQ) + The Mountain | Workshop Series added for Houston (HQ)",
+    /* @__PURE__ */ jsx("br", {}),
     /* @__PURE__ */ jsx("br", {}),
     /* @__PURE__ */ jsx(Text, { as: "b", children: "Update 8.29.24" }),
     /* @__PURE__ */ jsx("br", {}),
@@ -2503,7 +2521,7 @@ function Page() {
       /* @__PURE__ */ jsx(Box, { pos: "absolute", mt: 2, children: /* @__PURE__ */ jsx(Icon, { as: SvgLogo, width: ["250px", "500px"], height: ["250px", "500px"], zIndex: -1 }) }),
       /* @__PURE__ */ jsxs(Box, { width: "100%", children: [
         calendarDisplay(),
-        /* @__PURE__ */ jsx(Text, { color: "blackAlpha", mt: 1, fontSize: ["12px", "16px"], children: "Last Updated 8.29.24" })
+        /* @__PURE__ */ jsx(Text, { color: "blackAlpha", mt: 1, fontSize: ["12px", "16px"], children: "Last Updated 10.24.24" })
       ] })
     ] }),
     /* @__PURE__ */ jsx(Footer, {})

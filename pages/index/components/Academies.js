@@ -87,14 +87,14 @@ export const academies = {
             ],
             "Wrestling Adults & Junior 12+":[
             {
-                  //Monday
-                  start: new Date(2024, 0, 1, 11, 0),
-                  end: new Date(2024, 0, 1, 12, 0),
+                  //we
+                  start: new Date(2024, 0, 3, 11, 30),
+                  end: new Date(2024, 0, 3, 12, 0),
                   color: '#6e23fb',
             },
             {
                   //Friday
-                  start: new Date(2024, 0, 5, 11, 0),
+                  start: new Date(2024, 0, 5, 11, 30),
                   end: new Date(2024, 0, 5, 12, 0),
                   color: '#6e23fb',
             },
@@ -233,6 +233,12 @@ export const academies = {
                   //Monday
                   start: new Date(2024, 0, 1, 17, 30),
                   end: new Date(2024, 0, 1, 18, 30),
+                  color: "#F08600"
+            },
+            {
+                  //Monday
+                  start: new Date(2024, 0, 2, 17, 30),
+                  end: new Date(2024, 0, 2, 18, 30),
                   color: "#F08600"
             },
             {

@@ -9,6 +9,12 @@ export default function UpdateLog(){
       <Text as='b'>Upcoming:</Text>
       <br/> */}
       <br/>
+      <Text as='b'>Update 10.24.24</Text>
+      <br/>
+      + Schedule updated for Houston (HQ)
+      + The Mountain | Workshop Series added for Houston (HQ)
+      <br/>
+      <br/>
       <Text as='b'>Update 8.29.24</Text>
       <br/>
       + Schedule updated for Houston (HQ)
