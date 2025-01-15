@@ -1,13 +1,14 @@
 import { Box, Flex, Text } from '@chakra-ui/react';
 
-export default function Footer(){
-
+export default function Footer() {
   return (
-    <Box mt={2} pos="relative" bottom="0" py={4} color="blackAlpha" >
-        <Flex justifyContent="center">
-            <Text fontSize={["12px","16px"]} as="a" href="https://elliotweb.dev">Renzo Events &copy; 2023-2024</Text>
-        </Flex>
+    <Box my={4} pos="relative" bottom="0" py={4} color="blackAlpha" textAlign="center">
+      <Flex flexDirection="column" alignItems="center" justifyContent="center">
+        <Text fontSize={["12px", "16px"]}>Renzo Events &copy; 2023-2025</Text>
+        <Text fontSize={["8", "10"]} as="a" href="https://webboosterstudio.com">
+          Created by Web Booster Studio
+        </Text>
+      </Flex>
     </Box>
   );
-};
-
+}

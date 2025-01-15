@@ -63,9 +63,26 @@ function Page() {
       const btnRef = React.useRef()
       const { colorMode } = useColorMode()
       const [selectedLocation, setSelectedLocation] = useState()
+      const [isOverlayVisible, setIsOverlayVisible] = useState(true);
       const [events, setEvents] = useState([])
       const generatedEvents = []
       const bgGradients = ['linear(to-br, purple.500, red.600)','linear(to-bl, red.600, yellow.500)','linear(to-br, yellow.600, pink.500)','linear(to-bl, pink.500, purple.500)']
+      const hideOverlay = () => {
+            setIsOverlayVisible(false);
+            onOpen(); // Open the drawer directly after hiding the overlay
+          };
+      const overlayStyles = {
+      position: "fixed",
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100%",
+      backgroundColor: "rgba(0, 0, 0, 0.5)",
+      zIndex: 9999,
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      };
 
       const handleShowEvents = (location) => {
             
@@ -180,6 +197,26 @@ function Page() {
   return (
   <Box position="relative">
 
+      {/* Overlay */}
+      {isOverlayVisible && (
+        <Box flex flexDirection="column" style={overlayStyles}>
+
+            <Text as="b" color="white"> Welcome to Renzo Events!</Text>
+            <Text as="b" color="white"> Select a schedule to get started.</Text>
+            <Button
+                  margin={10}
+                  ref={btnRef}
+                  colorScheme="messenger"
+                  size="lg"
+                  padding="xl"
+                  onClick={hideOverlay}
+                  animation={`${pulse} 2s infinite`}
+            >
+                  SELECT SCHEDULE
+            </Button>
+        </Box>
+      )}
+
       <Drawer
       isOpen={isOpen}
       placement='left'
@@ -190,12 +227,12 @@ function Page() {
             <DrawerOverlay />
             <DrawerContent>
                   <DrawerCloseButton size="lg"/>
-                  <DrawerHeader><Heading size={["lg", "xl"]}>Choose an Academy</Heading></DrawerHeader>
+                  <DrawerHeader><Heading size="xl">Choose an Academy</Heading></DrawerHeader>
                   
                   <DrawerBody>
-                        <Flex height={["40em", "100%"]} mx={[0,4]} gap={[4, 6]}>
-                        <ButtonGroup size={["md", "lg"]}>
-                              <Stack gap={[2, 3]} >    
+                        <Flex height="100%" mx={[0,4]} gap={[4, 6]}>
+                        <ButtonGroup variant="outline" size={["md", "lg"]}>
+                              <Stack gap={[10, 12]} >    
                                     <IconButton as="a" color="white" bgGradient={bgGradients[0]} _hover={{ bg: "blackAlpha.600" }}
                                     href={linkAcademy("renzograciehouston")} icon={<SvgSocial/>}/>
 
@@ -205,50 +242,50 @@ function Page() {
                                     <IconButton as="a" color="white" bgGradient={bgGradients[2]} _hover={{ bg: "blackAlpha.600" }}
                                     href={linkAcademy("renzograciehoustonhcucampus")} icon={<SvgSocial/>}/>
 
-                                    <IconButton as="a" color="white" bgGradient={bgGradients[3]} _hover={{ bg: "blackAlpha.600" }}
-                                    href={linkAcademy("renzogracie_htx")} icon={<SvgSocial/>}/>
+                                    {/* <IconButton as="a" color="white" bgGradient={bgGradients[3]} _hover={{ bg: "blackAlpha.600" }}
+                                    href={linkAcademy("renzogracie_htx")} icon={<SvgSocial/>}/> */}
 
-                                    <IconButton as="a" color="white" bgGradient={bgGradients[0]} _hover={{ bg: "blackAlpha.600" }}
+                                    <IconButton as="a" color="white" bgGradient={bgGradients[3]} _hover={{ bg: "blackAlpha.600" }}
                                     href={linkAcademy("renzograciehuffman")} icon={<SvgSocial/>}/>
 
-                                    <IconButton as="a" color="white" bgGradient={bgGradients[1]} _hover={{ bg: "blackAlpha.600" }}
-                                    href={linkAcademy("renzograciekaty")} icon={<SvgSocial/>}/>
+                                    {/* <IconButton as="a" color="white" bgGradient={bgGradients[1]} _hover={{ bg: "blackAlpha.600" }}
+                                    href={linkAcademy("renzograciekaty")} icon={<SvgSocial/>}/> */}
 
-                                    <IconButton as="a" color="white" bgGradient={bgGradients[2]} _hover={{ bg: "blackAlpha.600" }}
-                                    href={linkAcademy("renzogracielakehouston")} icon={<SvgSocial/>}/>
+                                    {/* <IconButton as="a" color="white" bgGradient={bgGradients[2]} _hover={{ bg: "blackAlpha.600" }}
+                                    href={linkAcademy("renzogracielakehouston")} icon={<SvgSocial/>}/> */}
 
-                                    <IconButton as="a" color="white" bgGradient={bgGradients[3]} _hover={{ bg: "blackAlpha.600" }}
-                                    href={linkAcademy("renzograciembv")} icon={<SvgSocial/>}/>
+                                    {/* <IconButton as="a" color="white" bgGradient={bgGradients[3]} _hover={{ bg: "blackAlpha.600" }}
+                                    href={linkAcademy("renzograciembv")} icon={<SvgSocial/>}/> */}
+
+                                    {/* <IconButton as="a" color="white" bgGradient={bgGradients[0]} _hover={{ bg: "blackAlpha.600" }}
+                                    href={linkAcademy("renzograciepearland")} icon={<SvgSocial/>}/>              */}
 
                                     <IconButton as="a" color="white" bgGradient={bgGradients[0]} _hover={{ bg: "blackAlpha.600" }}
-                                    href={linkAcademy("renzograciepearland")} icon={<SvgSocial/>}/>             
-
-                                    <IconButton as="a" color="white" bgGradient={bgGradients[1]} _hover={{ bg: "blackAlpha.600" }}
                                     href={linkAcademy("renzogracieriverstone")} icon={<SvgSocial/>}/>
 
-                                    <IconButton as="a" color="white" bgGradient={bgGradients[2]} _hover={{ bg: "blackAlpha.600" }}
-                                    href={linkAcademy("renzo_gracie_the_woodlands")}  icon={<SvgSocial/>}/>
+                                    {/* <IconButton as="a" color="white" bgGradient={bgGradients[2]} _hover={{ bg: "blackAlpha.600" }}
+                                    href={linkAcademy("renzo_gracie_the_woodlands")}  icon={<SvgSocial/>}/> */}
 
-                                    <IconButton isDisabled bgGradient={bgGradients[3]} _hover={{ bg: "blackAlpha.400" }} icon={<SvgSocial/>}/>
+                                    <IconButton isDisabled bgGradient={bgGradients[1]} _hover={{ bg: "blackAlpha.400" }} icon={<SvgSocial/>}/>
                                     
                               </Stack>
                               </ButtonGroup>
 
                               <Divider orientation='vertical' />
-                              <ButtonGroup size={["md", "lg"]} colorScheme='messenger'>
-                              <Stack gap={[2, 3]} >
+                              <ButtonGroup variant="outline" size={["md", "lg"]} colorScheme='messenger'>
+                              <Stack gap={[10, 12]} >
                                     
-                                    <Button  onClick={() => handleShowEvents("Houston (HQ)")}>HOUSTON (HQ)</Button>
+                                    <Button  onClick={() => handleShowEvents("Houston | HQ")}>HOUSTON | HQ</Button>
                                     <Button  onClick={() => handleShowEvents("The Grove")}>THE GROVE</Button>
                                     <Button  onClick={() => handleShowEvents("HCU Campus")}>HCU CAMPUS</Button>
-                                    <Button  onClick={() => handleShowEvents("HTX (Downtown)")}>HTX (DOWNTOWN)</Button>
+                                    {/* <Button  onClick={() => handleShowEvents("HTX | Downtown")}>HTX | DOWNTOWN</Button> */}
                                     <Button  onClick={() => handleShowEvents("Huffman")}>HUFFMAN</Button>
-                                    <Button  onClick={() => handleShowEvents("Katy")}>KATY</Button>
-                                    <Button  onClick={() => handleShowEvents("Lake Houston")}>LAKE HOUSTON</Button>
-                                    <Button  onClick={() => handleShowEvents("Mont Belvieu")}>MONT BELVIEU</Button>
-                                    <Button  onClick={() => handleShowEvents("Pearland")}>PEARLAND</Button>
+                                    {/* <Button  onClick={() => handleShowEvents("Katy")}>KATY</Button> */}
+                                    {/* <Button  onClick={() => handleShowEvents("Lake Houston")}>LAKE HOUSTON</Button> */}
+                                    {/* <Button  onClick={() => handleShowEvents("Mont Belvieu")}>MONT BELVIEU</Button> */}
+                                    {/* <Button  onClick={() => handleShowEvents("Pearland")}>PEARLAND</Button> */}
                                     <Button  onClick={() => handleShowEvents("Riverstone")}>RIVERSTONE</Button>
-                                    <Button  onClick={() => handleShowEvents("The Woodlands")}>THE WOODLANDS</Button>
+                                    {/* <Button  onClick={() => handleShowEvents("The Woodlands")}>THE WOODLANDS</Button> */}
                                     <Button  isDisabled onClick={() => handleShowEvents("Missouri City")}
                                            _after={{ position: "absolute",
                                            top: "-8px",
@@ -288,7 +325,7 @@ function Page() {
 
             <Box  width="100%">      
                   {calendarDisplay()}
-                  <Text color="blackAlpha" mt={1} fontSize={["12px","16px"]}>Last Updated 10.24.24</Text>
+                  <Text color="blackAlpha" mt={1} fontSize={["12px","16px"]}>Last Updated 1.14.25</Text>
             </Box>
 
       </Flex>

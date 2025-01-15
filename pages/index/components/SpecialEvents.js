@@ -1,19 +1,12 @@
 export const specialEvents = {
-      "Houston (HQ)":{
-            "The Mountain | Workshop Series":
-                  {
-                        //Monday
-                        start: new Date(2024, 9, 26, 11, 0),
-                        end: new Date(2024, 9, 26, 13, 0),
-                        color: '#E20000',
-                  },
+      "Houston | HQ":{
       },
 
       "The Grove":{
       },
 
-      "HTX (Downtown)":{
-      },
+      // "HTX | Downtown":{
+      // },
 
       "Riverstone":{
       },
@@ -21,21 +14,21 @@ export const specialEvents = {
       "HCU Campus":{
       },
 
-      "Katy":{
-      },
+      // "Katy":{
+      // },
       
-      "Mont Belvieu":{
-      },
+      // "Mont Belvieu":{
+      // },
 
-      "Pearland":{
-      },
+      // "Pearland":{
+      // },
 
-      "The Woodlands":{
-      },
+      // "The Woodlands":{
+      // },
 
       "Huffman":{
       },
 
-      "Lake Houston":{
-      },
+      // "Lake Houston":{
+      // },
 }

@@ -5,9 +5,31 @@ export default function UpdateLog(){
   return (
     <>
       <Divider />
-      {/* <br/>
-      <Text as='b'>Upcoming:</Text>
-      <br/> */}
+      <br/>
+      <Text textDecor="underline" as='b'>UPCOMING TOURNAMENTS:</Text>
+      <br/>
+      + Houston Winter Tournament | Battleground Grappling Championship | Jan. 19th
+      <br/>
+      <br/>
+      + 2025 Houston Winter Games | Grappling Games | Feb. 8th
+      <br/>
+      <br/>
+      + Houston XIII | Jiu Jitsu World League | Feb. 15th
+      <br/>
+      <br/>
+      + Austin I | Jiu Jitsu World League | Mar. 15th
+      <br/>
+      <br/>
+      <Text as='b'>NEW YEARS UPDATE 1.14.25</Text>
+      <br/>
+      + Schedule updated for Houston (HQ)
+      <br/>
+      + Schedule updated for The Grove
+      <br/>
+      + Schedule updated for Huffman
+      <br/>
+      + Schedule updated for Riverstone
+      <br/>
       <br/>
       <Text as='b'>Update 10.24.24</Text>
       <br/>
