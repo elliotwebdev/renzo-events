@@ -96,7 +96,7 @@ export default function ToolbarButtonDisplay() {
                   backdropBlur='2px'/>
                   <ModalContent>
 
-                        <ModalHeader><Heading>Welcome to Renzo Events!</Heading></ModalHeader>
+                        <ModalHeader><Heading>Welcome to Renzo Rolls!</Heading></ModalHeader>
                         <ModalCloseButton />
                         <ModalBody>
                         <Tabs isFitted variant='enclosed'>
@@ -163,15 +163,15 @@ export default function ToolbarButtonDisplay() {
                                     These classes are exclusively dedicated to kids' BJJ and may have specific divisions based on 
                                     age and height established by each academy. Check with your academy for more information.
                                     </Text>
-                                    <br />
+                                    {/* <br /> */}
                                     
-                                    <Text as='b'>Special Events</Text>
+                                    {/* <Text as='b'>Special Events</Text>
                                     <Box span="true" w="200px" h="10px" borderRadius="3xl" backgroundColor={colorMode === 'light' ? '#E20000' : getDarkColor('#E20000')}></Box>
 
                                     <Text >
                                     These events are either organized by the Houston BJJ community or by Houston Team Renzo Gracie and typically coincide with class cancellations at the academy. 
                                     For more details about these events, please refer to the academy's social media pages.
-                                    </Text>
+                                    </Text> */}
          
                                     </TabPanel>
                                     <TabPanel>
@@ -181,10 +181,6 @@ export default function ToolbarButtonDisplay() {
                                           <br />
                                           Leave a message and share words of encouragment or ways the calendar could enhance your visit!
                                           <br />
-                                          <br />
-                                          <Text textColor={colorMode === 'light' ? '#0078ff' : getDarkColor('#0078ff')} as="b">For Academy Owners / Directors</Text>
-                                          <br/>
-                                          If you would like to update your academy's schedule or share information about an upcoming event, please provide the location and details below.
                                           </Text>
              
                                           <form method="POST" action="https://formsubmit.co/92cb9ddf59f1e62ddc366d8322abea72" >

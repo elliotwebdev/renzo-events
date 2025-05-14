@@ -5,30 +5,15 @@ export const specialEvents = {
       "The Grove":{
       },
 
-      // "HTX | Downtown":{
-      // },
-
       "Riverstone":{
       },
 
       "HCU Campus":{
       },
 
-      // "Katy":{
-      // },
-      
-      // "Mont Belvieu":{
-      // },
-
-      // "Pearland":{
-      // },
-
-      // "The Woodlands":{
-      // },
-
       "Huffman":{
+      },  
+      "Missouri City":{
       },
 
-      // "Lake Houston":{
-      // },
 }
